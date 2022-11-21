@@ -9,7 +9,7 @@ extents = Vector2( 32, 32 )
 extents = Vector2( 438.5, 32 )
 
 [node name="TestSceneNode" type="Node2D"]
-position = Vector2( 248, 148 )
+position = Vector2( 296, 245 )
 
 [node name="block" type="RigidBody2D" parent="."]
 position = Vector2( 326, 175 )
