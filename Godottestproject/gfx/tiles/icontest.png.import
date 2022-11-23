@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/newtilesversion2.png-7795fe1bed73e74ddc500eebbab45dd2.stex"
+path="res://.import/icontest.png-0d282ebc39e4b03bde810aadba7d084b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://newtilesversion2.png"
-dest_files=[ "res://.import/newtilesversion2.png-7795fe1bed73e74ddc500eebbab45dd2.stex" ]
+source_file="res://gfx/tiles/icontest.png"
+dest_files=[ "res://.import/icontest.png-0d282ebc39e4b03bde810aadba7d084b.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

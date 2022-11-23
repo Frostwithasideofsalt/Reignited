@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player-placeholder2.png-92012f0bbdb2cfc3e90f67666265e0ad.stex"
+path="res://.import/attack-placeholder.png-f4c57ecb497bdbb01902125c49038cfe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player-placeholder2.png"
-dest_files=[ "res://.import/player-placeholder2.png-92012f0bbdb2cfc3e90f67666265e0ad.stex" ]
+source_file="res://gfx/obj/attack-placeholder.png"
+dest_files=[ "res://.import/attack-placeholder.png-f4c57ecb497bdbb01902125c49038cfe.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
