@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
+    "activeFile": "untitled.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -103,14 +103,14 @@
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json": {
             "expandedObjectLayers": [
                 15,
-                12,
-                3
+                3,
+                12
             ],
             "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 4883.333333333333,
-                "y": 353.3333333333333
+                "x": 3024,
+                "y": 559.3333333333333
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json#actors": {
@@ -252,11 +252,11 @@
             "scaleInEditor": 1
         },
         "untitled.tmx": {
-            "scale": 5.5,
+            "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 355.54545454545456,
-                "y": 122.36363636363636
+                "x": 331.99999999999994,
+                "y": 229.33333333333331
             }
         },
         "untitled.tmx#enemies": {
@@ -279,17 +279,18 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
+        "untitled.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
+        "untitled.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-branches.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-fishy.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/template-overworld.json",
-        "untitled.tmx",
         "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx",
         "newtilesversion2.tsx"
     ],
