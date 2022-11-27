@@ -8,38 +8,62 @@ var friction = 0.8
 #lower the number the more friction there is.
 var Jdr = 15
 #this stands for jump duration. used to do stuff relating to variable jump height.
+var Jmp = 0
+#this variable is 1 when the player is falling
+var Kyt = 0
+#this variable handles kiyote time
 
-
-
-func _physics_process(delta):
+func _physics_process(_delta):
 	#key press stuff
 	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	
 	#Left and right movment
-	if hkp == 1 and vsp.x < 150:
+	if hkp == 1 and vsp.x < 150 :
 		vsp.x = vsp.x +(60 - (60 * friction))
-	if hkp == -1 and vsp.x > -150:
+		$AnimatedSprite.flip_h = false
+	elif hkp == -1 and vsp.x > -150:
 		vsp.x = vsp.x -(60 - (60 * friction))
-	if hkp == -0:
+		$AnimatedSprite.flip_h = true
+	elif hkp == 0:
 		vsp.x = vsp.x *(friction) 
 	
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
-		if is_on_floor(): 
+		if  Kyt >= 1:
 			Jdr = 15
 		else: 
-			Jdr = -1
+			Jdr = 0
 		
-	
-	if Input.is_action_pressed("Jump") and Jdr >= 0:
+	if Input.is_action_pressed("Jump") and Jdr >= 1:
+		Jmp = 1
 		vsp.y = -180
 		Jdr = Jdr - 1
-	
-	
+		Kyt = 0
+		
+	#animations weeee
+	if Jmp == 0 :
+		if hkp == 0 :
+			$AnimatedSprite.play("idle")
+			
+		else: 
+			$AnimatedSprite.play("walk")
+	else:
+		if int(round(vsp.y)) >= 14 :
+			$AnimatedSprite.play("jump-fall")
+		else:
+			$AnimatedSprite.play("jump-rise")
+		
+			
 	
 	#physics
-	vsp.y = vsp.y + 15 
+	if !is_on_floor():
+		vsp.y = vsp.y + 15 
+		Kyt = Kyt - 1
+	else:
+		Jmp = 0
+		Kyt = 8
 	vsp = move_and_slide(vsp,Vector2.UP)
+	print (Kyt)
 	
 	
 

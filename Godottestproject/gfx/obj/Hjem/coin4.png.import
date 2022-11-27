@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/attack-placeholder.png-f4c57ecb497bdbb01902125c49038cfe.stex"
+path="res://.import/coin4.png-a10a9c340f4bcef47d18818448edab21.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/obj/attack-placeholder.png"
-dest_files=[ "res://.import/attack-placeholder.png-f4c57ecb497bdbb01902125c49038cfe.stex" ]
+source_file="res://gfx/obj/Hjem/coin4.png"
+dest_files=[ "res://.import/coin4.png-a10a9c340f4bcef47d18818448edab21.stex" ]
 
 [params]
 

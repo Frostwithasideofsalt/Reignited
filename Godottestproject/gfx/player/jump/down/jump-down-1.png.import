@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy-placeholder.png-dddc5999877cc6f95d11fbebf77e7639.stex"
+path="res://.import/jump-down-1.png-8153a255fe5146b3c05a4dda3151acee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/obj/enemy-placeholder.png"
-dest_files=[ "res://.import/enemy-placeholder.png-dddc5999877cc6f95d11fbebf77e7639.stex" ]
+source_file="res://gfx/player/jump/down/jump-down-1.png"
+dest_files=[ "res://.import/jump-down-1.png-8153a255fe5146b3c05a4dda3151acee.stex" ]
 
 [params]
 

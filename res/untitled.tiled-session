@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "untitled.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -12,6 +12,44 @@
             "scaleInDock": 1
         },
         "#newtilesversion2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 5778.666666666666,
+                "y": 469.3333333333333
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#actors-sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json#solid": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-branches.json": {
@@ -247,6 +285,33 @@
         "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx#water": {
             "scaleInDock": 1
         },
+        "gui/untitled.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 186.5,
+                "y": 224
+            }
+        },
+        "gui/untitled.tmx#enemies": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "gui/untitled.tmx#goofy aah": {
+            "scaleInDock": 1
+        },
+        "gui/untitled.tmx#misc sprites": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "gui/untitled.tmx#newtilesversion2": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "gui/untitled.tmx#water": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "newtilesversion2.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -273,17 +338,17 @@
         }
     },
     "last.exportedFilePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject",
-    "last.imagePath": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/gfx",
+    "last.imagePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/res",
     "map.lastUsedExportFilter": "All Files (*)",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
-        "untitled.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "gui/untitled.tmx",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
         "untitled.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-branches.json",
