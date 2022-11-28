@@ -6,12 +6,12 @@ var hkp = 0
 #The name of this variable stands for "Horizonal key press" which doesn't make much sense but it works for me. Also use this variable instead of checking if either the left or right key is pressed
 var friction = 0.8
 #lower the number the more friction there is.
-var Jdr = 15
+var Jdr = 16
 #this stands for jump duration. used to do stuff relating to variable jump height.
 var Jmp = 0
 #this variable is 1 when the player is falling
 var Kyt = 0
-#this variable handles kiyote time
+#this variable handles kiyote timestop_on_slope 
 
 func _physics_process(_delta):
 	#key press stuff
@@ -30,13 +30,13 @@ func _physics_process(_delta):
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
-			Jdr = 15
+			Jdr = 16
 		else: 
 			Jdr = 0
 		
 	if Input.is_action_pressed("Jump") and Jdr >= 1:
 		Jmp = 1
-		vsp.y = -180
+		vsp.y = -200
 		Jdr = Jdr - 1
 		Kyt = 0
 		
@@ -53,19 +53,19 @@ func _physics_process(_delta):
 		else:
 			$AnimatedSprite.play("jump-rise")
 		
-			
-	
+		Kyt = Kyt - 1
 	#physics
 	if !is_on_floor():
-		vsp.y = vsp.y + 15 
+		vsp.y = vsp.y + 15
 		Kyt = Kyt - 1
 	else:
 		Jmp = 0
 		Kyt = 8
-	vsp = move_and_slide(vsp,Vector2.UP)
+	vsp = move_and_slide(vsp, Vector2.UP)
 	print (Kyt)
 	
 	
-
-	
+	#TEMPORARY CODE
+	self.position.x = round(self.position.x)
+	self.position.y = round(self.position.y)
 
