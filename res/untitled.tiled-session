@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -136,6 +136,47 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-fishy.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 96.5,
+                "y": 932.25
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#rocktiles": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#woodplat": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json": {
@@ -344,9 +385,11 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
         "gui/untitled.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",

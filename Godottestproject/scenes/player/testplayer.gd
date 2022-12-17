@@ -12,21 +12,22 @@ var Jmp = 0
 #this variable is 1 when the player is falling
 var Kyt = 0
 #this variable handles kiyote timestop_on_slope 
-
+var rns = 0
+#this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
 func _physics_process(_delta):
 	#key press stuff
 	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	
 	#Left and right movment
-	if hkp == 1 and vsp.x < 150 :
-		vsp.x = vsp.x +(60 - (60 * friction))
+	if hkp == 1 and rns < 150 :
+		rns = rns +(60 - (60 * friction))
 		$AnimatedSprite.flip_h = false
-	elif hkp == -1 and vsp.x > -150:
-		vsp.x = vsp.x -(60 - (60 * friction))
+	elif hkp == -1 and rns > -150:
+		rns = rns -(60 - (60 * friction))
 		$AnimatedSprite.flip_h = true
 	elif hkp == 0:
-		vsp.x = vsp.x *(friction) 
-	
+		rns = rns *(friction) 
+	vsp.x = rns
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
@@ -61,8 +62,9 @@ func _physics_process(_delta):
 	else:
 		Jmp = 0
 		Kyt = 8
+
 	vsp = move_and_slide(vsp, Vector2.UP)
-	print (Kyt)
+	print ("placehold")
 	
 	
 	#TEMPORARY CODE
