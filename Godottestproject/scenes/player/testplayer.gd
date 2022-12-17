@@ -31,7 +31,7 @@ func _physics_process(_delta):
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
-			Jdr = 16
+			Jdr = 20
 		else: 
 			Jdr = 0
 		

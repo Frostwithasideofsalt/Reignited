@@ -204,11 +204,11 @@ points = PoolVector2Array( 16, 8, 0, 8, 0, 0, 16, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 9/shape = SubResource( 28 )
-9/shape_one_way = false
+9/shape_one_way = true
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
+"one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 28 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
