@@ -14,7 +14,7 @@
 [ext_resource path="res://gfx/player/run/run-placeholder1.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8.5, 22 )
+extents = Vector2( 7, 22 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -41,17 +41,12 @@ animations = [ {
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 0 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 1
+frame = 2
 playing = true

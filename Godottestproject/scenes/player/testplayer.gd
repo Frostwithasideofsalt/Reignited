@@ -64,7 +64,7 @@ func _physics_process(_delta):
 		Kyt = 8
 
 	vsp = move_and_slide(vsp, Vector2.UP)
-	print ("placehold")
+	print (Engine.get_frames_per_second())
 	
 	
 	#TEMPORARY CODE
