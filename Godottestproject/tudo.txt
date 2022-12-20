@@ -1,17 +1,19 @@
+x = complete, w = work in progress
 Imporant
-[]- add falling speed cap
+[x]- add falling speed cap
 []- add enemies
-[]- add collectables
-[]- finish character animations 
-[]- add health, energy, and the ui
+[w]- add collectables
+[w]- finish character animations 
+[w]- add health, energy, and the ui
 []- add player attacks
 []- Particles to make stuff feel nice
 []- stage objects 
-[1/2]- add kill zones
+[x]- add kill zones
 
 Unimportant but should still get added
 []-jump buffering 
 []-key rebinds 
+[]-Dynamic camera
 
 Still im unsure about
 []-Squash and stretch 
