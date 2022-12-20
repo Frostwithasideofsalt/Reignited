@@ -13,6 +13,8 @@ position = Vector2( 299, 221 )
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -299, -221 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+
 [node name="solid" type="TileMap" parent="."]
 position = Vector2( -299, -221 )
 tile_set = ExtResource( 3 )

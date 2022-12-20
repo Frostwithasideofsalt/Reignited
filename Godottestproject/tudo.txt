@@ -1,0 +1,17 @@
+Imporant
+- add falling speed cap
+- add enemies
+- add collectables
+- finish character animations 
+- add health, energy, and the ui
+- add player attacks
+- Particles to make stuff feel nice
+- stage objects 
+
+Unimportant but should still get added
+-jump buffering 
+-key rebinds 
+
+Still im unsure about
+-squash and stretch 
+-Slippery tiles
