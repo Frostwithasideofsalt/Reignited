@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/objects/main/Hcoin.gd" type="Script" id=1]
+[ext_resource path="res://gfx/obj/Hjem/coin2.png" type="Texture" id=2]
+[ext_resource path="res://gfx/obj/Hjem/coin1.png" type="Texture" id=3]
+[ext_resource path="res://gfx/obj/Hjem/coin3.png" type="Texture" id=4]
+[ext_resource path="res://gfx/obj/Hjem/coin4.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7, 7 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="HCoin" type="Area2D"]
+collision_layer = 0
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+frame = 3
+playing = true
+
+[connection signal="body_entered" from="." to="." method="_on_HCoin_body_entered"]
