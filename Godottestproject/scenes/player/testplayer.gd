@@ -14,6 +14,8 @@ var Kyt = 0
 #this variable handles kiyote timestop_on_slope 
 var rns = 0
 #this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
+#var spwn = Vector2(self.position.x,self.position.y)
+
 func _physics_process(_delta):
 	#key press stuff
 	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
@@ -37,7 +39,7 @@ func _physics_process(_delta):
 		
 	if Input.is_action_pressed("Jump") and Jdr >= 1:
 		Jmp = 1
-		vsp.y = -200
+		vsp.y = -196
 		Jdr = Jdr - 1
 		Kyt = 0
 		
@@ -57,17 +59,29 @@ func _physics_process(_delta):
 		Kyt = Kyt - 1
 	#physics
 	if !is_on_floor():
-		vsp.y = vsp.y + 15
+		if vsp.y <= 384:
+			vsp.y = vsp.y + 16
 		Kyt = Kyt - 1
 	else:
 		Jmp = 0
 		Kyt = 8
 
 	vsp = move_and_slide(vsp, Vector2.UP)
-	print (Engine.get_frames_per_second())
+	
 	
 	
 	#TEMPORARY CODE
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
+	#print (Engine.get_frames_per_second())
+	print (Kyt)
 
+
+
+
+
+
+
+func _on_Killzone_body_entered(body):
+	get_tree().change_scene("res://scenes/Main.tscn")
+	#self.position = spwn
