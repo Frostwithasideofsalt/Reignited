@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Collision.png-ab60bb5599ec3d7e068e7f18b2a81829.stex"
+path="res://.import/forest-ground.png-9b8afc8134b4e42e638c76940051858d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/tiles/Collision.png"
-dest_files=[ "res://.import/Collision.png-ab60bb5599ec3d7e068e7f18b2a81829.stex" ]
+source_file="res://gfx/tiles/forest/forest-ground.png"
+dest_files=[ "res://.import/forest-ground.png-9b8afc8134b4e42e638c76940051858d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Untitled.png-ebe473dcafa0eb335e3ff8dc594498ae.stex"
+path="res://.import/Collision.png-2506577b8cb177c35fbba95009caed86.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/gui/engine/Untitled.png"
-dest_files=[ "res://.import/Untitled.png-ebe473dcafa0eb335e3ff8dc594498ae.stex" ]
+source_file="res://gfx/tiles/dev/Collision.png"
+dest_files=[ "res://.import/Collision.png-2506577b8cb177c35fbba95009caed86.stex" ]
 
 [params]
 

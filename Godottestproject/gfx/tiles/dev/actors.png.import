@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icontest.png-0d282ebc39e4b03bde810aadba7d084b.stex"
+path="res://.import/actors.png-291e5a44b647561031b53c4e9cbb6f1b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/tiles/icontest.png"
-dest_files=[ "res://.import/icontest.png-0d282ebc39e4b03bde810aadba7d084b.stex" ]
+source_file="res://gfx/tiles/dev/actors.png"
+dest_files=[ "res://.import/actors.png-291e5a44b647561031b53c4e9cbb6f1b.stex" ]
 
 [params]
 

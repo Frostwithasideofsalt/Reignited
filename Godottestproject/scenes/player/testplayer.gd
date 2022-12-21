@@ -73,9 +73,7 @@ func _physics_process(_delta):
 	#TEMPORARY CODE
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
-	#print (Engine.get_frames_per_second())
-	print (Kyt)
-
+	#print (Kyt)
 
 
 

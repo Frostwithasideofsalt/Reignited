@@ -14,6 +14,10 @@ config/name="Flame's land re-ignited"
 run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+globallevel="*res://scripts/global-level.gd"
+
 [display]
 
 window/size/width=432

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/consuming.png-6db911b524f1a6281ca9f7ae429e5c61.stex"
+path="res://.import/Untitled.png-37d219937d8fcad18a1507526363e69a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/player/consuming.png"
-dest_files=[ "res://.import/consuming.png-6db911b524f1a6281ca9f7ae429e5c61.stex" ]
+source_file="res://gfx/gui/dev/Untitled.png"
+dest_files=[ "res://.import/Untitled.png-37d219937d8fcad18a1507526363e69a.stex" ]
 
 [params]
 
