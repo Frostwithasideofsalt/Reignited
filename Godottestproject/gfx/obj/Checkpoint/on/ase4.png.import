@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Untitled.png-37d219937d8fcad18a1507526363e69a.stex"
+path="res://.import/ase4.png-0117a2d63db05247401f41eca02d754e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/gui/dev/Untitled.png"
-dest_files=[ "res://.import/Untitled.png-37d219937d8fcad18a1507526363e69a.stex" ]
+source_file="res://gfx/obj/Checkpoint/on/ase4.png"
+dest_files=[ "res://.import/ase4.png-0117a2d63db05247401f41eca02d754e.stex" ]
 
 [params]
 
