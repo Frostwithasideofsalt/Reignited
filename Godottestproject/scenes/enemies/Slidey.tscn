@@ -40,7 +40,7 @@ extents = Vector2( 8, 6 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 collision_layer = 16
-collision_mask = 35
+collision_mask = 34
 script = SubResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
