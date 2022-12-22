@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://gfx/obj/placeholder/enemy-placeholder.png" type="Texture" id=1]
+[ext_resource path="res://gfx/enemies/Slidey/Preview.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends KinematicBody2D
+#enemy's velocity
+var vsp = Vector2()
+#enemy's direction
+var dir = 1
+
+
+func _physics_process(delta):
+		if is_on_wall():
+			dir = dir * -1
+			scale.x = -1
+			
+		vsp.y += 15
+		
+		vsp.x = 60 * dir
+		vsp = move_and_slide(vsp,Vector2.UP)
+"
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8, 6 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 16
+collision_mask = 35
+script = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.5, 0 )
+shape = SubResource( 2 )

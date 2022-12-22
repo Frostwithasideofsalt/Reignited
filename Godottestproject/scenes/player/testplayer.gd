@@ -15,6 +15,7 @@ var Kyt = 0
 var rns = 0
 #this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
 #var spwn = Vector2(self.position.x,self.position.y)
+const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 
 func _physics_process(_delta):
 	#key press stuff
@@ -44,6 +45,7 @@ func _physics_process(_delta):
 		Kyt = 0
 		
 	#animations weeee
+	#when the programming is extremely questionable! :tuxflush:
 	if Jmp == 0 :
 		if hkp == 0 :
 			$AnimatedSprite.play("idle")
@@ -57,6 +59,7 @@ func _physics_process(_delta):
 			$AnimatedSprite.play("jump-rise")
 		
 		Kyt = Kyt - 1
+		
 	#physics
 	if !is_on_floor():
 		if vsp.y <= 384:
@@ -68,12 +71,31 @@ func _physics_process(_delta):
 
 	vsp = move_and_slide(vsp, Vector2.UP)
 	
+	#Attack
+		
+	if Input.is_action_pressed("action") and globallevel.nrg <= 63:
+		globallevel.nrg = globallevel.nrg + 1
+	elif globallevel.nrg >= 1 and globallevel.nrg <= 63:
+		globallevel.nrg = globallevel.nrg - 1
 	
+	if Input.is_action_just_released("action") and globallevel.nrg == 64:
+		var a = PATTACK.instance()
+		globallevel.nrg = 0
+		#probably a way better way to this, but i don't have the patiance to do that right now.
+		if int($AnimatedSprite.flip_h) == 0:
+			a.dir = 1
+		if int($AnimatedSprite.flip_h) == 1:
+			a.dir = -1
+		a.pmom = vsp.x 
+		get_parent().add_child(a)
+		a.position = position
 	
-	#TEMPORARY CODE
+	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
-	#print (Kyt)
+	
+
+	
 
 
 
