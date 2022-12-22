@@ -90,11 +90,18 @@ func _physics_process(_delta):
 		get_parent().add_child(a)
 		a.position = position
 	
+	#Coins
+	if globallevel.hcoin >= 12:
+		globallevel.hcoin = 0
+		if globallevel.hp < 23:
+			globallevel.hp = globallevel.hp + 1 
+	
 	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
+	if Input.is_action_pressed("escape"):
+		get_tree().change_scene("res://scenes/Main.tscn")
 	
-
 	
 
 

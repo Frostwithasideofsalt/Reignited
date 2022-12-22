@@ -18,7 +18,8 @@ func _ready():
 
 func _physics_process(delta):
 	lyf = lyf - 1
-	if is_on_wall() or lyf <= 60:
+	#is there 
+	if is_on_wall() or is_on_floor() or lyf <= 60:
 		queue_free()
 	move_and_slide(vsp,Vector2.UP)
 "

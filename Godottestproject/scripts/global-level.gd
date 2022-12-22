@@ -2,7 +2,7 @@ extends Node
 #variables in this file reset when a level is exited.
 
 #Player health
-var hp = 24
+var hp = 12
 
 #Coin count
 var hcoin = 0

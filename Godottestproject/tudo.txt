@@ -1,14 +1,15 @@
 x = complete, w = work in progress
 Imporant
 [x]- add falling speed cap
-[]- add enemies
+[w]- add enemies
 [w]- add collectables
 [w]- finish character animations 
 [w]- add health, energy, and the ui
-[]- add player attacks
+[w]- add player attacks
 []- Particles to make stuff feel nice
 []- stage objects 
 [x]- add kill zones
+[]- better way to handle multiple of the same object
 
 Unimportant but should still get added
 []-jump buffering 
