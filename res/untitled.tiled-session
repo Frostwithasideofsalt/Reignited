@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "gui/untitled.tmx",
+    "activeFile": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -142,15 +142,15 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json": {
-            "scale": 4,
+            "scale": 8,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 4000,
-                "y": 583.75
+                "x": 1846.875,
+                "y": 38.25
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#actors": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#goal": {
             "scaleInDock": 1
@@ -272,15 +272,59 @@
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json#spikes": {
             "scaleInDock": 1
         },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json": {
+            "expandedObjectLayers": [
+                12
+            ],
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 272,
+                "y": 652
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#actors": {
+            "scaleInDock": 3
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#forestdeco": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#spikes": {
+            "scaleInDock": 1
+        },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 11,
+            "scale": 2,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 448.5909090909091,
-                "y": 227.63636363636363
+                "x": 377.5,
+                "y": 128
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#actor": {
@@ -333,8 +377,8 @@
             "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 767,
-                "y": 179
+                "x": 111.5,
+                "y": 171.5
             }
         },
         "gui/untitled.tmx#enemies": {
@@ -384,15 +428,17 @@
     "last.exportedFilePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject",
     "last.imagePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/res/gui",
     "map.lastUsedExportFilter": "All Files (*)",
-    "map.lastUsedFormat": "tmx",
+    "map.lastUsedFormat": "json",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
-        "gui/untitled.tmx"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
         "gui/untitled.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json",
@@ -401,10 +447,8 @@
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-branches.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-fishy.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/template-overworld.json",
-        "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx",
-        "newtilesversion2.tsx"
+        "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx"
     ],
     "tileset.embedInMap": true,
     "tileset.tileSize": {
