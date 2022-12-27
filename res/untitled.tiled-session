@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
+    "activeFile": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -274,57 +274,61 @@
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json": {
             "expandedObjectLayers": [
+                15,
                 12
             ],
-            "scale": 1,
-            "selectedLayer": 1,
+            "scale": 0.5,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 272,
-                "y": 652
+                "x": 2956,
+                "y": 6
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#actors": {
-            "scaleInDock": 3
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#forestdeco": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#goal": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#grass": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#icecave": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#igloo": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#pipes": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#sign": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#snow": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#solid": {
-            "scaleInDock": 1
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#spikes": {
-            "scaleInDock": 1
+            "scaleInDock": 4
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#woodplat": {
+            "scaleInDock": 4
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json": {
             "expandedObjectLayers": [
                 4
             ],
-            "scale": 2,
+            "scale": 1.5,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 377.5,
-                "y": 128
+                "x": 334.66666666666663,
+                "y": 212.66666666666669
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#actor": {
@@ -426,7 +430,7 @@
         }
     },
     "last.exportedFilePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject",
-    "last.imagePath": "C:/Users/jlwal/Desktop/git/reignited/Reignited/res/gui",
+    "last.imagePath": "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/gfx",
     "map.lastUsedExportFilter": "All Files (*)",
     "map.lastUsedFormat": "json",
     "map.tileHeight": 16,
@@ -437,8 +441,8 @@
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
         "gui/untitled.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json",
