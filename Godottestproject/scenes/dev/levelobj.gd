@@ -6,7 +6,9 @@ class_name InteractiveTilemap
 
 export(Dictionary) var TILE_SCENES := {
 	0: preload("res://scenes/player/testplayer.tscn"),
-	3: preload("res://scenes/objects/main/Hcoin.tscn")
+	3: preload("res://scenes/objects/main/Hcoin.tscn"),
+	4: preload("res://scenes/objects/main/Fheal.tscn"),
+	8: preload("res://scenes/enemies/Slidey.tscn")
 }
 
 onready var half_cell_size := cell_size * 0.5

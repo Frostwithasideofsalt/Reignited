@@ -10,6 +10,7 @@ func _ready():
 
 
 
-func _on_HCoin_body_entered(body):
-	globallevel.hcoin = globallevel.hcoin + 1
+func _on_Fheal_body_entered(body):
+	globallevel.hp = 24
 	queue_free()
+

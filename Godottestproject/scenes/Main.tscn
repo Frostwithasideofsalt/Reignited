@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/player/testplayer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://tilesets/forest.tres" type="TileSet" id=2]
@@ -6,13 +6,14 @@
 [ext_resource path="res://gfx/bg/forest/forest-1.png" type="Texture" id=4]
 [ext_resource path="res://gfx/bg/forest/forest-3.png" type="Texture" id=5]
 [ext_resource path="res://gfx/bg/forest/forest-2.png" type="Texture" id=6]
-[ext_resource path="res://scenes/objects/main/Hcoin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/enemies/Slidey.tscn" type="PackedScene" id=7]
 [ext_resource path="res://fonts/SuperTux-Medium.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://gfx/obj/Hjem/coin1.png" type="Texture" id=9]
 [ext_resource path="res://gfx/gui/hud/Hp-bar.png" type="Texture" id=10]
 [ext_resource path="res://scenes/Hud.gd" type="Script" id=11]
-[ext_resource path="res://scenes/enemies/Slidey.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/objects/main/Fheal.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/dev/levelobj.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/objects/main/Hcoin.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2064, 41.5 )
@@ -65,18 +66,12 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="enemy" parent="." instance=ExtResource( 12 )]
-position = Vector2( -1291, -1054 )
-__meta__ = {
-"_edit_group_": true
-}
-
 [node name="Label" type="Label" parent="."]
 margin_left = -1391.0
 margin_top = -1144.0
 margin_right = -1273.0
 margin_bottom = -1130.0
-text = "He's buggy rn.... . ."
+text = "THERE  buggy rn.... . ."
 
 [node name="Label2" type="Label" parent="."]
 margin_left = -219.0
@@ -128,9 +123,6 @@ texture = ExtResource( 4 )
 centered = false
 offset = Vector2( 0, -128 )
 
-[node name="HCoin" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1973, -851 )
-
 [node name="Hud" type="CanvasLayer" parent="."]
 script = ExtResource( 11 )
 
@@ -174,8 +166,14 @@ margin_bottom = 42.0
 texture = ExtResource( 9 )
 expand = true
 
-[node name="TileMap2" parent="." instance=ExtResource( 13 )]
+[node name="objects" parent="." instance=ExtResource( 13 )]
 position = Vector2( 6, 3 )
-tile_data = PoolIntArray( -2818013, 3, 0, -2555894, 3, 0, -2555893, 3, 0, -2555892, 3, 0, -2555891, 3, 0, -2490357, 3, 0, -2490356, 3, 0, -2490355, 3, 0, -2490354, 3, 0, -2424821, 3, 0, -2424820, 3, 0, -2424819, 3, 0, -2424818, 3, 0, -2424817, 3, 0, -2359284, 3, 0, -2359283, 3, 0, -2359282, 3, 0, -2293747, 3, 0, -2293746, 3, 0 )
+tile_data = PoolIntArray( -4456539, 8, 0, -4456538, 8, 0, -4456537, 8, 0, -4456536, 8, 0, -4456535, 8, 0, -4456534, 8, 0, -4456533, 8, 0, -4456532, 8, 0, -4456531, 8, 0, -4456530, 8, 0, -4456529, 8, 0, -4456528, 8, 0, -4456527, 8, 0, -4456526, 8, 0, -4456525, 8, 0, -4456524, 8, 0, -4456523, 8, 0, -4456522, 8, 0, -4456521, 8, 0, -4456520, 8, 0, -4456519, 8, 0, -4456518, 8, 0, -3538826, 3, 0, -3538825, 3, 0, -3538824, 3, 0, -3538823, 3, 0, -3538822, 3, 0, -3538821, 3, 0, -3538820, 3, 0, -3538819, 3, 0, -3538818, 3, 0, -3538817, 3, 0, -3538816, 3, 0, -3473290, 3, 0, -3473289, 3, 0, -3473288, 3, 0, -3473287, 3, 0, -3473286, 3, 0, -3473285, 3, 0, -3473284, 3, 0, -3473283, 3, 0, -3473282, 3, 0, -3473281, 3, 0, -3473280, 3, 0, -3342221, 3, 0, -3342220, 3, 0, -3342219, 3, 0, -3342218, 3, 0, -3342217, 3, 0, -3342216, 3, 0, -3342215, 3, 0, -3342214, 3, 0, -3342213, 3, 0, -3342212, 3, 0, -3342211, 3, 0, -3342210, 3, 0, -3342209, 3, 0, -3342208, 3, 0, -3342207, 3, 0, -3342206, 3, 0, -3342205, 3, 0, -3276685, 3, 0, -3276684, 3, 0, -3276683, 3, 0, -3276682, 3, 0, -3276681, 3, 0, -3276680, 3, 0, -3276679, 3, 0, -3276678, 3, 0, -3276677, 3, 0, -3276676, 3, 0, -3276675, 3, 0, -3276674, 3, 0, -3276673, 3, 0, -3276672, 3, 0, -3276671, 3, 0, -3276670, 3, 0, -3276669, 3, 0, -3211149, 3, 0, -3211148, 3, 0, -3211147, 3, 0, -3211146, 3, 0, -3211145, 3, 0, -3211144, 3, 0, -3211143, 3, 0, -3211142, 3, 0, -3211141, 3, 0, -3211140, 3, 0, -3211139, 3, 0, -3211138, 3, 0, -3211137, 3, 0, -3211136, 3, 0, -3211135, 3, 0, -3211134, 3, 0, -3211133, 3, 0, -3014565, 4, 0, -2883469, 3, 0, -2883468, 3, 0, -2883467, 3, 0, -2883466, 3, 0, -2883465, 3, 0, -2883464, 3, 0, -2883463, 3, 0, -2883462, 3, 0, -2883461, 3, 0, -2883460, 3, 0, -2883459, 3, 0, -2883458, 3, 0, -2883457, 3, 0, -2883456, 3, 0, -2883455, 3, 0, -2883454, 3, 0, -2883453, 3, 0, -2883452, 3, 0, -2817933, 3, 0, -2817932, 3, 0, -2817931, 3, 0, -2817930, 3, 0, -2817929, 3, 0, -2817928, 3, 0, -2817927, 3, 0, -2817926, 3, 0, -2817925, 3, 0, -2817924, 3, 0, -2817923, 3, 0, -2817922, 3, 0, -2817921, 3, 0, -2817920, 3, 0, -2817919, 3, 0, -2817918, 3, 0, -2817917, 3, 0, -2817916, 3, 0, -2752397, 3, 0, -2752396, 3, 0, -2752395, 3, 0, -2752394, 3, 0, -2752393, 3, 0, -2752392, 3, 0, -2752391, 3, 0, -2752390, 3, 0, -2752389, 3, 0, -2752388, 3, 0, -2752387, 3, 0, -2752386, 3, 0, -2752385, 3, 0, -2752384, 3, 0, -2752383, 3, 0, -2752382, 3, 0, -2752381, 3, 0, -2752380, 3, 0, -2686861, 3, 0, -2686860, 3, 0, -2686859, 3, 0, -2686858, 3, 0, -2686857, 3, 0, -2686853, 3, 0, -2686852, 3, 0, -2686851, 3, 0, -2686850, 3, 0, -2686849, 3, 0, -2686848, 3, 0, -2686847, 3, 0, -2686846, 3, 0, -2686845, 3, 0, -2686844, 3, 0, -2621325, 3, 0, -2621324, 3, 0, -2621323, 3, 0, -2621322, 3, 0, -2621321, 3, 0, -2621316, 3, 0, -2621315, 3, 0, -2621314, 3, 0, -2621313, 3, 0, -2621312, 3, 0, -2621311, 3, 0, -2621310, 3, 0, -2621309, 3, 0, -2621308, 3, 0, -2555894, 3, 0, -2555893, 3, 0, -2555892, 3, 0, -2555891, 3, 0, -2490357, 3, 0, -2490356, 3, 0, -2490355, 3, 0, -2490354, 3, 0, -2424821, 3, 0, -2424820, 3, 0, -2424819, 3, 0, -2424818, 3, 0, -2424817, 3, 0, -2359284, 3, 0, -2359283, 3, 0, -2359282, 3, 0, -2293747, 3, 0, -2293746, 3, 0 )
+TILE_SCENES = {
+0: ExtResource( 1 ),
+3: ExtResource( 14 ),
+4: ExtResource( 12 ),
+8: ExtResource( 7 )
+}
 
 [connection signal="body_entered" from="Killzone" to="KinematicBody2D" method="_on_Killzone_body_entered"]

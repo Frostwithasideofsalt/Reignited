@@ -9,7 +9,7 @@ Imporant
 []- Particles to make stuff feel nice
 []- stage objects 
 [x]- add kill zones
-[]- better way to handle multiple of the same object
+[x]- better way to handle multiple of the same object
 
 Unimportant but should still get added
 []-jump buffering 

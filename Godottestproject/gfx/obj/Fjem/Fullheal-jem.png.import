@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Full=heal-jem.png-3f4262036ceb43311d57068b27d82629.stex"
+path="res://.import/Fullheal-jem.png-8365e92ebe218092c5c32848e41e2063.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/obj/Fjem/Full=heal-jem.png"
-dest_files=[ "res://.import/Full=heal-jem.png-3f4262036ceb43311d57068b27d82629.stex" ]
+source_file="res://gfx/obj/Fjem/Fullheal-jem.png"
+dest_files=[ "res://.import/Fullheal-jem.png-8365e92ebe218092c5c32848e41e2063.stex" ]
 
 [params]
 
