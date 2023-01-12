@@ -32,14 +32,14 @@ texture = ExtResource( 2 )
 [node name="Panel" type="Panel" parent="."]
 modulate = Color( 0, 0, 0, 0.368627 )
 margin_top = 211.0
-margin_right = 431.0
+margin_right = 432.0
 margin_bottom = 243.0
 theme = SubResource( 1 )
 
 [node name="Hcoin" type="Label" parent="."]
-margin_left = 19.0
+margin_left = 22.0
 margin_top = 30.0
-margin_right = 94.0
+margin_right = 97.0
 margin_bottom = 47.0
 custom_fonts/font = SubResource( 2 )
 text = "##"
