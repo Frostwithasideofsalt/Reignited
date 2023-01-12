@@ -17,6 +17,47 @@
         ":/automap-tiles.tsx": {
             "scaleInDock": 1
         },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json": {
+            "scale": 0.23046875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 2796.474576271187,
+                "y": 256
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#spikes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#waterfall": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json#woodplat": {
+            "scaleInDock": 1
+        },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json": {
             "scale": 1.5,
             "selectedLayer": 1,
@@ -182,6 +223,164 @@
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json#woodplat": {
             "scaleInDock": 1
         },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 782.6666666666665,
+                "y": 166.66666666666663
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#goal but yeah": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json": {
+            "scale": 1,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 4169.5,
+                "y": 270
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 2908.375,
+                "y": 384.75
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#brg": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#castle ": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#ropes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json#spikes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json": {
+            "scale": 0.75,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 5858,
+                "y": 485.3333333333333
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#actors": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#brg": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#ropes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#solid": {
+            "scaleInDock": 1
+        },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json": {
             "expandedObjectLayers": [
                 15,
@@ -232,11 +431,11 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json": {
-            "scale": 0.75,
+            "scale": 1.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 7285.333333333333,
-                "y": 538.6666666666665
+                "x": 3298.6666666666665,
+                "y": 268.66666666666663
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json#actors": {
@@ -277,21 +476,21 @@
                 15,
                 12
             ],
-            "scale": 0.5,
-            "selectedLayer": 2,
+            "scale": 1.5,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 2956,
-                "y": 6
+                "x": 7119,
+                "y": 306
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#actors": {
             "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#forestdeco": {
-            "scaleInDock": 4
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#goal": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#grass": {
             "scaleInDock": 2
@@ -300,38 +499,62 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#igloo": {
-            "scaleInDock": 4
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#pipes": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#sign": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#snow": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#solid": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#spikes": {
-            "scaleInDock": 4
+            "scaleInDock": 5.5
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#woodplat": {
-            "scaleInDock": 4
+            "scaleInDock": 3
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json": {
+            "scale": 1.456171875,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 353.66704222329525,
+                "y": 200.18241321959331
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json#actor": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json#overworld": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json#switches": {
+            "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json": {
             "expandedObjectLayers": [
+                6,
                 4
             ],
-            "scale": 1.5,
+            "scale": 3,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 334.66666666666663,
-                "y": 212.66666666666669
+                "x": 320,
+                "y": 199.83333333333331
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#actor": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#colorswitches-small": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#overworld": {
@@ -355,6 +578,50 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/template-overworld.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json": {
+            "scale": 2,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 1536,
+                "y": 511.75
+            }
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#actors": {
+            "scaleInDock": 2
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#castle": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#goal": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#grass": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#icecave": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#igloo": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#pipes": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#rope": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#sign": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#snow": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#waterfall": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx": {
@@ -437,22 +704,25 @@
     "map.tileWidth": 16,
     "openFiles": [
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
-        "gui/untitled.tmx",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/contrib/frostlands/fw-1.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json",
-        "untitled.tmx",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-branches.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-fishy.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/template-overworld.json",
-        "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
+        "gui/untitled.tmx"
     ],
     "tileset.embedInMap": true,
     "tileset.tileSize": {
