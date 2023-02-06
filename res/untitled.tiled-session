@@ -381,6 +381,9 @@
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json#solid": {
             "scaleInDock": 1
         },
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/grass.tsj": {
+            "scaleInDock": 1
+        },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-Green.json": {
             "expandedObjectLayers": [
                 15,
@@ -431,11 +434,11 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json": {
-            "scale": 1.5,
-            "selectedLayer": 8,
+            "scale": 0.75,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 3298.6666666666665,
-                "y": 268.66666666666663
+                "x": 4215.333333333333,
+                "y": 265.3333333333333
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json#actors": {
@@ -466,21 +469,21 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json#solid": {
-            "scaleInDock": 1
+            "scaleInDock": 2
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json#spikes": {
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json": {
             "expandedObjectLayers": [
-                15,
-                12
+                12,
+                15
             ],
             "scale": 1.5,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 7119,
-                "y": 306
+                "x": 3687.6666666666665,
+                "y": 319.3333333333333
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json#actors": {
@@ -523,8 +526,8 @@
             "scale": 1.456171875,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 353.66704222329525,
-                "y": 200.18241321959331
+                "x": 353.32367616288434,
+                "y": 200.5257792800043
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json#actor": {
@@ -547,8 +550,8 @@
             "scale": 3,
             "selectedLayer": 5,
             "viewCenter": {
-                "x": 320,
-                "y": 199.83333333333331
+                "x": 319.8333333333333,
+                "y": 199.66666666666666
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json#actor": {
@@ -584,8 +587,8 @@
             "scale": 2,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 1536,
-                "y": 511.75
+                "x": 1535.75,
+                "y": 511.5
             }
         },
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json#actors": {
@@ -642,6 +645,69 @@
             "scaleInDock": 1
         },
         "C:/Users/jlwal/Desktop/git/reignited/Reignited/Godottestproject/renderertest..tmx#water": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Downloads/RocketTux-master/RocketTux-master/data/tilemap_sections/beach_d.tmx": {
+            "scale": 0.7280859375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1065.1215193948174,
+                "y": -1.3734642416437737
+            }
+        },
+        "C:/Users/jlwal/Downloads/RocketTux-master/RocketTux-master/data/tilemap_sections/candyland_w.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 955.5,
+                "y": 485
+            }
+        },
+        "C:/Users/jlwal/Downloads/RocketTux-master/RocketTux-master/data/tilemap_sections/tilemap.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Downloads/Supertux-advance-big-chungus-mod-main/Supertux-advance-big-chungus-mod-main/supertux-advance-main/res/map/overworld-0.json": {
+            "scale": 4,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 152.875,
+                "y": 130
+            }
+        },
+        "C:/Users/jlwal/Downloads/Supertux-advance-big-chungus-mod-main/Supertux-advance-big-chungus-mod-main/supertux-advance-main/res/map/overworld-0.json#actor": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Downloads/Supertux-advance-big-chungus-mod-main/Supertux-advance-big-chungus-mod-main/supertux-advance-main/res/map/overworld-0.json#overworld": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Downloads/Supertux-advance-big-chungus-mod-main/Supertux-advance-big-chungus-mod-main/supertux-advance-main/res/map/overworld-0.json#solid": {
+            "scaleInDock": 1
+        },
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/friends.tmx": {
+            "scale": 0.7280859375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 707.3340844465905,
+                "y": 368.77514888137785
+            }
+        },
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/inventory.tmx": {
+            "scale": 0.7280859375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 407.232147647406,
+                "y": 472.4716991254896
+            }
+        },
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/main-menu.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1079.25,
+                "y": 105.5
+            }
+        },
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/main-menu.tsx": {
             "scaleInDock": 1
         },
         "gui/untitled.tmx": {
@@ -703,26 +769,22 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
+        "C:/Users/jlwal/Downloads/Supertux-advance-big-chungus-mod-main/Supertux-advance-big-chungus-mod-main/supertux-advance-main/res/map/overworld-0.json",
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json",
+        "C:/Users/jlwal/Downloads/RocketTux-master/RocketTux-master/data/tilemap_sections/candyland_w.tmx",
+        "C:/Users/jlwal/Downloads/RocketTux-master/RocketTux-master/data/tilemap_sections/beach_d.tmx",
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/friends.tmx",
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/main-menu.tmx",
+        "C:/Users/jlwal/Downloads/rockettux-0.6.5-win7-8-10-32bit/data/ui/inventory.tmx",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-steps.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-1.json",
         "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/overworld-0.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-owl.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance-alt/res/map/verdant-rise.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-learn.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-wind.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/nessland-left.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-iceguy.json",
-        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/aurora-frozen.json",
-        "gui/untitled.tmx"
+        "C:/Users/jlwal/Desktop/git/STA-ALT/supertux-advance/supertux-advance/res/map/test.json"
     ],
     "tileset.embedInMap": true,
     "tileset.tileSize": {
