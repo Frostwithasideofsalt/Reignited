@@ -22,41 +22,66 @@ font_data = ExtResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 4 )
 
+[node name="Panel2" type="Panel" parent="."]
+modulate = Color( 0, 0, 0, 0.368627 )
+margin_left = -6.0
+margin_right = 435.0
+margin_bottom = 22.0
+theme = SubResource( 1 )
+
 [node name="TextureRect2" type="TextureRect" parent="."]
 margin_left = 6.0
-margin_top = 7.0
+margin_top = 2.0
 margin_right = 48.0
-margin_bottom = 47.0
+margin_bottom = 42.0
 texture = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]
 modulate = Color( 0, 0, 0, 0.368627 )
-margin_top = 211.0
+margin_top = 230.0
 margin_right = 432.0
-margin_bottom = 243.0
+margin_bottom = 262.0
 theme = SubResource( 1 )
 
 [node name="Hcoin" type="Label" parent="."]
-margin_left = 22.0
-margin_top = 30.0
-margin_right = 97.0
-margin_bottom = 47.0
+margin_left = 90.0
+margin_top = 3.0
+margin_right = 165.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 10, 4 )
+custom_fonts/font = SubResource( 2 )
+text = "##"
+
+[node name="Scount" type="Label" parent="."]
+margin_left = 291.0
+margin_top = 4.0
+margin_right = 366.0
+margin_bottom = 21.0
+rect_pivot_offset = Vector2( 10, 4 )
+custom_fonts/font = SubResource( 2 )
+text = "##"
+
+[node name="Phealth" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 3.0
+margin_right = 70.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 10, 4 )
 custom_fonts/font = SubResource( 2 )
 text = "##"
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 6.0
-margin_top = 30.0
-margin_right = 18.0
-margin_bottom = 42.0
+margin_left = 75.0
+margin_top = 4.0
+margin_right = 87.0
+margin_bottom = 16.0
 texture = ExtResource( 1 )
 expand = true
 
 [node name="Templabel" type="Label" parent="."]
-margin_left = 6.0
-margin_top = 220.0
-margin_right = 46.0
-margin_bottom = 237.0
+margin_top = 230.0
+margin_right = 40.0
+margin_bottom = 247.0
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )

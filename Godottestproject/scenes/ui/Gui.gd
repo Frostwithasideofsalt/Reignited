@@ -2,5 +2,7 @@ extends CanvasLayer
 
 func _process(delta):
 	$Hcoin.text =  String(globallevel.hcoin) + "/12"
-	$Templabel.text =  "hp: " + String(globallevel.hp) + "/24 energy: " + String(globallevel.nrg) + "/64 fps: " + String(Engine.get_frames_per_second())
+	$Phealth.text =  String(globallevel.hp) + "/24"
+	$Scount.text = "Score; " + String(globallevel.score)
+	$Templabel.text =   "energy; " +String(globallevel.nrg) + "/64 fps: " + String(Engine.get_frames_per_second()) + "      PLACEHOLDER UI!"
 	
