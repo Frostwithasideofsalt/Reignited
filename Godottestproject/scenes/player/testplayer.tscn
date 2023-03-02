@@ -42,6 +42,7 @@ animations = [ {
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 collision_layer = 9
+collision_mask = 65
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -50,6 +51,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle"
+frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]

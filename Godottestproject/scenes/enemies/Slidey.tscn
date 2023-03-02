@@ -40,6 +40,7 @@ func _on_CHB_body_entered(body):
 
 func _on_Hitboxplayer_body_entered(body):
 	if globallevel.invstate <= 1:
+		globallevel.score = globallevel.score - 50
 		globallevel.hp = globallevel.hp - 4
 		globallevel.invstate = 60
 "
@@ -64,11 +65,11 @@ extents = Vector2( 7.5, 6 )
 extents = Vector2( 6.5, 5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 10.1875, 9 )
+extents = Vector2( 10.1875, 10.5 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 collision_layer = 16
-collision_mask = 2
+collision_mask = 66
 script = SubResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -91,7 +92,7 @@ collision_layer = 0
 collision_mask = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox-projectile"]
-position = Vector2( -0.1875, 0 )
+position = Vector2( -0.1875, -1.5 )
 shape = SubResource( 4 )
 
 [connection signal="body_entered" from="Hitbox-player" to="." method="_on_Hitboxplayer_body_entered"]
