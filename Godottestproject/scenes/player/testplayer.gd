@@ -95,6 +95,17 @@ func _physics_process(_delta):
 		globallevel.hcoin = 0
 		if globallevel.hp < 23:
 			globallevel.hp = globallevel.hp + 1 
+	#damage 
+	if globallevel.invstate >= 1:
+		if globallevel.hp <= 1:
+			#temp
+			get_tree().change_scene("res://scenes/Main.tscn")
+			globallevel.invstate = 0
+			globallevel.hp = 24
+		modulate.a = 0.5
+		globallevel.invstate = globallevel.invstate - 1 
+	else :
+		modulate.a = 1
 	
 	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
 	self.position.x = round(self.position.x)
