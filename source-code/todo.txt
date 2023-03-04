@@ -1,8 +1,8 @@
 x = complete, w = work in progress
 Imporant
 [x]- add falling speed cap
-[w]- add enemies
-[w]- add collectables
+[x]- add enemies
+[x]- add collectables
 [w]- finish character animations 
 [w]- add health, energy, and the ui
 [w]- add player attacks

@@ -65,6 +65,9 @@ func _physics_process(_delta):
 		if vsp.y <= 384:
 			vsp.y = vsp.y + 16
 		Kyt = Kyt - 1
+		if is_on_ceiling():
+			vsp.y = 16
+			Jdr = 0
 	else:
 		Jmp = 0
 		Kyt = 8
