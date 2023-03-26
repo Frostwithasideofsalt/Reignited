@@ -110,9 +110,6 @@ func _physics_process(_delta):
 	
 	#Dash
 	
-	#TEMP
-	
-	
 	candash = candash + 1
 	$test.text = String(rns)
 	
@@ -134,7 +131,7 @@ func _physics_process(_delta):
 		rns = 320 *dshdir
 		vsp.y = 0
 		dshtime = dshtime - 1 
-		if is_on_wall():
+		if is_on_wall() or Input.is_action_pressed("Jump"):
 			dshtime = -1
 	#Coins
 	
@@ -148,7 +145,7 @@ func _physics_process(_delta):
 	if globallevel.invstate >= 1:
 		if globallevel.hp <= 1:
 			#temp
-			get_tree().change_scene("res://scenes/Main.tscn")
+			get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 			globallevel.invstate = 0
 			globallevel.hp = 24
 		modulate.a = 0.5
@@ -159,8 +156,8 @@ func _physics_process(_delta):
 	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
-	if Input.is_action_pressed("escape"):
-		get_tree().change_scene("res://scenes/Main.tscn")
+	#if Input.is_action_pressed("escape"):
+	#	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 	
 	
 
@@ -170,5 +167,5 @@ func _physics_process(_delta):
 
 
 func _on_Killzone_body_entered(body):
-	get_tree().change_scene("res://scenes/Main.tscn")
+	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 	#self.position = spwn

@@ -19,3 +19,6 @@ var score = 0
 #player invicibility state
 # zero and negitives mean the player can recive damage. positives mean the player is invincible
 var invstate = 0
+
+#is the game paused or not
+var paused = false
