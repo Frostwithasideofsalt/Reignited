@@ -22,3 +22,9 @@ func _on_exit_pressed():
 	globallevel.paused = false
 	get_tree().change_scene("res://scenes/Main.tscn")
 	
+
+
+func _on_resume_pressed():
+	get_tree().paused = false
+	globallevel.paused = false
+	visible =  globallevel.paused

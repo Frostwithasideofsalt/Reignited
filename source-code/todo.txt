@@ -6,9 +6,9 @@ Imporant
 [w]- finish character animations 
 [w]- add health, energy, and the ui
 [w]- add player attacks
-[]- add dash
+[x]- add dash
 []- Particles to make stuff feel nice
-[]- stage objects 
+[x]- stage objects 
 [x]- add kill zones
 [x]- better way to handle multiple of the same object
 

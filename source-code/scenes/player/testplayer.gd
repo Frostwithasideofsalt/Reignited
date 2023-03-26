@@ -91,12 +91,10 @@ func _physics_process(_delta):
 	
 	#Attack
 		
-	if Input.is_action_pressed("action") and globallevel.nrg <= 63:
+	if  globallevel.nrg <= 47:
 		globallevel.nrg = globallevel.nrg + 1
-	elif globallevel.nrg >= 1 and globallevel.nrg <= 63:
-		globallevel.nrg = globallevel.nrg - 1
 	
-	if Input.is_action_just_released("action") and globallevel.nrg == 64:
+	if Input.is_action_just_released("action") and globallevel.nrg >= 47:
 		var a = PATTACK.instance()
 		globallevel.nrg = 0
 		#probably a way better way to this, but i don't have the patiance to do that right now.
@@ -145,6 +143,7 @@ func _physics_process(_delta):
 	if globallevel.invstate >= 1:
 		if globallevel.hp <= 1:
 			#temp
+# warning-ignore:return_value_discarded
 			get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 			globallevel.invstate = 0
 			globallevel.hp = 24
@@ -166,6 +165,8 @@ func _physics_process(_delta):
 
 
 
+# warning-ignore:unused_argument
 func _on_Killzone_body_entered(body):
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 	#self.position = spwn

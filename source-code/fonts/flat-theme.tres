@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=10 format=2]
+[gd_resource type="Theme" load_steps=11 format=2]
 
 [ext_resource path="res://fonts/St-med.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/lightpurple.tres" type="StyleBox" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://gfx/gui/dev/parent.png" type="Texture" id=7]
 [ext_resource path="res://gfx/gui/dev/reload.png" type="Texture" id=8]
 [ext_resource path="res://gfx/gui/dev/folder.png" type="Texture" id=9]
+[ext_resource path="res://fonts/textonly.tres" type="StyleBox" id=10]
 
 [resource]
 default_font = ExtResource( 1 )
@@ -17,11 +18,11 @@ Button/colors/font_color_disabled = Color( 0.328125, 0.133301, 0.174316, 1 )
 Button/colors/font_color_focus = Color( 0.764706, 0.858824, 0.631373, 1 )
 Button/colors/font_color_hover = Color( 0.682353, 1, 0.392157, 1 )
 Button/colors/font_color_pressed = Color( 0.117647, 0.568627, 0.32549, 1 )
-Button/styles/disabled = ExtResource( 3 )
-Button/styles/focus = ExtResource( 4 )
-Button/styles/hover = ExtResource( 2 )
-Button/styles/normal = ExtResource( 4 )
-Button/styles/pressed = ExtResource( 3 )
+Button/styles/disabled = ExtResource( 10 )
+Button/styles/focus = ExtResource( 10 )
+Button/styles/hover = ExtResource( 10 )
+Button/styles/normal = ExtResource( 10 )
+Button/styles/pressed = ExtResource( 10 )
 CheckButton/icons/off = null
 CheckButton/styles/disabled = null
 FileDialog/colors/file_icon_modulate = Color( 1, 1, 1, 1 )

@@ -1,11 +1,75 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://gfx/gui/logo.png" type="Texture" id=1]
 [ext_resource path="res://scripts/mainmenu-test.gd" type="Script" id=2]
-[ext_resource path="res://fonts/flat-theme.tres" type="Theme" id=3]
+[ext_resource path="res://gfx/gui/dev/folder.png" type="Texture" id=3]
 [ext_resource path="res://gfx/bg/forest/forest-1.png" type="Texture" id=4]
 [ext_resource path="res://gfx/bg/forest/forest-3.png" type="Texture" id=5]
 [ext_resource path="res://gfx/bg/forest/forest-2.png" type="Texture" id=6]
+[ext_resource path="res://gfx/gui/dev/parent.png" type="Texture" id=7]
+[ext_resource path="res://gfx/gui/dev/file.png" type="Texture" id=8]
+[ext_resource path="res://gfx/gui/dev/reload.png" type="Texture" id=9]
+[ext_resource path="res://gfx/gui/dev/veiw.png" type="Texture" id=10]
+[ext_resource path="res://fonts/textonly.tres" type="StyleBox" id=11]
+[ext_resource path="res://fonts/St-med.tres" type="DynamicFont" id=12]
+[ext_resource path="res://fonts/purplebox.tres" type="StyleBox" id=13]
+[ext_resource path="res://fonts/pressed-purple.tres" type="StyleBox" id=14]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 12 )
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.328125, 0.133301, 0.174316, 1 )
+Button/colors/font_color_focus = Color( 0.764706, 0.858824, 0.631373, 1 )
+Button/colors/font_color_hover = Color( 0.682353, 1, 0.392157, 1 )
+Button/colors/font_color_pressed = Color( 0.117647, 0.568627, 0.32549, 1 )
+Button/constants/hseparation = 2
+Button/styles/disabled = ExtResource( 11 )
+Button/styles/focus = ExtResource( 11 )
+Button/styles/hover = ExtResource( 11 )
+Button/styles/normal = ExtResource( 11 )
+Button/styles/pressed = ExtResource( 11 )
+CheckButton/icons/off = null
+CheckButton/styles/disabled = null
+FileDialog/colors/file_icon_modulate = Color( 1, 1, 1, 1 )
+FileDialog/colors/files_disabled = Color( 1, 1, 1, 0.25 )
+FileDialog/colors/folder_icon_modulate = Color( 1, 1, 1, 1 )
+FileDialog/icons/file = ExtResource( 8 )
+FileDialog/icons/folder = ExtResource( 3 )
+FileDialog/icons/parent_folder = ExtResource( 7 )
+FileDialog/icons/reload = ExtResource( 9 )
+FileDialog/icons/toggle_hidden = ExtResource( 10 )
+HSlider/styles/grabber_area = null
+MenuButton/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+MenuButton/colors/font_color_disabled = Color( 1, 1, 1, 0.3 )
+MenuButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+MenuButton/constants/hseparation = 3
+MenuButton/styles/disabled = ExtResource( 11 )
+MenuButton/styles/focus = ExtResource( 11 )
+MenuButton/styles/hover = ExtResource( 11 )
+MenuButton/styles/normal = ExtResource( 11 )
+MenuButton/styles/pressed = ExtResource( 11 )
+PopupDialog/styles/panel = ExtResource( 13 )
+Tabs/colors/font_color_bg = Color( 0.69, 0.69, 0.69, 1 )
+Tabs/colors/font_color_disabled = Color( 0.32549, 0.129412, 0.172549, 1 )
+Tabs/colors/font_color_fg = Color( 0.890196, 1, 0.815686, 1 )
+Tabs/constants/hseparation = 4
+Tabs/constants/label_valign_bg = 2
+Tabs/constants/label_valign_fg = 0
+Tabs/constants/top_margin = 24
+Tabs/icons/close = null
+Tabs/icons/decrement = null
+Tabs/icons/decrement_highlight = null
+Tabs/icons/increment = null
+Tabs/icons/increment_highlight = null
+Tabs/styles/button = ExtResource( 13 )
+Tabs/styles/button_pressed = ExtResource( 14 )
+Tabs/styles/tab_bg = ExtResource( 13 )
+Tabs/styles/tab_disabled = ExtResource( 14 )
+Tabs/styles/tab_fg = ExtResource( 13 )
+VBoxContainer/constants/separation = 20
+VBoxContainer/styles/flatstylebox = ExtResource( 11 )
 
 [node name="TestSceneNode" type="Node2D"]
 pause_mode = 2
@@ -40,7 +104,7 @@ motion_scale = Vector2( 0.2, 0 )
 motion_mirroring = Vector2( 512, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/ParallaxLayer"]
-position = Vector2( -45, 136 )
+position = Vector2( -82, 120 )
 texture = ExtResource( 4 )
 centered = false
 offset = Vector2( 0, -128 )
@@ -54,9 +118,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -145.0
 margin_top = -46.0
-margin_right = 84.0
+margin_right = -15.0
 margin_bottom = -14.0
-theme = ExtResource( 3 )
+theme = SubResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="HBoxContainer"]
