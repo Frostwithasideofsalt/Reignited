@@ -10,6 +10,9 @@ var hcoin = 0
 #Energy amount
 var nrg = 0
 
+#Dash energy
+#var dsh = 0
+
 #score
 var score = 0
 

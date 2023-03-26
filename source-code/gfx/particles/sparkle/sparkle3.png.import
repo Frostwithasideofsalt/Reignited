@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jump-down-3.png-bad8a2f63a711c84f8cb17fcebaf9553.stex"
+path="res://.import/sparkle3.png-9825aa807f96a2391437d9220cf6579d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/player/jump/down/jump-down-3.png"
-dest_files=[ "res://.import/jump-down-3.png-bad8a2f63a711c84f8cb17fcebaf9553.stex" ]
+source_file="res://gfx/particles/sparkle/sparkle3.png"
+dest_files=[ "res://.import/sparkle3.png-9825aa807f96a2391437d9220cf6579d.stex" ]
 
 [params]
 

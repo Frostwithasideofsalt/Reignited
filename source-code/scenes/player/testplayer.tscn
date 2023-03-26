@@ -1,35 +1,35 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://gfx/player/idle/idle-1.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player/testplayer.gd" type="Script" id=2]
 [ext_resource path="res://gfx/player/idle/idle-2.png" type="Texture" id=3]
 [ext_resource path="res://gfx/player/idle/idle-3.png" type="Texture" id=4]
 [ext_resource path="res://gfx/player/jump/up/jump-up-1.png" type="Texture" id=5]
-[ext_resource path="res://gfx/player/jump/up/jump-up-2.png" type="Texture" id=6]
-[ext_resource path="res://gfx/player/jump/up/jump-up-3.png" type="Texture" id=7]
 [ext_resource path="res://gfx/player/run/run-placeholder2.png" type="Texture" id=8]
-[ext_resource path="res://gfx/player/jump/down/jump-down-2.png" type="Texture" id=9]
-[ext_resource path="res://gfx/player/jump/down/jump-down-3.png" type="Texture" id=10]
 [ext_resource path="res://gfx/player/jump/down/jump-down-1.png" type="Texture" id=11]
 [ext_resource path="res://gfx/player/run/run-placeholder1.png" type="Texture" id=12]
 [ext_resource path="res://scenes/ui/Gui.tscn" type="PackedScene" id=13]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7, 22 )
+[ext_resource path="res://fonts/SuperTux-Medium.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://gfx/player/dash/side/dash-side-placeholder.png" type="Texture" id=15]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "dash",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "idle",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "jump-fall",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "jump-rise",
 "speed": 10.0
@@ -40,15 +40,22 @@ animations = [ {
 "speed": 10.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 16 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 14 )
+
 [node name="KinematicBody2D" type="KinematicBody2D"]
 collision_layer = 9
 collision_mask = 65
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -3 )
 frames = SubResource( 2 )
 animation = "idle"
 playing = true
@@ -57,3 +64,15 @@ playing = true
 current = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 13 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="test" type="Label" parent="."]
+margin_left = -31.0
+margin_top = -35.0
+margin_right = 44.0
+margin_bottom = -18.0
+rect_pivot_offset = Vector2( 10, 4 )
+custom_fonts/font = SubResource( 3 )
+text = "##"

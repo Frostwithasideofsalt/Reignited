@@ -14,23 +14,33 @@ var Kyt = 0
 #this variable handles kiyote timestop_on_slope 
 var rns = 0
 #this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
+var candash = 65
+var dshtime = 0
+var dshdir = 0
+#candash above 64, means player can dash
+#dshtime shows how much longer a player has during the dash move
+#dshdir shows direction player moves while dashing
+
 #var spwn = Vector2(self.position.x,self.position.y)
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
+const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 
 func _physics_process(_delta):
 	#key press stuff
 	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	
 	#Left and right movment
-	if hkp == 1 and rns < 150 :
-		rns = rns +(60 - (60 * friction))
+	if hkp == 1 and rns < 160 :
+		rns = rns +(80 - (80 * friction))
 		$AnimatedSprite.flip_h = false
-	elif hkp == -1 and rns > -150:
-		rns = rns -(60 - (60 * friction))
+	elif hkp == -1 and rns > -160:
+		rns = rns -(80 - (80 * friction))
 		$AnimatedSprite.flip_h = true
-	elif hkp == 0:
+	elif hkp == 0 and dshtime <= 0 :
 		rns = rns *(friction) 
 	vsp.x = rns
+	
+	
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
@@ -46,17 +56,20 @@ func _physics_process(_delta):
 		
 	#animations weeee
 	#when the programming is extremely questionable! :tuxflush:
-	if Jmp == 0 :
-		if hkp == 0 :
-			$AnimatedSprite.play("idle")
-			
-		else: 
-			$AnimatedSprite.play("walk")
+	if  dshtime >= 0:
+		$AnimatedSprite.play("dash")
 	else:
-		if int(round(vsp.y)) >= 14 :
-			$AnimatedSprite.play("jump-fall")
+		if Jmp == 0 :
+			if hkp == 0 :
+				$AnimatedSprite.play("idle")
+				
+			else: 
+				$AnimatedSprite.play("walk")
 		else:
-			$AnimatedSprite.play("jump-rise")
+			if int(round(vsp.y)) >= 14 :
+				$AnimatedSprite.play("jump-fall")
+			else:
+				$AnimatedSprite.play("jump-rise")
 		
 		Kyt = Kyt - 1
 		
@@ -69,6 +82,8 @@ func _physics_process(_delta):
 			vsp.y = 16
 			Jdr = 0
 	else:
+		if (rns >= 161 or rns <= -161) and dshtime <= 0:
+			rns = rns * 0.96
 		Jmp = 0
 		Kyt = 8
 
@@ -93,12 +108,43 @@ func _physics_process(_delta):
 		get_parent().add_child(a)
 		a.position = position
 	
+	#Dash
+	
+	#TEMP
+	
+	
+	candash = candash + 1
+	$test.text = String(rns)
+	
+	if candash <= 64 and !dshtime >= 0:
+		modulate = Color(0.7,0.6,0.5)
+	else:
+		modulate = Color(1,1,1)
+	
+	
+	if Input.is_action_pressed("action-2") and candash >= 63:
+		dshtime = 16
+		candash = 0
+		if $AnimatedSprite.flip_h == true:
+			dshdir = -1
+		else:
+			dshdir = 1
+				
+	if dshtime >= 0:
+		rns = 320 *dshdir
+		vsp.y = 0
+		dshtime = dshtime - 1 
+		if is_on_wall():
+			dshtime = -1
 	#Coins
+	
 	if globallevel.hcoin >= 12:
 		globallevel.hcoin = 0
 		if globallevel.hp < 23:
 			globallevel.hp = globallevel.hp + 1 
+			
 	#damage 
+	
 	if globallevel.invstate >= 1:
 		if globallevel.hp <= 1:
 			#temp
