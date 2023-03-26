@@ -20,15 +20,16 @@ var dshdir = 0
 #candash above 64, means player can dash
 #dshtime shows how much longer a player has during the dash move
 #dshdir shows direction player moves while dashing
-
-#var spwn = Vector2(self.position.x,self.position.y)
+var swn = Vector2(0,0)
+#this variable is for the player spawnpoint. it gets set when you first enter a level & when touching a checkpoint
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
+
+
 
 func _physics_process(_delta):
 	#key press stuff
 	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
-	
 	#Left and right movment
 	if hkp == 1 and rns < 160 :
 		rns = rns +(80 - (80 * friction))
@@ -109,7 +110,6 @@ func _physics_process(_delta):
 	#Dash
 	
 	candash = candash + 1
-	$test.text = String(rns)
 	
 	if candash <= 64 and !dshtime >= 0:
 		modulate = Color(0.7,0.6,0.5)
@@ -142,19 +142,29 @@ func _physics_process(_delta):
 	
 	if globallevel.invstate >= 1:
 		if globallevel.hp <= 1:
-			#temp
-# warning-ignore:return_value_discarded
-			get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
+			self.position = swn 
+			#sends player back to spawn
 			globallevel.invstate = 0
 			globallevel.hp = 24
+			globallevel.score = globallevel.score - 800
+			#reset player hp, and score penalty 
 		modulate.a = 0.5
 		globallevel.invstate = globallevel.invstate - 1 
 	else :
 		modulate.a = 1
 	
+	#TEMP
+	 
+	if Input.is_action_pressed("fullscreen"):
+		swn = Vector2(self.position.x,self.position.y)
+		
+	$test.text = String(swn)
+	
 	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
+	
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
+	
 	#if Input.is_action_pressed("escape"):
 	#	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
 	

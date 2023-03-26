@@ -59,6 +59,7 @@ script = ExtResource( 2 )
 position = Vector2( 0, -3 )
 frames = SubResource( 2 )
 animation = "idle"
+frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -73,7 +74,6 @@ position = Vector2( 0, 0.5 )
 shape = SubResource( 1 )
 
 [node name="test" type="Label" parent="."]
-visible = false
 margin_left = -31.0
 margin_top = -35.0
 margin_right = 44.0
