@@ -22,3 +22,6 @@ var invstate = 0
 
 #is the game paused or not
 var paused = false
+
+#player respawnpoint
+var swn = Vector2(0,0)

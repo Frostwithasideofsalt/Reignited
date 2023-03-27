@@ -59,7 +59,6 @@ script = ExtResource( 2 )
 position = Vector2( 0, -3 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]

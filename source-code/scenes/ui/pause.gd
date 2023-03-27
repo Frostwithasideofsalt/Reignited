@@ -15,6 +15,7 @@ func _on_retry_pressed():
 	globallevel.paused = false
 	globallevel.invstate = 2
 	globallevel.hp = 0
+	visible =  globallevel.paused
 
 
 func _on_exit_pressed():

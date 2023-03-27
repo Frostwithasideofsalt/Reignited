@@ -20,8 +20,6 @@ var dshdir = 0
 #candash above 64, means player can dash
 #dshtime shows how much longer a player has during the dash move
 #dshdir shows direction player moves while dashing
-var swn = Vector2(0,0)
-#this variable is for the player spawnpoint. it gets set when you first enter a level & when touching a checkpoint
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 
@@ -142,7 +140,7 @@ func _physics_process(_delta):
 	
 	if globallevel.invstate >= 1:
 		if globallevel.hp <= 1:
-			self.position = swn 
+			self.position = globallevel.swn 
 			#sends player back to spawn
 			globallevel.invstate = 0
 			globallevel.hp = 24
@@ -156,9 +154,9 @@ func _physics_process(_delta):
 	#TEMP
 	 
 	if Input.is_action_pressed("fullscreen"):
-		swn = Vector2(self.position.x,self.position.y)
+		globallevel.swn = Vector2(self.position.x,self.position.y)
 		
-	$test.text = String(swn)
+	$test.text = String(globallevel.swn)
 	
 	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
 	
