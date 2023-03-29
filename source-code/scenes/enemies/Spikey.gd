@@ -14,7 +14,8 @@ func _physics_process(delta):
 	else:
 		globallevel.score = globallevel.score + 5
 		var a = enemydead.instance()
-		a.vsp.x = (vsp.x /30)
+		a.vsp.x = 2
+		a.typ = 2
 		get_parent().add_child(a)
 		a.position = position
 		queue_free()
