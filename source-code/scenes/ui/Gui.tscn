@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://gfx/obj/Hjem/coin1.png" type="Texture" id=1]
 [ext_resource path="res://gfx/gui/hud/Hp-bar.png" type="Texture" id=2]
 [ext_resource path="res://fonts/SuperTux-Medium.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/ui/Gui.gd" type="Script" id=4]
+[ext_resource path="res://fonts/flat-theme.tres" type="Theme" id=5]
 
 [sub_resource type="Theme" id=1]
 
@@ -46,43 +47,45 @@ theme = SubResource( 1 )
 
 [node name="Hcoin" type="Label" parent="."]
 margin_left = 90.0
-margin_top = 3.0
+margin_top = 4.0
 margin_right = 165.0
-margin_bottom = 20.0
+margin_bottom = 21.0
 rect_pivot_offset = Vector2( 10, 4 )
 custom_fonts/font = SubResource( 2 )
 text = "##"
 
 [node name="Scount" type="Label" parent="."]
 margin_left = 291.0
-margin_top = 4.0
+margin_top = 5.0
 margin_right = 366.0
-margin_bottom = 21.0
+margin_bottom = 22.0
 rect_pivot_offset = Vector2( 10, 4 )
 custom_fonts/font = SubResource( 2 )
 text = "##"
 
 [node name="Phealth" type="Label" parent="."]
-margin_left = 24.0
-margin_top = 3.0
-margin_right = 70.0
-margin_bottom = 20.0
+margin_left = 25.0
+margin_top = 4.0
+margin_right = 74.0
+margin_bottom = 16.0
 rect_pivot_offset = Vector2( 10, 4 )
+theme = ExtResource( 5 )
 custom_fonts/font = SubResource( 2 )
 text = "##"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 75.0
-margin_top = 4.0
+margin_top = 3.0
 margin_right = 87.0
-margin_bottom = 16.0
+margin_bottom = 17.0
 texture = ExtResource( 1 )
 expand = true
 
 [node name="Templabel" type="Label" parent="."]
 margin_top = 230.0
-margin_right = 40.0
+margin_right = 60.0
 margin_bottom = 247.0
+size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
