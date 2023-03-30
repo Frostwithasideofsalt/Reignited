@@ -1,8 +1,11 @@
 extends AnimatedSprite
-
-var life = 128
-
-func _process(delta):
-	life = life - 1
-	if life <= 1:
-		queue_free()
+var time = 120
+var typ 
+func _ready():
+	match(typ):
+		0:
+			$AnimatedSprite.play("0")
+		1:
+			$AnimatedSprite.play("1")
+func _physics_process(delta):
+	pass

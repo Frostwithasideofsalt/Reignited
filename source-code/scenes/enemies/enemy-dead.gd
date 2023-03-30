@@ -17,3 +17,6 @@ func _physics_process(delta):
 	position.y = position.y + vsp.y
 	position.x = position.x + vsp.x
 	rotate(vsp.x / 12)
+	time = time - 1
+	if time <= 1:
+		queue_free()

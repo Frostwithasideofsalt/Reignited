@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bcrate-broken.png-19647a49799bb270bb9e310014cd4dfc.stex"
+path="res://.import/crate-static-break3.png-f152f3150d3a6b58705ca7ef6d8b85e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/obj/Crate/Bonus/bcrate-broken.png"
-dest_files=[ "res://.import/bcrate-broken.png-19647a49799bb270bb9e310014cd4dfc.stex" ]
+source_file="res://gfx/obj/Crate/Basic/break/crate-static-break3.png"
+dest_files=[ "res://.import/crate-static-break3.png-f152f3150d3a6b58705ca7ef6d8b85e7.stex" ]
 
 [params]
 
