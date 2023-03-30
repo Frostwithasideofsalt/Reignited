@@ -10,6 +10,7 @@ export(Dictionary) var TILE_SCENES := {
 	3: preload("res://scenes/objects/main/Hcoin.tscn"),
 	4: preload("res://scenes/objects/main/Fheal.tscn"),
 	5: preload("res://scenes/objects/main/Box-empty.tscn"),
+	6: preload("res://scenes/objects/main/Box-item.tscn"),
 	8: preload("res://scenes/enemies/Slidey.tscn"),
 	9: preload("res://scenes/enemies/Spikey.tscn"),
 	16: preload("res://scenes/objects/main/safecheckpoint.tscn")
