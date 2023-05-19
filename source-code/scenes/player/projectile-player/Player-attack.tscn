@@ -1,6 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://gfx/obj/placeholder/attack-placeholder.png" type="Texture" id=1]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst1.png" type="Texture" id=1]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst4.png" type="Texture" id=2]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst5.png" type="Texture" id=3]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst6.png" type="Texture" id=4]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst7.png" type="Texture" id=5]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst3.png" type="Texture" id=6]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst8.png" type="Texture" id=7]
+[ext_resource path="res://gfx/obj/fire-attack/proj/attack-placeholder.png" type="Texture" id=8]
+[ext_resource path="res://gfx/obj/fire-attack/burst/fire-burst2.png" type="Texture" id=9]
 
 [sub_resource type="GDScript" id=3]
 script/source = "extends KinematicBody2D
@@ -9,27 +17,48 @@ var vsp = Vector2()
 #direction the projectile is facing. changing the value here shouldn't really do anything
 var dir = 1
 #the amount of time the projectile should stay on the screen
-var lyf = 90
+var lyf = 30
 #the amount of momentum the player when firing the projectile. This variable name is so bad it's funny.
 var pmom =0
+#TESt
+var phs = 1
 
 func _ready():
 	vsp.x = ((dir) * 240) + pmom
 
 func _physics_process(delta):
-	lyf = lyf - 1
-	#this code looks so bad lmfao
-	if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 60: 
-		queue_free()
+	lyf = lyf- 1
 	move_and_slide(vsp,Vector2.UP)
+	match(phs):
+		1:
+			move_and_slide(vsp,Vector2.UP)
+			if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 0: 
+					lyf = 30
+					phs = 2
+		2:
+			
+			if lyf <= 30:
+				queue_free()
+			elif lyf >= 25:
+				pass
+				
+				
+	
+	
+	
 "
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7.5, 7.5 )
+extents = Vector2( 8, 7 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Explosion",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -39,15 +68,12 @@ animations = [ {
 collision_layer = 32
 collision_mask = 34
 script = SubResource( 3 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, -0.5 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
+playing = true
 
 [node name="Timer" type="Timer" parent="."]
