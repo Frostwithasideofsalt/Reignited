@@ -23,6 +23,7 @@ var dshdir = 0
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 
+#This should be refactored at some point
 
 
 func _physics_process(_delta):

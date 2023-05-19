@@ -7,7 +7,7 @@ Imporant
 [w]- add health, energy, and the ui
 [w]- add player attacks
 [x]- add dash
-[]- Particles to make stuff feel nice
+[w]- Particles to make stuff feel nice
 [x]- stage objects 
 [x]- add kill zones
 [x]- better way to handle multiple of the same object
@@ -20,4 +20,4 @@ Unimportant but should still get added
 Still im unsure about
 []-Squash and stretch 
 []-Slippery tiles
-[]-Dash
+[w]-Dash

@@ -1,6 +1,9 @@
 extends AnimatedSprite
 var time = 35
 var typ 
+
+#at some point i wanna replace this with proper particles 
+
 func _ready():
 	set_frame(0)
 	match(typ):
