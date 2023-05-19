@@ -18,13 +18,15 @@ var vsp = Vector2()
 var dir = 1
 #the amount of time the projectile should stay on the screen
 var lyf = 30
-#the amount of momentum the player when firing the projectile. This variable name is so bad it's funny.
+#the amount of momentum the player has when figing the projectile                                                    
 var pmom =0
 #TESt
 var phs = 1
 
 func _ready():
-	vsp.x = ((dir) * 240) + pmom
+	vsp.x =((dir) * 120)+ pmom / 2
+	if dir ==-1:
+		$AnimatedSprite.flip_h = true
 
 func _physics_process(delta):
 	lyf = lyf- 1
@@ -37,19 +39,19 @@ func _physics_process(delta):
 					phs = 2
 		2:
 			
-			if lyf <= 30:
+			if lyf <= 0:
 				queue_free()
 			elif lyf >= 25:
-				pass
-				
-				
-	
+				$AnimatedSprite.play(\"Explosion\")
+				$AnimatedSprite.set_frame(0)
+				vsp.x = 0
+
 	
 	
 "
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 7 )
+[sub_resource type="CircleShape2D" id=4]
+radius = 7.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -70,10 +72,8 @@ collision_mask = 34
 script = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 playing = true
-
-[node name="Timer" type="Timer" parent="."]
