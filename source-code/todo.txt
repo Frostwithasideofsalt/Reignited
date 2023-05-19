@@ -1,3 +1,17 @@
+DEMO LISTINGSSSSS
+
+pre demo phase (0.0.x) - CURRENT -
+
+demo 1 (0.1.x)
+
+demo 2 (0.2.x)
+
+demo 3 (0.3.x)
+
+demo 4/pre-release (0.4.x)
+
+Release (1.x.x)
+
 x = complete, w = work in progress
 Imporant
 [x]- add falling speed cap
