@@ -1,13 +1,13 @@
 extends Node2D
 var collected = 0
-var vsp = -5
+var vsp = -3
 #refactor needed 
 
 func _physics_process(delta):
 	if collected == 1:
 		$AnimatedSprite.position.y = $AnimatedSprite.position.y + vsp
-		vsp = vsp + 0.5
-		if vsp >= 10:
+		vsp = vsp + 0.25
+		if vsp >= 3:
 			queue_free()
 	
 
