@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://sounds/music/level/tutorial.ogg" type="AudioStream" id=1]
 [ext_resource path="res://tilesets/forest.tres" type="TileSet" id=2]
 [ext_resource path="res://tilesets/Solid.tres" type="TileSet" id=3]
 [ext_resource path="res://gfx/bg/forest/forest-1.png" type="Texture" id=4]
@@ -64,3 +65,7 @@ motion_mirroring = Vector2( 512, 0 )
 texture = ExtResource( 4 )
 centered = false
 offset = Vector2( 0, -128 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true

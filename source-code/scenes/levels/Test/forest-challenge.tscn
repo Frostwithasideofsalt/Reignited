@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://tilesets/forest.tres" type="TileSet" id=1]
 [ext_resource path="res://tilesets/Solid.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://gfx/bg/forest/forest-3.png" type="Texture" id=4]
 [ext_resource path="res://gfx/bg/forest/forest-1.png" type="Texture" id=5]
 [ext_resource path="res://gfx/bg/forest/forest-2.png" type="Texture" id=6]
+[ext_resource path="res://sounds/music/level/forest.ogg" type="AudioStream" id=7]
 
 [node name="Node2D" type="Node2D"]
 
@@ -58,3 +59,7 @@ tile_data = PoolIntArray( 131071, 5, 0, 65566, 41, 0, 65567, 40, 0, 65568, 40, 0
 
 [node name="actors" parent="." instance=ExtResource( 3 )]
 tile_data = PoolIntArray( -327614, 4, 0, -196554, 8, 0, -196548, 8, 0, 131104, 5, 0, 131105, 3, 0, 131106, 3, 0, 131107, 3, 0, 131108, 5, 0, 196614, 3, 0, 196616, 3, 0, 196618, 3, 0, 196640, 6, 0, 196641, 3, 0, 196642, 3, 0, 196643, 3, 0, 196644, 6, 0, 196680, 1, 0, 262151, 3, 0, 262153, 3, 0, 524306, 9, 0, 589857, 8, 0, 589866, 9, 0, 589869, 9, 0, 589881, 9, 0, 589883, 9, 0, 589890, 9, 0, 589892, 9, 0, 655364, 0, 0, 655370, 8, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

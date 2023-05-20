@@ -145,7 +145,7 @@ func _physics_process(_delta):
 			#sends player back to spawn
 			globallevel.invstate = 0
 			globallevel.hp = 24
-			globallevel.score = globallevel.score - 800
+			globallevel.score = 0
 			#reset player hp, and score penalty 
 		modulate.a = 0.5
 		globallevel.invstate = globallevel.invstate - 1 

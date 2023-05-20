@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ice-cave.ogg-27b0631711360fce7c03749afc50150d.oggstr"
+
+[deps]
+
+source_file="res://sounds/music/level/ice-cave.ogg"
+dest_files=[ "res://.import/ice-cave.ogg-27b0631711360fce7c03749afc50150d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
