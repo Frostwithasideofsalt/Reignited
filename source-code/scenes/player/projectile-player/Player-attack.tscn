@@ -35,13 +35,13 @@ func _physics_process(delta):
 		1:
 			move_and_slide(vsp,Vector2.UP)
 			if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 0: 
-					lyf = 30
+					lyf = 36
 					phs = 2
 		2:
 			
 			if lyf <= 0:
 				queue_free()
-			elif lyf >= 25:
+			elif lyf >= 34:
 				$AnimatedSprite.play(\"Explosion\")
 				$AnimatedSprite.set_frame(0)
 				vsp.x = 0
