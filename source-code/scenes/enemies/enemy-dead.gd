@@ -3,6 +3,8 @@ var vsp = Vector2()
 var time = 120
 var typ 
 func _ready():
+	if globallevel.hcoin <= 11:
+				globallevel.hcoin = globallevel.hcoin + 1
 	vsp.y = -4
 	match(typ):
 		0:

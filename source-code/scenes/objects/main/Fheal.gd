@@ -11,5 +11,5 @@ func _on_Fheal_body_entered(body):
 	else:
 		globallevel.score = globallevel.score + 100
 	globallevel.hp = 24
-	globallevel.hcoin = globallevel.hcoin + 1
+	
 	queue_free()

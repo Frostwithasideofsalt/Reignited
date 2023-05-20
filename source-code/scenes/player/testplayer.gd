@@ -132,9 +132,9 @@ func _physics_process(_delta):
 			dshtime = -1
 	#Coins
 	
-	if globallevel.hcoin >= 12:
+	if globallevel.hcoin >= 12 and globallevel.hp <= 23:
 		globallevel.hcoin = 0
-		if globallevel.hp < 23:
+		if globallevel.hp < 24:
 			globallevel.hp = globallevel.hp + 1 
 			
 	#damage 
