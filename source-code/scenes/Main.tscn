@@ -125,15 +125,15 @@ custom_constants/separation = 19
 script = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="HBoxContainer"]
-margin_right = 61.0
+margin_right = 55.0
 margin_bottom = 25.0
-text = "test1"
+text = "Test"
 
 [node name="Button2" type="Button" parent="HBoxContainer"]
-margin_left = 80.0
-margin_right = 153.0
+margin_left = 74.0
+margin_right = 151.0
 margin_bottom = 25.0
-text = "test 2"
+text = "Forest"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 15 )

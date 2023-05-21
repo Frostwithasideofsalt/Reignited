@@ -136,6 +136,7 @@ fullscreen={
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="Attack"
 2d_physics/layer_7="blocks"
+2d_physics/layer_8="Platform-enemy"
 
 [physics]
 
