@@ -7,5 +7,5 @@ func _process(delta):
 	
 	#test ui
 	$Scount.text = "Score; " + String(globallevel.score)
-	$Templabel.text =   "att energy; " +String(globallevel.nrg) + "/48 | fps: " + String(Engine.get_frames_per_second())# +  " | dsh energy; " +  String(globallevel.dsh)
+	$Templabel.text = " - fps: " + String(Engine.get_frames_per_second()) + " -"# +  " | dsh energy; " +  String(globallevel.dsh)
 	
