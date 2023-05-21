@@ -2,7 +2,7 @@
 
 [ext_resource path="res://gfx/enemies/Slidey/Preview5.png" type="Texture" id=1]
 [ext_resource path="res://scenes/enemies/enemy-dead.gd" type="Script" id=2]
-[ext_resource path="res://gfx/enemies/Spikey/Preview.png" type="Texture" id=3]
+[ext_resource path="res://gfx/enemies/Spikey/Preview2.png" type="Texture" id=3]
 [ext_resource path="res://gfx/enemies/dunny/dummy.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]

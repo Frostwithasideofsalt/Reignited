@@ -27,13 +27,21 @@ extents = Vector2( 5, 6 )
 extents = Vector2( 8.09375, 10.25 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
+position = Vector2( 0, 1 )
 collision_layer = 16
 collision_mask = 66
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 1 )
 frames = SubResource( 1 )
 animation = "idle"
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.25, 1.5 )

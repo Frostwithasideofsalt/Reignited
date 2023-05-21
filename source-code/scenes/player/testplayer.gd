@@ -66,7 +66,7 @@ func _physics_process(_delta):
 			else: 
 				$AnimatedSprite.play("walk")
 		else:
-			if int(round(vsp.y)) >= 14 :
+			if int(round(vsp.y)) >= 0 :
 				$AnimatedSprite.play("jump-fall")
 			else:
 				$AnimatedSprite.play("jump-rise")
