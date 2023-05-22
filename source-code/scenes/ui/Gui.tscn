@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://fonts/SuperTux-Medium.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/ui/Gui.gd" type="Script" id=4]
 [ext_resource path="res://gfx/gui/hud/bars1.png" type="Texture" id=6]
 [ext_resource path="res://gfx/gui/hud/bars2.png" type="Texture" id=7]
 [ext_resource path="res://gfx/gui/hud/hud1.png" type="Texture" id=8]
-
-[sub_resource type="Theme" id=1]
 
 [sub_resource type="DynamicFont" id=3]
 size = 12
@@ -18,17 +16,11 @@ font_data = ExtResource( 3 )
 pause_mode = 2
 script = ExtResource( 4 )
 
-[node name="Panel" type="Panel" parent="."]
-modulate = Color( 0, 0, 0, 0.368627 )
-margin_top = 230.0
-margin_right = 432.0
-margin_bottom = 262.0
-theme = SubResource( 1 )
-
 [node name="Templabel" type="Label" parent="."]
-margin_top = 230.0
-margin_right = 60.0
-margin_bottom = 247.0
+margin_left = 1.0
+margin_top = 226.0
+margin_right = 61.0
+margin_bottom = 243.0
 rect_pivot_offset = Vector2( 40, -11 )
 size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )

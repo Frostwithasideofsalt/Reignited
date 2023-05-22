@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FLRI - Forest demo"
+config/name="FLRI"
 run/main_scene="res://scenes/Main.tscn"
 boot_splash/show_image=false
 config/icon="res://icon.png"
@@ -28,6 +28,7 @@ config/icon="res://icon.png"
 [autoload]
 
 globallevel="*res://scripts/global-level.gd"
+globalsetting="*res://scripts/global-settings.gd"
 
 [display]
 
