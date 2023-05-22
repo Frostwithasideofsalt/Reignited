@@ -20,8 +20,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Flame's land re-ignited"
+config/name="FLRI - Forest demo"
 run/main_scene="res://scenes/Main.tscn"
+boot_splash/show_image=false
 config/icon="res://icon.png"
 
 [autoload]
@@ -148,6 +149,7 @@ quality/driver/driver_name="GLES2"
 2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+quality/reflections/high_quality_ggx=false
 quality/shading/force_vertex_shading=true
 quality/shading/force_vertex_shading.mobile=false
 quality/skinning/software_skinning_fallback=false
