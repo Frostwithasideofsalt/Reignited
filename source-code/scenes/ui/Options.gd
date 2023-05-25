@@ -4,7 +4,6 @@ func _physics_process(delta):
 		get_tree().change_scene("res://scenes/Main.tscn")
 	$Fps.text = "Show FPS" + " (" + String(globalsetting.SFPS) + ")"
 	$Mute.text = "Mute audio" + " (" + String(globalsetting.muted) + ")"
-
 func _on_Exit_pressed():
 	get_tree().change_scene("res://scenes/Main.tscn")
 

@@ -117,5 +117,6 @@ text = "Test"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer" method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer" method="_on_Options_pressed"]
+[connection signal="pressed" from="VBoxContainer/info" to="VBoxContainer" method="_on_info_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer" method="_on_Quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/TEST" to="VBoxContainer" method="_on_TEST_pressed"]

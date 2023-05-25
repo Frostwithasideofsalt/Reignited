@@ -17,8 +17,13 @@ func _on_TEST_pressed():
 func _on_Options_pressed():
 	globallevel.paused = false
 	get_tree().change_scene("res://scenes/ui/Options.tscn")
-	globallevel.score = 0
 
 
 func _on_Quit_pressed():
 	get_tree().quit()
+
+
+func _on_info_pressed():
+	globallevel.paused = false
+	get_tree().change_scene("res://scenes/ui/info.tscn")
+

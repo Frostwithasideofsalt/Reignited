@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/flat-theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/menu-grab-focus.gd" type="Script" id=2]
+[ext_resource path="res://gfx/gui/pause.png" type="Texture" id=4]
+[ext_resource path="res://gfx/gui/hud/gradient-2.png" type="Texture" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Pause" type="Sprite" parent="."]
+position = Vector2( 216, 122 )
+texture = ExtResource( 4 )
+
+[node name="Gradient-2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 220, 122 )
+texture = ExtResource( 5 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 114.0
+margin_top = 192.0
+margin_right = 509.0
+margin_bottom = 212.0
+theme = ExtResource( 1 )
+
+[node name="Quit" type="Button" parent="HBoxContainer"]
+margin_right = 51.0
+margin_bottom = 25.0
+text = "Exit"
+script = ExtResource( 2 )
+
+[node name="Other controls" type="Button" parent="HBoxContainer"]
+margin_left = 55.0
+margin_right = 218.0
+margin_bottom = 25.0
+text = "Other controls"
+
+[node name="controls" type="RichTextLabel" parent="."]
+margin_left = 6.0
+margin_top = 70.0
+margin_right = 304.0
+margin_bottom = 275.0
+theme = ExtResource( 1 )
+text = "Controls:
+z - Jump
+x - Attack
+Shift - Dash
+Arrows keys - Move
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 266.0
+margin_bottom = 70.0
+theme = ExtResource( 1 )
+text = "Game developed by FrostC
+Music made by rodirod"
