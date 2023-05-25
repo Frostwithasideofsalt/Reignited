@@ -30,14 +30,14 @@ script = ExtResource( 3 )
 [node name="Mute" type="Button" parent="Options"]
 margin_right = 423.0
 margin_bottom = 25.0
-text = "Mute audio (TBA)"
+text = "Mute audio (   )"
 script = ExtResource( 2 )
 
 [node name="Fps" type="Button" parent="Options"]
 margin_top = 26.0
 margin_right = 423.0
 margin_bottom = 51.0
-text = "Display FPS ( )"
+text = "Display FPS (   )"
 
 [node name="fullscreen" type="Button" parent="Options"]
 margin_top = 52.0

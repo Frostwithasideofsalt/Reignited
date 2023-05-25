@@ -4,3 +4,5 @@ extends Node
 #Is FPS being shown?
 var SFPS = false
 
+#is game muted?
+var muted = false
