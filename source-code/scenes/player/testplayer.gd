@@ -154,8 +154,8 @@ func _physics_process(_delta):
 	
 	#TEMP
 	 
-	if Input.is_action_pressed("fullscreen"):
-		globallevel.swn = Vector2(self.position.x,self.position.y)
+	#if Input.is_action_pressed("fullscreen"):
+	#	globallevel.swn = Vector2(self.position.x,self.position.y)
 		
 	$test.text = String(globallevel.swn)
 	

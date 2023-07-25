@@ -1,6 +1,5 @@
 extends VBoxContainer
 
-#ADD KEYBOARD SUPPORT FORM MENUS!!!!! should not be overlooked
 
 func _on_Button_pressed():
 	globallevel.paused = false

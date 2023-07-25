@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://fonts/flat-theme.tres" type="Theme" id=1]
 [ext_resource path="res://scripts/menu-grab-focus.gd" type="Script" id=2]
+[ext_resource path="res://scenes/ui/infomenu.gd" type="Script" id=3]
 [ext_resource path="res://gfx/gui/pause.png" type="Texture" id=4]
 [ext_resource path="res://gfx/gui/hud/gradient-2.png" type="Texture" id=5]
 
@@ -22,6 +23,7 @@ margin_top = 192.0
 margin_right = 509.0
 margin_bottom = 212.0
 theme = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Quit" type="Button" parent="HBoxContainer"]
 margin_right = 51.0
@@ -49,6 +51,7 @@ Arrows keys - Move
 "
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 margin_left = 5.0
 margin_top = 8.0
 margin_right = 266.0
@@ -56,3 +59,5 @@ margin_bottom = 70.0
 theme = ExtResource( 1 )
 text = "Game developed by FrostC
 Music made by rodirod"
+
+[connection signal="pressed" from="HBoxContainer/Quit" to="HBoxContainer" method="_on_Quit_pressed"]

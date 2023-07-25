@@ -28,7 +28,6 @@ Imporant
 
 Unimportant but should still get added
 []-jump buffering 
-[]-key rebinds 
 []-Dynamic camera
 
 Still im unsure about
