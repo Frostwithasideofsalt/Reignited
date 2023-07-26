@@ -5,7 +5,7 @@ extends Node
 var hp = 24
 
 #Coin count
-var hcoin = 0
+var hcoin = 6
 
 #Energy amount
 var nrg = 0

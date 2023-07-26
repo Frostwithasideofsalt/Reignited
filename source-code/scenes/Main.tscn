@@ -115,6 +115,14 @@ margin_bottom = 157.0
 shortcut_in_tooltip = false
 text = "Test"
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -297.0
+margin_top = 3.0
+margin_right = -36.0
+margin_bottom = 65.0
+theme = ExtResource( 16 )
+text = "v0.0.3"
+
 [connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer" method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/info" to="VBoxContainer" method="_on_info_pressed"]

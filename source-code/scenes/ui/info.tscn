@@ -17,26 +17,6 @@ visible = false
 position = Vector2( 220, 122 )
 texture = ExtResource( 5 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 114.0
-margin_top = 192.0
-margin_right = 509.0
-margin_bottom = 212.0
-theme = ExtResource( 1 )
-script = ExtResource( 3 )
-
-[node name="Quit" type="Button" parent="HBoxContainer"]
-margin_right = 51.0
-margin_bottom = 25.0
-text = "Exit"
-script = ExtResource( 2 )
-
-[node name="Other controls" type="Button" parent="HBoxContainer"]
-margin_left = 55.0
-margin_right = 218.0
-margin_bottom = 25.0
-text = "Other controls"
-
 [node name="controls" type="RichTextLabel" parent="."]
 margin_left = 6.0
 margin_top = 70.0
@@ -50,8 +30,21 @@ Shift - Dash
 Arrows keys - Move
 "
 
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 183.0
+margin_top = 206.0
+margin_right = 237.0
+margin_bottom = 231.0
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Quit" type="Button" parent="HBoxContainer"]
+margin_right = 51.0
+margin_bottom = 25.0
+text = "Exit"
+script = ExtResource( 2 )
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-visible = false
 margin_left = 5.0
 margin_top = 8.0
 margin_right = 266.0
