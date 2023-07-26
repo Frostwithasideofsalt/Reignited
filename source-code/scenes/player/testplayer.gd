@@ -94,7 +94,7 @@ func _physics_process(_delta):
 	if  globallevel.nrg <= 47:
 		globallevel.nrg = globallevel.nrg + 1
 	
-	if Input.is_action_just_released("action") and globallevel.nrg >= 47:
+	if Input.is_action_just_pressed("action") and globallevel.nrg >= 47:
 		var a = PATTACK.instance()
 		globallevel.nrg = 0
 		#probably a way better way to this, but i don't have the patiance to do that right now.

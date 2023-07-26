@@ -116,9 +116,9 @@ shortcut_in_tooltip = false
 text = "Test"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = -297.0
+margin_left = -295.0
 margin_top = 3.0
-margin_right = -36.0
+margin_right = -34.0
 margin_bottom = 65.0
 theme = ExtResource( 16 )
 text = "v0.0.3"
