@@ -21,6 +21,7 @@ func _on_retry_pressed():
 	globallevel.paused = false
 	globallevel.invstate = 2
 	globallevel.hp = 0
+	globallevel.hcoin = 6
 	$off.play()
 	visible =  globallevel.paused
 
@@ -29,6 +30,7 @@ func _on_exit_pressed():
 	get_tree().paused = false
 	globallevel.paused = false
 	$off.play()
+	globallevel.hcoin = 6
 	get_tree().change_scene("res://scenes/Main.tscn")
 
 
