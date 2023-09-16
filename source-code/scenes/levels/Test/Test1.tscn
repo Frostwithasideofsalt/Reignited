@@ -13,6 +13,7 @@
 position = Vector2( 299, 221 )
 
 [node name="solid" type="TileMap" parent="."]
+visible = false
 position = Vector2( -304, -224 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
