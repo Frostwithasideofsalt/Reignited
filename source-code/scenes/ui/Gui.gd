@@ -7,6 +7,7 @@ func _process(delta):
 	
 	#test ui
 	$Scount.text = "Score; " + String(globallevel.score)
+	$Console.text = "Camera position target, x:" + String(globallevel.camseek.x) + " y:" + String(globallevel.camseek.y)
 	
 	if globalsetting.SFPS == true:
 		$Templabel.text = " fps: " + String(Engine.get_frames_per_second())

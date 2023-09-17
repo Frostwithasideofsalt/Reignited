@@ -24,7 +24,8 @@ const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tsc
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 
 #This should be refactored at some point
-
+func _ready():
+	globallevel.cammod = 0
 
 func _physics_process(_delta):
 	#key press stuff
@@ -163,6 +164,9 @@ func _physics_process(_delta):
 	
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
+	globallevel.camseek.y = (vsp.y / 256)
+	globallevel.camseek.x = (vsp.x / 256)
+	
 	
 	#if Input.is_action_pressed("escape"):
 	#	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")

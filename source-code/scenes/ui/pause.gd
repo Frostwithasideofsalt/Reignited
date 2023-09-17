@@ -18,10 +18,7 @@ func _input(event):\
 
 func _on_retry_pressed():
 	get_tree().paused = false
-	globallevel.paused = false
-	globallevel.invstate = 2
-	globallevel.hp = 0
-	globallevel.hcoin = 6
+	Scripts.reset_level()
 	$off.play()
 	visible =  globallevel.paused
 

@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "InteractiveTilemap",
 "language": "GDScript",
 "path": "res://scenes/dev/levelobj.gd"
+}, {
+"base": "Reference",
+"class": "Scripts",
+"language": "GDScript",
+"path": "res://scripts/functions.gd"
 } ]
 _global_script_class_icons={
-"InteractiveTilemap": ""
+"InteractiveTilemap": "",
+"Scripts": ""
 }
 
 [application]
@@ -29,6 +35,7 @@ config/icon="res://icon.png"
 
 globallevel="*res://scripts/global-level.gd"
 globalsetting="*res://scripts/global-settings.gd"
+Functions="*res://scripts/functions.gd"
 
 [display]
 
