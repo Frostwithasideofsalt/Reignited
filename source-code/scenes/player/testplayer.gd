@@ -45,13 +45,13 @@ func _physics_process(_delta):
 	#Jumping
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
-			Jdr = 20
+			Jdr = 12
 		else: 
 			Jdr = 0
 		
 	if Input.is_action_pressed("Jump") and Jdr >= 1:
 		Jmp = 1
-		vsp.y = -196
+		vsp.y = -260
 		Jdr = Jdr - 1
 		Kyt = 0
 		
@@ -154,32 +154,10 @@ func _physics_process(_delta):
 		modulate.a = 1
 	
 	#TEMP
-	 
-	#if Input.is_action_pressed("fullscreen"):
-	#	globallevel.swn = Vector2(self.position.x,self.position.y)
-		
 	$test.text = String(globallevel.swn)
-	
-	#TEMPORARY(?) CODE, player acts kinda silly if you remove this
-	
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (vsp.y / 256)
 	globallevel.camseek.x = (vsp.x / 256)
-	
-	
-	#if Input.is_action_pressed("escape"):
-	#	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
-	
-	
-
-
-
-
-
-
-# warning-ignore:unused_argument
-func _on_Killzone_body_entered(body):
-# warning-ignore:return_value_discarded
-	get_tree().change_scene("res://scenes/levels/Test/Test1.tscn")
-	#self.position = spwn
+	if Input.is_action_pressed("ui_focus_next"):
+		globalfunc.reset_level()

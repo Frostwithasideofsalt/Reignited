@@ -15,6 +15,7 @@ func _on_Mute_pressed():
 	else:
 		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true)
 		globalsetting.muted = true
+		
 
 func _on_Fps_pressed():
 	globalsetting.SFPS = not(globalsetting.SFPS)

@@ -17,10 +17,10 @@ pause_mode = 2
 script = ExtResource( 4 )
 
 [node name="Templabel" type="Label" parent="."]
-margin_left = 3.0
-margin_top = 43.0
-margin_right = 63.0
-margin_bottom = 60.0
+margin_left = 2.0
+margin_top = 214.0
+margin_right = 62.0
+margin_bottom = 231.0
 rect_pivot_offset = Vector2( 24, 9 )
 size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
@@ -29,6 +29,7 @@ custom_fonts/font = SubResource( 3 )
 text = "##"
 
 [node name="Console" type="Label" parent="."]
+visible = false
 margin_left = 2.0
 margin_top = 228.0
 margin_right = 62.0

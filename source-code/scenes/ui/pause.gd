@@ -2,7 +2,7 @@ extends Control
 var On = preload("res://sounds/gui/select-on.ogg")
 var Off = preload("res://sounds/gui/select-off.ogg")
 
-func _input(event):\
+func _input(event):
 	if Input.is_action_just_pressed("escape"):
 		globallevel.paused = not get_tree().paused
 		get_tree().paused = globallevel.paused
@@ -13,15 +13,13 @@ func _input(event):\
 			$off.play()
 		$on.stop()
 
-
-
-
 func _on_retry_pressed():
-	get_tree().paused = false
-	Scripts.reset_level()
-	$off.play()
+	globallevel.hp = 0
+	globallevel.invstate = 2
+	globallevel.paused = false
 	visible =  globallevel.paused
-
+	get_tree().paused = false
+	$off.play()
 
 func _on_exit_pressed():
 	get_tree().paused = false
@@ -29,7 +27,6 @@ func _on_exit_pressed():
 	$off.play()
 	globallevel.hcoin = 6
 	get_tree().change_scene("res://scenes/Main.tscn")
-
 
 func _on_resume_pressed():
 	get_tree().paused = false
