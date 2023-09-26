@@ -72,7 +72,7 @@ texture = ExtResource( 1 )
 flip_h = true
 
 [node name="Logo" type="Sprite" parent="."]
-position = Vector2( -170, -95 )
+position = Vector2( -168, -94 )
 texture = ExtResource( 7 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -86,42 +86,42 @@ script = ExtResource( 3 )
 
 [node name="Play" type="Button" parent="VBoxContainer"]
 margin_right = 86.0
-margin_bottom = 25.0
+margin_bottom = 28.0
 text = "Play"
 script = ExtResource( 2 )
 
 [node name="Options" type="Button" parent="VBoxContainer"]
-margin_top = 33.0
+margin_top = 36.0
 margin_right = 86.0
-margin_bottom = 58.0
+margin_bottom = 64.0
 text = "Options"
 
 [node name="info" type="Button" parent="VBoxContainer"]
-margin_top = 66.0
+margin_top = 72.0
 margin_right = 86.0
-margin_bottom = 91.0
+margin_bottom = 100.0
 text = "Info"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
-margin_top = 99.0
+margin_top = 108.0
 margin_right = 86.0
-margin_bottom = 124.0
+margin_bottom = 136.0
 text = "Quit"
 
 [node name="TEST" type="Button" parent="VBoxContainer"]
-margin_top = 132.0
+margin_top = 144.0
 margin_right = 86.0
-margin_bottom = 157.0
+margin_bottom = 172.0
 shortcut_in_tooltip = false
 text = "Test"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = -295.0
-margin_top = 3.0
-margin_right = -34.0
-margin_bottom = 65.0
+margin_left = -292.0
+margin_top = 1.0
+margin_right = -31.0
+margin_bottom = 63.0
 theme = ExtResource( 16 )
-text = "v0.0.5"
+text = "v0.0.4"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="VBoxContainer" method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer" method="_on_Options_pressed"]

@@ -6,7 +6,7 @@ func _process(delta):
 	$Bars2.scale = Vector2(globallevel.hcoin * -4 ,1)
 	
 	#test ui
-	$Scount.text = "Score; " + String(globallevel.score)
+	$Scount.text = "Score: " + String(globallevel.score)
 	
 	if globalsetting.SFPS == true:
 		$Templabel.text = "fps: " + String(Engine.get_frames_per_second())

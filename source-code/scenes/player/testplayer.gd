@@ -20,6 +20,9 @@ var dshdir = 0
 #candash above 64, means player can dash
 #dshtime shows how much longer a player has during the dash move
 #dshdir shows direction player moves while dashing
+var jmpbf = 1
+
+
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 
@@ -43,6 +46,7 @@ func _physics_process(_delta):
 	
 	
 	#Jumping
+	
 	if !Input.is_action_pressed("Jump"):
 		if  Kyt >= 1:
 			Jdr = 12

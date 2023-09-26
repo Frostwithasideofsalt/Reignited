@@ -36,32 +36,34 @@ margin_bottom = -28.0
 
 [node name="resume" type="Button" parent="pause/VBoxContainer"]
 margin_right = 117.0
-margin_bottom = 25.0
+margin_bottom = 28.0
 theme = ExtResource( 2 )
 text = "Resume"
 script = ExtResource( 6 )
 
 [node name="retry" type="Button" parent="pause/VBoxContainer"]
-margin_top = 29.0
+margin_top = 32.0
 margin_right = 117.0
-margin_bottom = 54.0
+margin_bottom = 60.0
 theme = ExtResource( 2 )
 text = "Retry"
 
 [node name="exit" type="Button" parent="pause/VBoxContainer"]
-margin_top = 58.0
+margin_top = 64.0
 margin_right = 117.0
-margin_bottom = 83.0
+margin_bottom = 92.0
 theme = ExtResource( 2 )
 text = "Exit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="pause"]
-margin_left = -244.0
-margin_top = -171.0
-margin_right = -155.0
-margin_bottom = -131.0
+margin_left = -235.0
+margin_top = -196.0
+margin_right = -114.0
+margin_bottom = -124.0
 theme = ExtResource( 2 )
-text = "-PAUSE-"
+text = "
+
+-PAUSE-"
 
 [connection signal="pressed" from="pause/VBoxContainer/resume" to="pause" method="_on_resume_pressed"]
 [connection signal="visibility_changed" from="pause/VBoxContainer/resume" to="pause/VBoxContainer/resume" method="_on_resume_visibility_changed"]
