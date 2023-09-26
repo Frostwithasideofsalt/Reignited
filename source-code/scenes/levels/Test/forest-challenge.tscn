@@ -14,7 +14,7 @@
 follow_viewport_scale = 0.001
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="bg"]
-motion_scale = Vector2( 0.005, 0 )
+motion_scale = Vector2( 0, 0 )
 motion_mirroring = Vector2( 512, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/ParallaxLayer2"]
