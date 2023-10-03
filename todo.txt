@@ -18,8 +18,8 @@ Imporant
 [x]- add enemies
 [x]- add collectables
 [w]- finish character animations 
-[w]- add health, energy, and the ui
-[w]- add player attacks
+[x]- add health, energy, and the ui
+[x]- add player attacks
 [x]- add dash
 [w]- Particles to make stuff feel nice
 [x]- stage objects 
@@ -28,7 +28,7 @@ Imporant
 
 Unimportant but should still get added
 []-jump buffering 
-[]-Dynamic camera
+[x]-Dynamic camera
 
 Still im unsure about
 []-Squash and stretch 
