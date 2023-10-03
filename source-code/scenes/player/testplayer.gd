@@ -15,12 +15,13 @@ var Kyt = 0
 var rns = 0
 #this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
 var candash = 65
-var dshtime = 0
-var dshdir = 0
 #candash above 64, means player can dash
+var dshtime = 0
 #dshtime shows how much longer a player has during the dash move
+var dshdir = 0
 #dshdir shows direction player moves while dashing
 var jmpbf = 1
+#jumpbuffer related stuff. currently unused as i couldn't get it working.
 
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
