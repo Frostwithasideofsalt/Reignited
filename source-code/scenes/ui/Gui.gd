@@ -7,6 +7,11 @@ func _process(delta):
 	
 	#test ui
 	$Scount.text = "Score: " + String(globallevel.score)
+	if globallevel.Combo == 0:
+		$Combo.text = "Combo:"
+	else:
+		$Combo.text = "Combo: x" + String(globallevel.Combo)
+	$Bars3.scale = Vector2(globallevel.Combo_timer * -2 ,1)
 	
 	if globalsetting.SFPS == true:
 		$Templabel.text = "fps: " + String(Engine.get_frames_per_second())

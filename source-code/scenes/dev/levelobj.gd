@@ -7,6 +7,7 @@ class_name InteractiveTilemap
 export(Dictionary) var TILE_SCENES := {
 	0: preload("res://scenes/player/testplayer.tscn"),
 	1: preload("res://scenes/objects/main/checkpoint.tscn"),
+	2: preload("res://scenes/objects/main/exit.tscn"),
 	3: preload("res://scenes/objects/main/Hcoin.tscn"),
 	4: preload("res://scenes/objects/main/Fheal.tscn"),
 	5: preload("res://scenes/objects/main/Box-empty.tscn"),

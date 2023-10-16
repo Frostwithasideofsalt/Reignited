@@ -50,9 +50,6 @@ func _physics_process(delta):
 	
 "
 
-[sub_resource type="CircleShape2D" id=4]
-radius = 7.0
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ) ],
@@ -66,14 +63,18 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="CircleShape2D" id=4]
+radius = 6.0
+
 [node name="Player-attack" type="KinematicBody2D"]
 collision_layer = 32
 collision_mask = 34
 script = SubResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 4 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, 0 )
+shape = SubResource( 4 )

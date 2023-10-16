@@ -27,12 +27,13 @@ func _physics_process(delta):
 		
 		vsp.x = 60 * dir
 	else:
-		globallevel.score = globallevel.score + 5
+		globallevel.score = globallevel.score + 5 + round((globallevel.Combo_timer / 32) * 5)
 		var a = enemydead.instance()
 		a.vsp.x = (vsp.x /30)
 		a.typ = 1
 		get_parent().add_child(a)
 		a.position = position
+		globalfunc.Combo_up()
 		queue_free()
 	vsp = move_and_slide(vsp,Vector2.UP)
 
@@ -79,7 +80,7 @@ script = SubResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 3
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

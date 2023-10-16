@@ -1,5 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://gfx/gui/hud/bars3.png" type="Texture" id=1]
+[ext_resource path="res://gfx/gui/hud/hud2.png" type="Texture" id=2]
 [ext_resource path="res://fonts/SuperTux-Medium.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/ui/Gui.gd" type="Script" id=4]
 [ext_resource path="res://gfx/gui/hud/bars1.png" type="Texture" id=6]
@@ -46,16 +48,32 @@ margin_left = 37.0
 margin_top = 29.0
 margin_right = 97.0
 margin_bottom = 46.0
-rect_pivot_offset = Vector2( 40, -11 )
+rect_pivot_offset = Vector2( 71, -3 )
 size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "##"
 
+[node name="Combo" type="Label" parent="."]
+margin_left = 328.0
+margin_top = 10.0
+margin_right = 388.0
+margin_bottom = 27.0
+rect_pivot_offset = Vector2( 71, -3 )
+size_flags_stretch_ratio = 0.52
+custom_colors/font_color = Color( 0, 0.396078, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "combo:"
+
 [node name="Hud1" type="Sprite" parent="."]
 position = Vector2( 65, 65 )
 texture = ExtResource( 8 )
+
+[node name="Hud2" type="Sprite" parent="Hud1"]
+position = Vector2( 296, -32 )
+texture = ExtResource( 2 )
 
 [node name="Bars2" type="Sprite" parent="."]
 position = Vector2( 39, 20 )
@@ -64,3 +82,7 @@ texture = ExtResource( 7 )
 [node name="Bars1" type="Sprite" parent="."]
 position = Vector2( 39, 20 )
 texture = ExtResource( 6 )
+
+[node name="Bars3" type="Sprite" parent="."]
+position = Vector2( 329, 33 )
+texture = ExtResource( 1 )

@@ -12,7 +12,6 @@ func _physics_process(delta):
 	if lfe == 1:
 		pass
 	else:
-		globallevel.score = globallevel.score + 5
 		var a = enemydead.instance()
 		a.vsp.x = 2
 		a.typ = 2
@@ -28,9 +27,10 @@ func _physics_process(delta):
 func _on_Hitboxplayer_body_entered(body):
 	if globallevel.invstate <= 1:
 		globallevel.score = globallevel.score - 50
-		globallevel.hp = globallevel.hp - 4
+		globallevel.hp = globallevel.hp - 6
 		globallevel.invstate = 60
 
 
 func _on_Hitboxprojectile_body_entered(body):
 	lfe = 0
+	globalfunc.Combo_up()

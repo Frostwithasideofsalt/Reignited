@@ -10,3 +10,10 @@ func reset_level():
 	globallevel.invstate = 0
 	globallevel.paused = false
 	globallevel.cammod = 0
+	globallevel.Combo = 0
+	globallevel.Combo_timer = 0
+
+func Combo_up():
+	globallevel.score = globallevel.score + 5 + round(((globallevel.Combo_timer / 32) * 5) + (globallevel.Combo / 3)) 
+	globallevel.Combo = globallevel.Combo + 1
+	globallevel.Combo_timer = 32
