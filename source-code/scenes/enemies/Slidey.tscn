@@ -45,6 +45,7 @@ func _on_CHB_body_entered(body):
 
 func _on_Hitboxplayer_body_entered(body):
 	if globallevel.invstate <= 1:
+		globallevel.Combo_timer = globallevel.Combo_timer - 6
 		globallevel.score = globallevel.score - 50
 		globallevel.hp = globallevel.hp - 4
 		globallevel.invstate = 60
@@ -80,7 +81,7 @@ script = SubResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

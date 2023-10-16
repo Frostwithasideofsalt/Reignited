@@ -26,6 +26,7 @@ func _physics_process(delta):
 
 func _on_Hitboxplayer_body_entered(body):
 	if globallevel.invstate <= 1:
+		globallevel.Combo_timer = globallevel.Combo_timer - 6
 		globallevel.score = globallevel.score - 50
 		globallevel.hp = globallevel.hp - 6
 		globallevel.invstate = 60

@@ -159,7 +159,7 @@ func _physics_process(_delta):
 		modulate.a = 1
 	
 	if globallevel.Combo_timer >= 1:
-		globallevel.Combo_timer = globallevel.Combo_timer - 0.2
+		globallevel.Combo_timer = globallevel.Combo_timer - 0.15
 	else:
 		globallevel.Combo = 0
 		globallevel.Combo_timer = 0
