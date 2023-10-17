@@ -77,9 +77,9 @@ texture = ExtResource( 7 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 6.0
-margin_top = -178.0
+margin_top = -162.0
 margin_right = 92.0
-margin_bottom = 27.0
+margin_bottom = 43.0
 theme = ExtResource( 16 )
 custom_constants/separation = 8
 script = ExtResource( 3 )
@@ -108,13 +108,6 @@ margin_right = 86.0
 margin_bottom = 136.0
 text = "Quit"
 
-[node name="TEST" type="Button" parent="VBoxContainer"]
-margin_top = 144.0
-margin_right = 86.0
-margin_bottom = 172.0
-shortcut_in_tooltip = false
-text = "Test"
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = -292.0
 margin_top = 1.0
@@ -127,4 +120,3 @@ text = "v0.0.4"
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/info" to="VBoxContainer" method="_on_info_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer" method="_on_Quit_pressed"]
-[connection signal="pressed" from="VBoxContainer/TEST" to="VBoxContainer" method="_on_TEST_pressed"]

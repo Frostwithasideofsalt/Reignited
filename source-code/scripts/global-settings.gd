@@ -6,3 +6,6 @@ var SFPS = false
 
 #is game muted?
 var muted = false
+
+#show control hints?
+var control_hints = true

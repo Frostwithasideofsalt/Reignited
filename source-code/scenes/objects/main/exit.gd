@@ -4,7 +4,8 @@ var can_exit = false
 #will add a LOT more later lmao
 func _on_Area2D_body_entered(body):
 	can_exit = true
-	$placetext.text = " press up to exit"
+	if globalsetting.control_hints == true:
+		$placetext.text = " press up to exit"
 func _on_Area2D_body_exited(body):
 	can_exit = false
 	$placetext.text = ""

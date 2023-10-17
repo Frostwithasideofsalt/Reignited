@@ -29,29 +29,36 @@ script = ExtResource( 3 )
 
 [node name="Mute" type="Button" parent="Options"]
 margin_right = 423.0
-margin_bottom = 25.0
-text = "Mute audio (   )"
+margin_bottom = 28.0
+text = "Sounds"
 script = ExtResource( 2 )
 
 [node name="Fps" type="Button" parent="Options"]
-margin_top = 26.0
+margin_top = 29.0
 margin_right = 423.0
-margin_bottom = 51.0
+margin_bottom = 57.0
 text = "Display FPS (   )"
 
 [node name="fullscreen" type="Button" parent="Options"]
-margin_top = 52.0
+margin_top = 58.0
 margin_right = 423.0
-margin_bottom = 77.0
+margin_bottom = 86.0
 text = "Toggle fullscreen"
 
-[node name="Exit" type="Button" parent="Options"]
-margin_top = 78.0
+[node name="Controls" type="Button" parent="Options"]
+margin_top = 87.0
 margin_right = 423.0
-margin_bottom = 103.0
+margin_bottom = 115.0
+text = "Control reminders"
+
+[node name="Exit" type="Button" parent="Options"]
+margin_top = 116.0
+margin_right = 423.0
+margin_bottom = 144.0
 text = "Exit"
 
 [connection signal="pressed" from="Options/Mute" to="Options" method="_on_Mute_pressed"]
 [connection signal="pressed" from="Options/Fps" to="Options" method="_on_Fps_pressed"]
 [connection signal="pressed" from="Options/fullscreen" to="Options" method="_on_fullscreen_pressed"]
+[connection signal="pressed" from="Options/Controls" to="Options" method="_on_Controls_pressed"]
 [connection signal="pressed" from="Options/Exit" to="Options" method="_on_Exit_pressed"]
