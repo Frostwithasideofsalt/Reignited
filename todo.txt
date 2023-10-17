@@ -25,6 +25,8 @@ Imporant
 [x]- stage objects 
 [x]- add kill zones
 [x]- better way to handle multiple of the same object
+[x]-Dash
+[w]- level exit
 
 Unimportant but should still get added
 []-jump buffering 
@@ -33,4 +35,4 @@ Unimportant but should still get added
 Still im unsure about
 []-Squash and stretch 
 []-Slippery tiles
-[w]-Dash
+[]-more diverse moveset
