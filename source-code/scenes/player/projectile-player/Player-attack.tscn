@@ -20,16 +20,22 @@ var dir = 1
 var lyf = 30
 #the amount of momentum the player has when figing the projectile                                                    
 var pmom =0
-#TESt
+#the state of the attack
 var phs = 1
 
 func _ready():
-	vsp.x =((dir) * 120)+ pmom / 2
+	vsp.x =(((dir) * 120)+ pmom) / 2
 	if dir ==-1:
 		$AnimatedSprite.flip_h = true
+	if abs(vsp.x) < 120:
+		if not(vsp.x == 0):
+			 vsp.x = (abs(vsp.x) / (vsp.x))*120 
+		else: 
+			vsp.x = 120
 
 func _physics_process(delta):
 	lyf = lyf- 1
+			
 	move_and_slide(vsp,Vector2.UP)
 	match(phs):
 		1:

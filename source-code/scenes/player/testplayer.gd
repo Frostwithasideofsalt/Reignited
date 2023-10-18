@@ -106,7 +106,7 @@ func _physics_process(_delta):
 		#probably a way better way to this, but i don't have the patiance to do that right now.
 		if int($AnimatedSprite.flip_h) == 0:
 			a.dir = 1
-		if int($AnimatedSprite.flip_h) == 1:
+		else:
 			a.dir = -1
 		a.pmom = vsp.x 
 		get_parent().add_child(a)
