@@ -16,6 +16,11 @@ func _enter_tree():
 		$Fps.text = "Show FPS -on-"
 	else:
 		$Fps.text = "Show FPS -off-"
+		
+	if globalsetting.timer_show == true:
+		$timer.text = "Show timer -on-"
+	else:
+		$timer.text = "Show timer -off-"
 	
 	
 func _physics_process(delta):
@@ -55,3 +60,11 @@ func _on_Controls_pressed():
 		$Controls.text = "Control reminders -on-"
 	else:
 		$Controls.text = "Control reminders -off-"
+
+
+func _on_timer_pressed():
+	globalsetting.timer_show = not(globalsetting.timer_show)
+	if globalsetting.timer_show == true:
+		$timer.text = "Show timer -on-"
+	else:
+		$timer.text = "Show timer -off-"

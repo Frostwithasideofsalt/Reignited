@@ -9,3 +9,6 @@ var muted = false
 
 #show control hints?
 var control_hints = true
+
+#show timer?
+var timer_show = false

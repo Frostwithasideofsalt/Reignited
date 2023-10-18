@@ -19,9 +19,9 @@ texture = ExtResource( 5 )
 
 [node name="Options" type="VBoxContainer" parent="."]
 margin_left = 6.0
-margin_top = 64.0
+margin_top = 35.0
 margin_right = 429.0
-margin_bottom = 193.0
+margin_bottom = 208.0
 grow_horizontal = 2
 theme = ExtResource( 1 )
 custom_constants/separation = 1
@@ -51,14 +51,21 @@ margin_right = 423.0
 margin_bottom = 115.0
 text = "Control reminders"
 
-[node name="Exit" type="Button" parent="Options"]
+[node name="timer" type="Button" parent="Options"]
 margin_top = 116.0
 margin_right = 423.0
 margin_bottom = 144.0
+text = "Show timer -off-"
+
+[node name="Exit" type="Button" parent="Options"]
+margin_top = 145.0
+margin_right = 423.0
+margin_bottom = 173.0
 text = "Exit"
 
 [connection signal="pressed" from="Options/Mute" to="Options" method="_on_Mute_pressed"]
 [connection signal="pressed" from="Options/Fps" to="Options" method="_on_Fps_pressed"]
 [connection signal="pressed" from="Options/fullscreen" to="Options" method="_on_fullscreen_pressed"]
 [connection signal="pressed" from="Options/Controls" to="Options" method="_on_Controls_pressed"]
+[connection signal="pressed" from="Options/timer" to="Options" method="_on_timer_pressed"]
 [connection signal="pressed" from="Options/Exit" to="Options" method="_on_Exit_pressed"]

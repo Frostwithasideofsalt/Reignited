@@ -37,3 +37,5 @@ var Combo = 0
 
 #Combo timer i guess
 var Combo_timer = 0
+
+var timer = 0
