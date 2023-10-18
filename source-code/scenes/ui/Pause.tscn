@@ -11,7 +11,6 @@
 
 [node name="pause" type="Control" parent="."]
 pause_mode = 2
-visible = false
 margin_left = 299.0
 margin_top = 221.0
 margin_right = 339.0
@@ -30,9 +29,9 @@ texture = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="pause"]
 margin_left = -258.0
-margin_top = -111.0
+margin_top = -129.0
 margin_right = -141.0
-margin_bottom = -28.0
+margin_bottom = -5.0
 
 [node name="resume" type="Button" parent="pause/VBoxContainer"]
 margin_right = 117.0
@@ -48,18 +47,25 @@ margin_bottom = 60.0
 theme = ExtResource( 2 )
 text = "Retry"
 
-[node name="exit" type="Button" parent="pause/VBoxContainer"]
+[node name="Options" type="Button" parent="pause/VBoxContainer"]
 margin_top = 64.0
 margin_right = 117.0
 margin_bottom = 92.0
+theme = ExtResource( 2 )
+text = "options"
+
+[node name="exit" type="Button" parent="pause/VBoxContainer"]
+margin_top = 96.0
+margin_right = 117.0
+margin_bottom = 124.0
 theme = ExtResource( 2 )
 text = "Exit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="pause"]
 margin_left = -235.0
-margin_top = -196.0
+margin_top = -219.0
 margin_right = -114.0
-margin_bottom = -124.0
+margin_bottom = -147.0
 theme = ExtResource( 2 )
 text = "
 
@@ -68,4 +74,5 @@ text = "
 [connection signal="pressed" from="pause/VBoxContainer/resume" to="pause" method="_on_resume_pressed"]
 [connection signal="visibility_changed" from="pause/VBoxContainer/resume" to="pause/VBoxContainer/resume" method="_on_resume_visibility_changed"]
 [connection signal="pressed" from="pause/VBoxContainer/retry" to="pause" method="_on_retry_pressed"]
+[connection signal="visibility_changed" from="pause/VBoxContainer/Options" to="pause/VBoxContainer/Options" method="_on_resume_visibility_changed"]
 [connection signal="pressed" from="pause/VBoxContainer/exit" to="pause" method="_on_exit_pressed"]
