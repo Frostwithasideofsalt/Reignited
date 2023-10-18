@@ -20,15 +20,15 @@ script = ExtResource( 4 )
 
 [node name="Templabel" type="Label" parent="."]
 margin_left = 2.0
-margin_top = 214.0
+margin_top = 229.0
 margin_right = 62.0
-margin_bottom = 231.0
+margin_bottom = 246.0
 rect_pivot_offset = Vector2( 24, 9 )
 size_flags_stretch_ratio = 0.52
-custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "##"
+text = "fps:"
 
 [node name="Console" type="Label" parent="."]
 visible = false
@@ -41,7 +41,7 @@ size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "##"
+text = "j"
 
 [node name="Scount" type="Label" parent="."]
 margin_left = 37.0
@@ -53,7 +53,19 @@ size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "##"
+text = "j"
+
+[node name="Timer" type="Label" parent="."]
+margin_left = 4.0
+margin_top = 46.0
+margin_right = 64.0
+margin_bottom = 63.0
+rect_pivot_offset = Vector2( 71, -3 )
+size_flags_stretch_ratio = 0.52
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "00:00:00"
 
 [node name="Combo" type="Label" parent="."]
 margin_left = 328.0

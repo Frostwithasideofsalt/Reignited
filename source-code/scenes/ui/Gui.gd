@@ -1,11 +1,15 @@
 extends CanvasLayer
-
+var seconds = 0
+var minutes = 0
+var msec = 0
 func _process(delta):
+
+	
 	visible =  not globallevel.paused
 	$Bars1.scale = Vector2(globallevel.hp * -2 ,1)
 	$Bars2.scale = Vector2(globallevel.hcoin * -4 ,1)
 	
-	#test ui
+	#ui
 	$Scount.text = "Score: " + String(globallevel.score)
 	if globallevel.Combo == 0:
 		$Combo.text = "Combo:"
@@ -17,3 +21,12 @@ func _process(delta):
 		$Templabel.text = "fps: " + String(Engine.get_frames_per_second())
 	else:
 		$Templabel.text = ""
+	#timer 
+	if globalsetting.timer_show == true:
+		globallevel.timer += delta
+		seconds = int(fmod(globallevel.timer, 60))
+		minutes = int(fmod(globallevel.timer, 3600)/60)
+		msec = fmod(globallevel.timer,1)*1000
+		$Timer.text =  "time: " + str(minutes) + ":" + "%02d" % seconds + ":" + "%03d" % msec
+	else:
+		$Timer.text = ""
