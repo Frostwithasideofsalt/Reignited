@@ -29,7 +29,7 @@ func _ready():
 		$AnimatedSprite.flip_h = true
 	if abs(vsp.x) < 120:
 		if not(vsp.x == 0):
-			 vsp.x = (abs(vsp.x) * dir)
+			 vsp.x = (abs(vsp.x) * 2) * dir
 		else: 
 			vsp.x = 120
 
