@@ -1,0 +1,67 @@
+[gd_resource type="Theme" load_steps=11 format=2]
+
+[ext_resource path="res://fonts/title.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/lightpurple.tres" type="StyleBox" id=2]
+[ext_resource path="res://fonts/pressed-purple.tres" type="StyleBox" id=3]
+[ext_resource path="res://fonts/purplebox.tres" type="StyleBox" id=4]
+[ext_resource path="res://gfx/gui/dev/veiw.png" type="Texture" id=5]
+[ext_resource path="res://gfx/gui/dev/file.png" type="Texture" id=6]
+[ext_resource path="res://gfx/gui/dev/parent.png" type="Texture" id=7]
+[ext_resource path="res://gfx/gui/dev/reload.png" type="Texture" id=8]
+[ext_resource path="res://gfx/gui/dev/folder.png" type="Texture" id=9]
+[ext_resource path="res://fonts/textonly.tres" type="StyleBox" id=10]
+
+[resource]
+default_font = ExtResource( 1 )
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.328125, 0.133301, 0.174316, 1 )
+Button/colors/font_color_focus = Color( 0.745098, 1, 0.372549, 1 )
+Button/colors/font_color_hover = Color( 0.435294, 0.992157, 0.12549, 1 )
+Button/colors/font_color_pressed = Color( 0.117647, 0.568627, 0.32549, 1 )
+Button/styles/disabled = ExtResource( 10 )
+Button/styles/focus = ExtResource( 10 )
+Button/styles/hover = ExtResource( 10 )
+Button/styles/normal = ExtResource( 10 )
+Button/styles/pressed = ExtResource( 10 )
+CheckButton/icons/off = null
+CheckButton/styles/disabled = null
+FileDialog/colors/file_icon_modulate = Color( 1, 1, 1, 1 )
+FileDialog/colors/files_disabled = Color( 1, 1, 1, 0.25 )
+FileDialog/colors/folder_icon_modulate = Color( 1, 1, 1, 1 )
+FileDialog/icons/file = ExtResource( 6 )
+FileDialog/icons/folder = ExtResource( 9 )
+FileDialog/icons/parent_folder = ExtResource( 7 )
+FileDialog/icons/reload = ExtResource( 8 )
+FileDialog/icons/toggle_hidden = ExtResource( 5 )
+HSlider/styles/grabber_area = null
+MenuButton/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+MenuButton/colors/font_color_disabled = Color( 1, 1, 1, 0.3 )
+MenuButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+MenuButton/constants/hseparation = 3
+MenuButton/styles/disabled = ExtResource( 3 )
+MenuButton/styles/focus = ExtResource( 4 )
+MenuButton/styles/hover = ExtResource( 2 )
+MenuButton/styles/normal = ExtResource( 4 )
+MenuButton/styles/pressed = ExtResource( 3 )
+PopupDialog/styles/panel = ExtResource( 4 )
+Tabs/colors/font_color_bg = Color( 0.69, 0.69, 0.69, 1 )
+Tabs/colors/font_color_disabled = Color( 0.32549, 0.129412, 0.172549, 1 )
+Tabs/colors/font_color_fg = Color( 0.890196, 1, 0.815686, 1 )
+Tabs/constants/hseparation = 4
+Tabs/constants/label_valign_bg = 2
+Tabs/constants/label_valign_fg = 0
+Tabs/constants/top_margin = 24
+Tabs/icons/close = null
+Tabs/icons/decrement = null
+Tabs/icons/decrement_highlight = null
+Tabs/icons/increment = null
+Tabs/icons/increment_highlight = null
+Tabs/styles/button = ExtResource( 4 )
+Tabs/styles/button_pressed = ExtResource( 3 )
+Tabs/styles/tab_bg = ExtResource( 4 )
+Tabs/styles/tab_disabled = ExtResource( 3 )
+Tabs/styles/tab_fg = ExtResource( 4 )
+VBoxContainer/constants/separation = 20
+VBoxContainer/styles/flatstylebox = ExtResource( 4 )

@@ -19,15 +19,16 @@ texture = ExtResource( 5 )
 
 [node name="controls" type="RichTextLabel" parent="."]
 margin_left = 6.0
-margin_top = 70.0
+margin_top = 38.0
 margin_right = 304.0
-margin_bottom = 275.0
+margin_bottom = 243.0
 theme = ExtResource( 1 )
-text = "Controls:
-z - Jump
-x - Attack
-Shift - Dash
-Arrows keys - Move
+text = " 
+ Controls:
+ z - Jump
+ x - Attack
+ Shift - Dash
+ Arrows keys - Move
 "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -46,11 +47,12 @@ script = ExtResource( 2 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 5.0
-margin_top = 8.0
+margin_top = -13.0
 margin_right = 266.0
-margin_bottom = 70.0
+margin_bottom = 60.0
 theme = ExtResource( 1 )
-text = "Game developed by FrostC
-Music made by rodirod"
+text = " 
+ Game developed by FrostC
+ Music made by rodirod"
 
 [connection signal="pressed" from="HBoxContainer/Quit" to="HBoxContainer" method="_on_Quit_pressed"]
