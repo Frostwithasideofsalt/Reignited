@@ -43,11 +43,24 @@ func _on_resume_pressed():
 func _on_Options_pressed():
 	$Optionspause.visible  = true
 	$Main.visible = false
-	#screen = 1
-	#match (screen):
-	#	0: 
-	#		$Optionspause.visible  = false
-	#		$Main.visible = true
-	#	1: 
-	#		$Optionspause.visible  = true
-	#		$Main.visible = false
+	
+	if globalsetting.muted == true:
+		$Optionspause/Mute.text = "Sounds -off-"
+	else:
+		$Optionspause/Mute.text = "Sounds -on-"
+		
+	if globalsetting.control_hints == true:
+		$Optionspause/Controls.text = "Control reminders -on-"
+	else:
+		$Optionspause/Controls.text = "Control reminders -off-"
+	
+	if globalsetting.SFPS == true:
+		$Optionspause/Fps.text = "Show FPS -on-"
+	else:
+		$Optionspause/Fps.text = "Show FPS -off-"
+		
+	if globalsetting.timer_show == true:
+		$Optionspause/timer.text = "Show timer -on-"
+	else:
+		$Optionspause/timer.text = "Show timer -off-"
+	
