@@ -22,8 +22,9 @@ func _process(delta):
 	else:
 		$Templabel.text = ""
 	#timer 
-	if globalsetting.timer_show == true:
+	if visible == true:
 		globallevel.timer += delta
+	if globalsetting.timer_show == true:
 		seconds = int(fmod(globallevel.timer, 60))
 		minutes = int(fmod(globallevel.timer, 3600)/60)
 		msec = fmod(globallevel.timer,1)*1000

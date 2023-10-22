@@ -12,4 +12,4 @@ func _on_Area2D_body_exited(body):
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("ui_up") and can_exit == true:
-		get_tree().change_scene("res://scenes/Main.tscn")
+		get_tree().change_scene("res://scenes/ui/End-screen.tscn")
