@@ -18,7 +18,7 @@ func _ready():
 		$rank.text = "rank: C"
 		if globallevel.score >= 750:
 			$rank.text = "rank: B"
-			if globallevel.score >= 1450:
+			if globallevel.score >= 1350:
 				$rank.text = "rank: A"
 				if globallevel.score >= 2150:
 					$rank.text = "rank: S"
