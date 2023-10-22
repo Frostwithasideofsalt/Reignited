@@ -118,6 +118,7 @@ text = "Back"
 [connection signal="pressed" from="pause/Main/Options" to="pause" method="_on_Options_pressed"]
 [connection signal="visibility_changed" from="pause/Main/Options" to="pause/Main/Options" method="_on_resume_visibility_changed"]
 [connection signal="pressed" from="pause/Main/exit" to="pause" method="_on_exit_pressed"]
+[connection signal="pressed" from="pause/Optionspause/Mute" to="pause" method="_on_Mute_pressed"]
 [connection signal="visibility_changed" from="pause/Optionspause/Mute" to="pause/Optionspause/Mute" method="_on_Mute_visibility_changed"]
 [connection signal="pressed" from="pause/Optionspause/Fps" to="pause" method="_on_Fps_pressed"]
 [connection signal="pressed" from="pause/Optionspause/fullscreen" to="pause" method="_on_fullscreen_pressed"]
