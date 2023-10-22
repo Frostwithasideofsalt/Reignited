@@ -10,6 +10,7 @@ func _input(event):
 		globallevel.paused = not get_tree().paused
 		get_tree().paused = globallevel.paused
 		visible =  globallevel.paused
+		$Main/resume.grab_focus()
 		if !globallevel.paused:
 			$on.play()
 		else:
@@ -64,6 +65,8 @@ func _on_Options_pressed():
 	else:
 		$Optionspause/timer.text = "Show timer -off-"
 	
+	$Optionspause/Mute.grab_focus()
+	
 
 
 
@@ -109,3 +112,9 @@ func _on_timer_pressed():
 func _on_Back_pressed():
 	$Optionspause.visible  = false
 	$Main.visible = true
+	$Main/resume.grab_focus()
+
+
+
+
+
