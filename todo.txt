@@ -13,7 +13,13 @@ demo 4/pre-release (0.4.x)
 Release (1.x.x)
 
 x = complete, w = work in progress
+
 Imporant
+
+[] - have combo meter hide when no combo 
+[w]- level exit
+[] - WALKING ANIMATION!!!!
+
 [x]- add falling speed cap
 [x]- add enemies
 [x]- add collectables
@@ -26,7 +32,8 @@ Imporant
 [x]- add kill zones
 [x]- better way to handle multiple of the same object
 [x]-Dash
-[w]- level exit
+
+
 
 Unimportant but should still get added
 []-jump buffering 
