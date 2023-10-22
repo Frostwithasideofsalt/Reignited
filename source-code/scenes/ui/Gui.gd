@@ -12,10 +12,13 @@ func _process(delta):
 	#ui
 	$Scount.text = "Score: " + String(globallevel.score)
 	if globallevel.Combo == 0:
-		$Combo.text = "Combo:"
+		#$combometer/Combo.text = "Combo:"
+		$combometer.position.y = $combometer.position.y + ((-200 - $combometer.position.y) / 128 )
 	else:
-		$Combo.text = "Combo: x" + String(globallevel.Combo)
-	$Bars3.scale = Vector2(globallevel.Combo_timer * -2 ,1)
+		$combometer/Combo.text = "Combo: x" + String(globallevel.Combo)
+		$combometer.position.y = $combometer.position.y + ((0 - $combometer.position.y) / 128 )
+	$combometer/Bars3.scale = Vector2(globallevel.Combo_timer * -2 ,1)
+	
 	
 	if globalsetting.SFPS == true:
 		$Templabel.text = "fps: " + String(Engine.get_frames_per_second())
