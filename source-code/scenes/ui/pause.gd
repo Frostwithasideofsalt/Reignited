@@ -64,3 +64,48 @@ func _on_Options_pressed():
 	else:
 		$Optionspause/timer.text = "Show timer -off-"
 	
+
+
+
+func _on_Mute_pressed():
+	if globalsetting.muted == true:
+		$Optionspause/Mute.text = "Sounds -on-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), false)
+		globalsetting.muted = false
+	else:
+		$Optionspause/Mute.text = "Sounds -off-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true)
+		globalsetting.muted = true
+
+
+func _on_Fps_pressed():
+	globalsetting.SFPS = not(globalsetting.SFPS)
+	if globalsetting.SFPS == true:
+		$Optionspause/Fps.text = "Show FPS -on-"
+	else:
+		$Optionspause/Fps.text = "Show FPS -off-"
+
+
+func _on_fullscreen_pressed():
+	 OS.window_fullscreen = !OS.window_fullscreen
+
+
+func _on_Controls_pressed():
+	globalsetting.control_hints = not(globalsetting.control_hints)
+	if globalsetting.control_hints == true:
+		$Optionspause/Controls.text = "Control reminders -on-"
+	else:
+		$Optionspause/Controls.text = "Control reminders -off-"
+
+
+func _on_timer_pressed():
+	globalsetting.timer_show = not(globalsetting.timer_show)
+	if globalsetting.timer_show == true:
+		$Optionspause/timer.text = "Show timer -on-"
+	else:
+		$Optionspause/timer.text = "Show timer -off-"
+
+
+func _on_Back_pressed():
+	$Optionspause.visible  = false
+	$Main.visible = true
