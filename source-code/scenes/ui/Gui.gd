@@ -2,7 +2,8 @@ extends CanvasLayer
 var seconds = 0
 var minutes = 0
 var msec = 0
-func _process(delta):
+
+func _physics_process(delta):
 
 	
 	visible =  not globallevel.paused
@@ -13,10 +14,10 @@ func _process(delta):
 	$Scount.text = "Score: " + String(globallevel.score)
 	if globallevel.Combo == 0:
 		#$combometer/Combo.text = "Combo:"
-		$combometer.position.y = $combometer.position.y + ((-200 - $combometer.position.y) / 128 )
+		$combometer.position.y = $combometer.position.y + ((-200 - $combometer.position.y) / 64 )
 	else:
 		$combometer/Combo.text = "Combo: x" + String(globallevel.Combo)
-		$combometer.position.y = $combometer.position.y + ((0 - $combometer.position.y) / 128 )
+		$combometer.position.y = $combometer.position.y + ((0 - $combometer.position.y) / 16 )
 	$combometer/Bars3.scale = Vector2(globallevel.Combo_timer * -2 ,1)
 	
 	
