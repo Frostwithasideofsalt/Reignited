@@ -27,15 +27,16 @@ func _ready():
 	vsp.x =(((dir) * 120)+ pmom) / 2
 	if dir ==-1:
 		$AnimatedSprite.flip_h = true
-	if abs(vsp.x) < 120:
-		if not(vsp.x == 0):
-			 vsp.x = (abs(vsp.x) * 2) * dir
-		else: 
-			vsp.x = 120
+	
 
 func _physics_process(delta):
 	lyf = lyf- 1
-			
+	#janky ass mf 
+	#$Label.text = str(vsp.x)
+	if abs(vsp.x) < 120:
+		if not(vsp.x == 0):
+			 vsp.x = 120 * dir
+
 	move_and_slide(vsp,Vector2.UP)
 	match(phs):
 		1:

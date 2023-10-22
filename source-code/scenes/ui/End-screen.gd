@@ -13,11 +13,17 @@ func _ready():
 
 	$point.text = " score: " + str(globallevel.score)
 	$time.text = " time: " + "%02d" % minutes + ":" + "%02d" % seconds + ":" + "%03d" % msec
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+	
+	if globallevel.score >= 200:
+		$rank.text = "rank: C"
+		if globallevel.score >= 750:
+			$rank.text = "rank: B"
+			if globallevel.score >= 1450:
+				$rank.text = "rank: A"
+				if globallevel.score >= 2150:
+					$rank.text = "rank: S"
+	else: 
+		$rank.text = "rank: D"
 
 func _on_retry_pressed():
 	get_tree().change_scene("res://scenes/levels/Test/forest-challenge.tscn")
