@@ -39,8 +39,8 @@ theme = ExtResource( 1 )
 script = ExtResource( 3 )
 
 [node name="Quit" type="Button" parent="HBoxContainer"]
-margin_right = 51.0
-margin_bottom = 25.0
+margin_right = 42.0
+margin_bottom = 28.0
 text = "Exit"
 script = ExtResource( 2 )
 
