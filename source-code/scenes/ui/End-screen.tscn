@@ -37,6 +37,16 @@ margin_bottom = 146.0
 theme = ExtResource( 2 )
 text = "points"
 
+[node name="point2" type="Label" parent="."]
+margin_left = 76.0
+margin_top = 3.0
+margin_right = 522.0
+margin_bottom = 46.0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0.211765, 0, 1, 1 )
+text = "(this is a placeholder
+ that will be changed in 0.1.0!!"
+
 [node name="time" type="Label" parent="."]
 margin_left = 130.0
 margin_top = 95.0
