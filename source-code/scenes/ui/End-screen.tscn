@@ -38,6 +38,7 @@ theme = ExtResource( 2 )
 text = "points"
 
 [node name="point2" type="Label" parent="."]
+visible = false
 margin_left = 76.0
 margin_top = 3.0
 margin_right = 522.0
