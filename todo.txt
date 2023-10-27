@@ -19,6 +19,7 @@ Imporant
 [] - have combo meter hide when no combo 
 [w]- level exit
 [] - WALKING ANIMATION!!!!
+[] - have it so score cant be in the negitives 
 
 [x]- add falling speed cap
 [x]- add enemies
