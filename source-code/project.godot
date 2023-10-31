@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FLRI"
+config/name="Flame's land re-ignited"
 run/main_scene="res://scenes/Main.tscn"
 boot_splash/show_image=false
 config/icon="res://icon.png"
