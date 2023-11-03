@@ -1,27 +1,20 @@
 extends KinematicBody2D
-# this is the test character 
-var vsp = Vector2(0,0)
-#vsp normally means vertial speed but i am dumb and it's just used for velocity 
-var hkp = 0
-#The name of this variable stands for "Horizonal key press" which doesn't make much sense but it works for me. Also use this variable instead of checking if either the left or right key is pressed
+
+var velocity = Vector2(0,0)
+var h_hey_press = 0
 var friction = 0.8
-#lower the number the more friction there is.
-var Jdr = 16
-#this stands for jump duration. used to do stuff relating to variable jump height.
+var jump_duration = 16
 var Jmp = 0
-#this variable is 1 when the player is falling
-var Kyt = 0
-#this variable handles kiyote timestop_on_slope 
-var rns = 0
-#this variable is used for the characters Hspeed. Not using vsp for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
-var candash = 65
-#candash above 64, means player can dash
-var dshtime = 0
-#dshtime shows how much longer a player has during the dash move
-var dshdir = 0
-#dshdir shows direction player moves while dashing
-var jmpbf = 1
-#jumpbuffer related stuff. currently unused as i couldn't get it working.
+var Koyote_time = 0
+
+var horizontal_speed = 0
+#this variable is used for the characters Hspeed. Not using velocity for this so slopes aren't an isssue. Threre is probably a way to do this without needing an extra variable, but i don't know it. 
+var can_dash = 65
+#can_dash above 64, means player can dash
+var dash_time = 0
+#dash_time shows how much longer a player has during the dash move
+var dash_direction = 0
+#dash_direction shows direction player moves while dashing
 
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
@@ -33,67 +26,67 @@ func _ready():
 
 func _physics_process(_delta):
 	#key press stuff
-	hkp = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
+	h_hey_press = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	#Left and right movment
-	if hkp == 1 and rns < 160 :
-		rns = rns +(80 - (80 * friction))
+	if h_hey_press == 1 and horizontal_speed < 160 :
+		horizontal_speed = horizontal_speed +(80 - (80 * friction))
 		$AnimatedSprite.flip_h = false
-	elif hkp == -1 and rns > -160:
-		rns = rns -(80 - (80 * friction))
+	elif h_hey_press == -1 and horizontal_speed > -160:
+		horizontal_speed = horizontal_speed -(80 - (80 * friction))
 		$AnimatedSprite.flip_h = true
-	elif hkp == 0 and dshtime <= 0 :
-		rns = rns *(friction) 
-	vsp.x = rns
+	elif h_hey_press == 0 and dash_time <= 0 :
+		horizontal_speed = horizontal_speed *(friction) 
+	velocity.x = horizontal_speed
 	
 	
 	#Jumping
 	
 	if !Input.is_action_pressed("Jump"):
-		if  Kyt >= 1:
-			Jdr = 12
+		if  Koyote_time >= 1:
+			jump_duration = 12
 		else: 
-			Jdr = 0
+			jump_duration = 0
 		
-	if Input.is_action_pressed("Jump") and Jdr >= 1:
+	if Input.is_action_pressed("Jump") and jump_duration >= 1:
 		Jmp = 1
-		vsp.y = -260
-		Jdr = Jdr - 1
-		Kyt = 0
+		velocity.y = -260
+		jump_duration = jump_duration - 1
+		Koyote_time = 0
 		
 	#animations weeee
 	#when the programming is extremely questionable! :tuxflush:
-	if  dshtime >= 0:
+	if  dash_time >= 0:
 		$AnimatedSprite.play("dash")
 	else:
 		if Jmp == 0 :
-			if hkp == 0 :
+			if h_hey_press == 0 :
 				$AnimatedSprite.play("idle")
 				
 			else: 
 				$AnimatedSprite.play("walk")
 		else:
-			if int(round(vsp.y)) >= 0 :
+			if int(round(velocity.y)) >= 0 :
 				$AnimatedSprite.play("jump-fall")
 			else:
 				$AnimatedSprite.play("jump-rise")
 		
-		Kyt = Kyt - 1
+		Koyote_time = Koyote_time - 1
 		
 	#physics
 	if !is_on_floor():
-		if vsp.y <= 384:
-			vsp.y = vsp.y + 16
-		Kyt = Kyt - 1
+		if velocity.y <= 384:
+			velocity.y = velocity.y + 16
+		Koyote_time = Koyote_time - 1
 		if is_on_ceiling():
-			vsp.y = 16
-			Jdr = 0
+			velocity.y = 16
+			jump_duration = 0
 	else:
-		if (rns >= 161 or rns <= -161) and dshtime <= 0:
-			rns = rns * 0.96
+		if (horizontal_speed >= 161 or horizontal_speed <= -161) and dash_time <= 0:
+			horizontal_speed = horizontal_speed * 0.96
 		Jmp = 0
-		Kyt = 8
+		Koyote_time = 8
 
-	vsp = move_and_slide(vsp, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP)
 	
 	#Attack
 		
@@ -108,34 +101,34 @@ func _physics_process(_delta):
 			a.dir = 1
 		else:
 			a.dir = -1
-		a.pmom = vsp.x 
+		a.pmom = velocity.x 
 		get_parent().add_child(a)
 		a.position = position
 	
 	#Dash
 	
-	candash = candash + 1
+	can_dash = can_dash + 1
 	
-	if candash <= 64 and !dshtime >= 0:
+	if can_dash <= 64 and !dash_time >= 0:
 		modulate = Color(0.7,0.6,0.5)
 	else:
 		modulate = Color(1,1,1)
 	
 	
-	if Input.is_action_pressed("action-2") and candash >= 63:
-		dshtime = 16
-		candash = 0
+	if Input.is_action_pressed("action-2") and can_dash >= 63:
+		dash_time = 16
+		can_dash = 0
 		if $AnimatedSprite.flip_h == true:
-			dshdir = -1
+			dash_direction = -1
 		else:
-			dshdir = 1
+			dash_direction = 1
 				
-	if dshtime >= 0:
-		rns = 320 *dshdir
-		vsp.y = 0
-		dshtime = dshtime - 1 
+	if dash_time >= 0:
+		horizontal_speed = 320 *dash_direction
+		velocity.y = 0
+		dash_time = dash_time - 1 
 		if is_on_wall() or Input.is_action_pressed("Jump"):
-			dshtime = -1
+			dash_time = -1
 	#Coins
 	
 	if globallevel.hcoin >= 12 and globallevel.hp <= 23:
@@ -168,7 +161,7 @@ func _physics_process(_delta):
 	$test.text = String(globallevel.swn)
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
-	globallevel.camseek.y = (vsp.y / 256)
-	globallevel.camseek.x = (vsp.x / 256)
+	globallevel.camseek.y = (velocity.y / 256)
+	globallevel.camseek.x = (velocity.x / 256)
 	if Input.is_action_pressed("ui_focus_next"):
 		globalfunc.reset_level()
