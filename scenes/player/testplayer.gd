@@ -4,7 +4,7 @@ var velocity = Vector2(0,0)
 var h_hey_press = 0
 var friction = 0.8
 var jump_duration = 16
-var Jmp = 0
+var can_jump = false
 var Koyote_time = 0
 
 var horizontal_speed = 0
@@ -48,7 +48,7 @@ func _physics_process(_delta):
 			jump_duration = 0
 		
 	if Input.is_action_pressed("Jump") and jump_duration >= 1:
-		Jmp = 1
+		can_jump = true
 		velocity.y = -260
 		jump_duration = jump_duration - 1
 		Koyote_time = 0
@@ -58,7 +58,7 @@ func _physics_process(_delta):
 	if  dash_time >= 0:
 		$AnimatedSprite.play("dash")
 	else:
-		if Jmp == 0 :
+		if can_jump == false :
 			if h_hey_press == 0 :
 				$AnimatedSprite.play("idle")
 				
@@ -69,7 +69,6 @@ func _physics_process(_delta):
 				$AnimatedSprite.play("jump-fall")
 			else:
 				$AnimatedSprite.play("jump-rise")
-		
 		Koyote_time = Koyote_time - 1
 		
 	#physics
@@ -83,7 +82,7 @@ func _physics_process(_delta):
 	else:
 		if (horizontal_speed >= 161 or horizontal_speed <= -161) and dash_time <= 0:
 			horizontal_speed = horizontal_speed * 0.96
-		Jmp = 0
+		can_jump = false
 		Koyote_time = 8
 
 	velocity = move_and_slide(velocity, Vector2.UP)
