@@ -93,7 +93,7 @@ func _physics_process(_delta):
 		
 	#physics
 	if !is_on_floor():
-		if velocity.y <= 384:
+		if velocity.y <= 384 and dash_time < 0:
 			velocity.y += 16 * move_physics_mult
 		Koyote_time = Koyote_time - 1
 		if is_on_ceiling():
@@ -145,7 +145,7 @@ func _physics_process(_delta):
 	if dash_time >= 0:
 		horizontal_speed = 320 *dash_direction
 		velocity.y = 0
-		dash_time = dash_time - 1 
+		dash_time = dash_time - move_physics_mult 
 		if is_on_wall() or Input.is_action_pressed("Jump"):
 			dash_time = -1
 			jump_buffer = 0
