@@ -15,6 +15,8 @@ var dash_time = 0
 #dash_time shows how much longer a player has during the dash move
 var dash_direction = 0
 #dash_direction shows direction player moves while dashing
+var jump_buffer = 0
+#attempt three
 
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
@@ -23,6 +25,7 @@ const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
 #This should be refactored at some point
 func _ready():
 	globallevel.cammod = 0
+
 
 func _physics_process(_delta):
 	#key press stuff
@@ -41,15 +44,20 @@ func _physics_process(_delta):
 	
 	#Jumping
 	
-	if !Input.is_action_pressed("Jump"):
+	if Input.is_action_just_pressed("Jump"):
+		jump_buffer = 12
+
+	
+	if !Input.is_action_pressed("Jump") or ( (jump_buffer > 0) and is_on_floor() ):
 		if  Koyote_time >= 1:
 			jump_duration = 12
 		else: 
 			jump_duration = 0
 		
-	if Input.is_action_pressed("Jump") and jump_duration >= 1:
+	if (Input.is_action_pressed("Jump") or jump_buffer > 0) and jump_duration >= 1:
 		can_jump = true
 		velocity.y = -260
+		jump_buffer = 0
 		jump_duration = jump_duration - 1
 		Koyote_time = 0
 		
@@ -128,6 +136,8 @@ func _physics_process(_delta):
 		dash_time = dash_time - 1 
 		if is_on_wall() or Input.is_action_pressed("Jump"):
 			dash_time = -1
+			jump_buffer = 0
+			velocity.y = -280
 	#Coins
 	
 	if globallevel.hcoin >= 12 and globallevel.hp <= 23:
@@ -157,7 +167,8 @@ func _physics_process(_delta):
 		globallevel.Combo_timer = 0
 	
 	#TEMP
-	$test.text = String(globallevel.swn)
+	jump_buffer = jump_buffer - 1
+	$test.text = String(jump_buffer)
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)

@@ -72,6 +72,6 @@ margin_right = 44.0
 margin_bottom = -18.0
 rect_pivot_offset = Vector2( 10, 4 )
 custom_fonts/font = SubResource( 3 )
-text = "##"
+text = "j"
 
 [node name="camera" parent="." instance=ExtResource( 3 )]
