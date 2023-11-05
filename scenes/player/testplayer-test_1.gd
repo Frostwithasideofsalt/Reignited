@@ -1,10 +1,15 @@
 extends KinematicBody2D
 
+###experemental alternate player code! doesn't work too well...
+###credits to tulip for rewriting the jump, this code might be used in a later version
+
+
 var velocity = Vector2(0,0)
 var h_hey_press = 0
 var friction = 0.8
 var jump_duration = 16
-var can_jump = false
+var jump_anim_state = false
+var can_jump = true
 var Koyote_time = 0
 
 var horizontal_speed = 0
@@ -18,7 +23,6 @@ var dash_direction = 0
 var jump_buffer = 0
 #attempt three
 var move_physics_mult = 0
-
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
@@ -54,22 +58,16 @@ func _physics_process(_delta):
 	
 	#Jumping
 	
-	
-	if Input.is_action_just_pressed("Jump"):
-		jump_buffer = 12
 
-	
-	if !Input.is_action_pressed("Jump") or ( (jump_buffer > 0) and is_on_floor() ):
-		if  Koyote_time >= 1:
-			jump_duration = 12
-		else: 
-			jump_duration = 0
-		
-	if (Input.is_action_pressed("Jump") or jump_buffer > 0) and jump_duration >= 1:
+	if Input.is_action_just_pressed("Jump"):
 		can_jump = true
-		velocity.y = -260
+		jump_buffer = 12
+		
+	if can_jump == true and ((Input.is_action_pressed("Jump") or jump_buffer > 12) and (is_on_floor() or Koyote_time > 0)):
+		can_jump = false
+		jump_anim_state = true
+		velocity.y = -360
 		jump_buffer = 0
-		jump_duration = jump_duration - move_physics_mult
 		Koyote_time = 0
 	
 	
@@ -78,7 +76,7 @@ func _physics_process(_delta):
 	if  dash_time >= 0:
 		$AnimatedSprite.play("dash")
 	else:
-		if can_jump == false :
+		if jump_anim_state == false :
 			if h_hey_press == 0 :
 				$AnimatedSprite.play("idle")
 				
@@ -89,9 +87,10 @@ func _physics_process(_delta):
 				$AnimatedSprite.play("jump-fall")
 			else:
 				$AnimatedSprite.play("jump-rise")
-		Koyote_time = Koyote_time - 1
+		Koyote_time = Koyote_time - move_physics_mult
 		
 	#physics
+	
 	if !is_on_floor():
 		if velocity.y <= 384:
 			velocity.y += 16 * move_physics_mult
@@ -102,9 +101,15 @@ func _physics_process(_delta):
 	else:
 		if (horizontal_speed >= 161 or horizontal_speed <= -161) and dash_time <= 0:
 			horizontal_speed = horizontal_speed * 0.96
-		can_jump = false
+		jump_anim_state = false
 		Koyote_time = 8
-
+	
+	if Input.is_action_just_released("Jump") and velocity.y < 0:
+		jump_duration = 0
+		velocity.y *= 0.3
+	
+	
+	
 	velocity = move_and_slide(velocity, Vector2.UP)
 	
 	#Attack
@@ -126,7 +131,7 @@ func _physics_process(_delta):
 	
 	#Dash
 	
-	can_dash = can_dash + move_physics_mult
+	can_dash = can_dash + 1
 	
 	if can_dash <= 64 and !dash_time >= 0:
 		modulate = Color(0.7,0.6,0.5)
@@ -179,8 +184,8 @@ func _physics_process(_delta):
 		globallevel.Combo_timer = 0
 	
 	#TEMP
-	jump_buffer = jump_buffer - move_physics_mult
-	#$test.text = String(jump_duration) + "- " + String(move_physics_mult)
+	jump_buffer = jump_buffer -(move_physics_mult)
+	$test.text = String(jump_buffer) + "- " + String(move_physics_mult)
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)

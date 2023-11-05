@@ -29,11 +29,11 @@ func _ready():
 		$AnimatedSprite.flip_h = true
 	
 
-func _physics_process(delta):
-	lyf = lyf- 1
+func _physics_process(_delta):
+	lyf = lyf- _delta * 60
 	#janky ass mf 
-	#$Label.text = str(vsp.x)
-	if abs(vsp.x) < 120:
+	#$Label.text = str(vsp.x) + \" - \" +str(phs)
+	if abs(vsp.x) < 120 and lyf > 5:
 		if not(vsp.x == 0):
 			 vsp.x = 120 * dir
 
@@ -41,18 +41,15 @@ func _physics_process(delta):
 	match(phs):
 		1:
 			move_and_slide(vsp,Vector2.UP)
-			if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 0: 
-					lyf = 36
+			if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 0:
+					$AnimatedSprite.play(\"Explosion\")
+					$AnimatedSprite.set_frame(0)
+					vsp.x = 0
 					phs = 2
+					lyf = 36
 		2:
-			
 			if lyf <= 0:
 				queue_free()
-			elif lyf >= 34:
-				$AnimatedSprite.play(\"Explosion\")
-				$AnimatedSprite.set_frame(0)
-				vsp.x = 0
-
 	
 	
 "

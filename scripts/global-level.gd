@@ -8,7 +8,7 @@ var hp = 24
 var hcoin = 6
 
 #Energy amount
-var nrg = 0
+var nrg = 48
 
 #Dash energy
 #var dsh = 0
