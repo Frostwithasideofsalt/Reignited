@@ -17,7 +17,7 @@ var dash_direction = 0
 #dash_direction shows direction player moves while dashing
 var jump_buffer = 0
 #attempt three
-
+var move_physics_mult = 0
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
@@ -28,22 +28,32 @@ func _ready():
 
 
 func _physics_process(_delta):
+	
+	move_physics_mult = _delta * 60
+	
 	#key press stuff
 	h_hey_press = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	#Left and right movment
 	if h_hey_press == 1 and horizontal_speed < 160 :
-		horizontal_speed = horizontal_speed +(80 - (80 * friction))
+		
+		horizontal_speed += (80 - (80 * friction)) * move_physics_mult
 		$AnimatedSprite.flip_h = false
+		
 	elif h_hey_press == -1 and horizontal_speed > -160:
-		horizontal_speed = horizontal_speed -(80 - (80 * friction))
+		
+		horizontal_speed += -(80 - (80 * friction)) * move_physics_mult
 		$AnimatedSprite.flip_h = true
+		
 	elif h_hey_press == 0 and dash_time <= 0 :
+		
 		horizontal_speed = horizontal_speed *(friction) 
+		
 	velocity.x = horizontal_speed
 	
 	
 	#Jumping
 	
+	""""
 	if Input.is_action_just_pressed("Jump"):
 		jump_buffer = 12
 
@@ -60,7 +70,8 @@ func _physics_process(_delta):
 		jump_buffer = 0
 		jump_duration = jump_duration - 1
 		Koyote_time = 0
-		
+	"""
+	
 	#animations weeee
 	#when the programming is extremely questionable! :tuxflush:
 	if  dash_time >= 0:
@@ -82,7 +93,7 @@ func _physics_process(_delta):
 	#physics
 	if !is_on_floor():
 		if velocity.y <= 384:
-			velocity.y = velocity.y + 16
+			velocity.y += 16 * move_physics_mult
 		Koyote_time = Koyote_time - 1
 		if is_on_ceiling():
 			velocity.y = 16
@@ -168,7 +179,7 @@ func _physics_process(_delta):
 	
 	#TEMP
 	jump_buffer = jump_buffer - 1
-	$test.text = String(jump_buffer)
+	$test.text = String(jump_duration) + "- " + String(move_physics_mult)
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)
