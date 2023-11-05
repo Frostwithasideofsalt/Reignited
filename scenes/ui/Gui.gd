@@ -15,7 +15,7 @@ func _physics_process(delta):
 	#ui
 	$Scount.text = "Score: " + String(globallevel.score)
 	if globallevel.Combo == 0:
-		#$combometer/Combo.text = "Combo:"
+		$combometer/Combo.text = "Combo:"
 		$combometer.position.y = $combometer.position.y + ((-200 - $combometer.position.y) / 64 )
 	else:
 		$combometer/Combo.text = "Combo: x" + String(globallevel.Combo)

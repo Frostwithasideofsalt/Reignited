@@ -1,6 +1,5 @@
 extends Control
-var On = preload("res://sounds/gui/select-on.ogg")
-var Off = preload("res://sounds/gui/select-off.ogg")
+
 var screen = 0 
 
 func _input(event):

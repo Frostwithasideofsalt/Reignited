@@ -1,5 +1,5 @@
 extends Node2D
-const Coincollect = preload("res://scenes/objects/main/collected-hcoin.tscn")
+const Coincollect = preload("res://scenes/objects/main/collected-fheal.tscn")
 
 func _ready():
 	pass
