@@ -3,9 +3,11 @@ var seconds = 0
 var minutes = 0
 var msec = 0
 
+func _ready():
+	$combometer.position.y = -200
+	
 func _physics_process(delta):
 
-	
 	visible =  not globallevel.paused
 	$Bars1.scale = Vector2(globallevel.hp * -2 ,1)
 	$Bars2.scale = Vector2(globallevel.hcoin * -4 ,1)

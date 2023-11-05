@@ -1,7 +1,8 @@
 extends Node2D
 var collected = 0
 var vsp = -3
-const Coincollect = preload("res://scenes/objects/main/Hcoin-collect.tscn")
+const Coincollect = preload("res://scenes/objects/main/collected-hcoin.tscn")
+
 func _on_Hcoin_body_entered(body):
 	
 	if globallevel.hp == 24:

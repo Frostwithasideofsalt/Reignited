@@ -149,7 +149,9 @@ func _physics_process(_delta):
 		if is_on_wall() or Input.is_action_pressed("Jump"):
 			dash_time = -1
 			jump_buffer = 0
-			velocity.y = -280
+			if Input.is_action_pressed("Jump"):
+				velocity.y = -280
+			
 	#Coins
 	
 	if globallevel.hcoin >= 12 and globallevel.hp <= 23:
