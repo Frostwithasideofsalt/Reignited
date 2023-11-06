@@ -19,9 +19,12 @@ var jump_buffer = 0
 #attempt three
 var move_physics_mult = 0
 
+var dash_ghost_offset = Vector2(0,0)
+
 
 const PATTACK = preload("res://scenes/player/projectile-player/Player-attack.tscn")
 const SPK = preload("res://scenes/particles/AnimatedSprite.tscn")
+
 
 #This should be refactored at some point
 func _ready():
@@ -79,7 +82,14 @@ func _physics_process(_delta):
 	#when the programming is extremely questionable! :tuxflush:
 	if  dash_time >= 0:
 		$AnimatedSprite.play("dash")
+		$Dash.visible= true
+		$Dash.flip_h = $AnimatedSprite.flip_h
+		$Dash.position = dash_ghost_offset - position
+		if fmod(int(dash_time),6) == 2:
+			dash_ghost_offset = position
+
 	else:
+		$Dash.visible= false
 		if can_jump == false :
 			if h_hey_press == 0 :
 				$AnimatedSprite.play("idle")
@@ -137,6 +147,7 @@ func _physics_process(_delta):
 	
 	
 	if Input.is_action_pressed("action-2") and can_dash >= 63:
+		dash_ghost_offset = position
 		dash_time = 16
 		can_dash = 0
 		if $AnimatedSprite.flip_h == true:
