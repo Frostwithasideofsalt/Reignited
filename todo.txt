@@ -16,10 +16,12 @@ x = complete, w = work in progress
 
 Imporant
 
-[] - have combo meter hide when no combo 
+[x] - have combo meter hide when no combo 
 [w]- level exit
-[] - WALKING ANIMATION!!!!
 [x] - have it so score cant be in the negitives 
+[w] - WALKING ANIMATION!!!!
+[w] -  sounds
+
 
 [x]- add falling speed cap
 [x]- add enemies
@@ -37,10 +39,10 @@ Imporant
 
 
 Unimportant but should still get added
-[]-jump buffering 
+[x]-jump buffering 
 [x]-Dynamic camera
 
 Still im unsure about
 []-Squash and stretch 
 []-Slippery tiles
-[]-more diverse moveset
+[w]-more diverse moveset
