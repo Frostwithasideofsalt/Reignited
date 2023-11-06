@@ -25,10 +25,10 @@ margin_bottom = 243.0
 theme = ExtResource( 1 )
 text = " 
  Controls:
- z - Jump
- x - Attack
- Shift - Dash
- Arrows keys - Move
+ z / j - Jump
+ x / k - Attack
+ Shift / L- Dash
+ Arrows keys /WASD - Move
 "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
