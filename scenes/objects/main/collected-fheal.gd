@@ -1,5 +1,8 @@
 extends AnimatedSprite
 var life = 0
+
+func _ready():
+	$AudioStreamPlayer.play()
 func _physics_process(delta):
 	if life == 0:
 		set_frame(0)

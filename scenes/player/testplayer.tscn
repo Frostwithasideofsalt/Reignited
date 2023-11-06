@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://gfx/player/idle/idle-1.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player/testplayer.gd" type="Script" id=2]
 [ext_resource path="res://scenes/player/camera-scene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sounds/game/Player-jump.wav" type="AudioStream" id=4]
 [ext_resource path="res://gfx/player/jump/up/jump-up-1.png" type="Texture" id=5]
 [ext_resource path="res://scenes/ui/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://gfx/player/jump/down/jump-down-1.png" type="Texture" id=11]
@@ -75,3 +76,8 @@ custom_fonts/font = SubResource( 3 )
 text = "j"
 
 [node name="camera" parent="." instance=ExtResource( 3 )]
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -17.333
+bus = "Sounds"

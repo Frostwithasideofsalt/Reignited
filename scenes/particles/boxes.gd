@@ -5,6 +5,7 @@ var typ
 #at some point i wanna replace this with proper particles 
 
 func _ready():
+	$AudioStreamPlayer.play()
 	set_frame(0)
 
 func _physics_process(delta):

@@ -66,6 +66,8 @@ func _physics_process(_delta):
 			jump_duration = 0
 		
 	if (Input.is_action_pressed("Jump") or jump_buffer > 0) and jump_duration >= 1:
+		if jump_duration == 12:
+			$Jump.play()
 		can_jump = true
 		velocity.y = -260
 		jump_buffer = 0
