@@ -24,6 +24,8 @@ var pmom =0
 #the state of the attack
 var phs = 1
 
+const particle = preload(\"res://scenes/player/projectile-player/projectile-particle.tscn\")
+
 func _ready():
 	vsp.x =(((dir) * 120)+ pmom) / 2
 	if dir ==-1:
@@ -42,6 +44,11 @@ func _physics_process(_delta):
 	match(phs):
 		1:
 			move_and_slide(vsp,Vector2.UP)
+			if fmod(int(lyf),6) == 2:
+				var a = particle.instance()
+				get_parent().add_child(a)
+				a.position = position
+			
 			if is_on_wall() or is_on_floor() or is_on_ceiling() or lyf <= 0:
 					$AnimatedSprite.play(\"Explosion\")
 					$AnimatedSprite.set_frame(0)
@@ -78,6 +85,7 @@ script = SubResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
