@@ -28,14 +28,14 @@ text = "
  z / j - Jump
  x / k - Attack
  Shift / L- Dash
- Arrows keys /WASD - Move
+ Arrows keys / WASD - Move
 "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 183.0
+margin_left = 105.0
 margin_top = 206.0
-margin_right = 237.0
-margin_bottom = 231.0
+margin_right = 328.0
+margin_bottom = 234.0
 theme = ExtResource( 1 )
 script = ExtResource( 3 )
 
@@ -44,6 +44,18 @@ margin_right = 42.0
 margin_bottom = 28.0
 text = "Exit"
 script = ExtResource( 2 )
+
+[node name="Github" type="Button" parent="HBoxContainer"]
+margin_left = 46.0
+margin_right = 112.0
+margin_bottom = 28.0
+text = "Github"
+
+[node name="Soundcloud" type="Button" parent="HBoxContainer"]
+margin_left = 116.0
+margin_right = 223.0
+margin_bottom = 28.0
+text = "Soundcloud"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 5.0
@@ -56,3 +68,5 @@ text = "
  Music made by rodirod"
 
 [connection signal="pressed" from="HBoxContainer/Quit" to="HBoxContainer" method="_on_Quit_pressed"]
+[connection signal="pressed" from="HBoxContainer/Github" to="HBoxContainer" method="_on_Github_pressed"]
+[connection signal="pressed" from="HBoxContainer/Soundcloud" to="HBoxContainer" method="_on_Soundcloud_pressed"]
