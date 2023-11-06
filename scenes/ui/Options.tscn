@@ -19,9 +19,9 @@ texture = ExtResource( 5 )
 
 [node name="Options" type="VBoxContainer" parent="."]
 margin_left = 6.0
-margin_top = 35.0
+margin_top = 23.0
 margin_right = 429.0
-margin_bottom = 208.0
+margin_bottom = 225.0
 grow_horizontal = 2
 theme = ExtResource( 1 )
 custom_constants/separation = 1
@@ -33,37 +33,45 @@ margin_bottom = 28.0
 text = "Sounds"
 script = ExtResource( 2 )
 
-[node name="Fps" type="Button" parent="Options"]
+[node name="Mute-music" type="Button" parent="Options"]
 margin_top = 29.0
 margin_right = 423.0
 margin_bottom = 57.0
-text = "Display FPS (   )"
+text = "Music -TBA-"
+script = ExtResource( 2 )
 
-[node name="fullscreen" type="Button" parent="Options"]
+[node name="Fps" type="Button" parent="Options"]
 margin_top = 58.0
 margin_right = 423.0
 margin_bottom = 86.0
-text = "Toggle fullscreen"
+text = "Display FPS (   )"
 
-[node name="Controls" type="Button" parent="Options"]
+[node name="fullscreen" type="Button" parent="Options"]
 margin_top = 87.0
 margin_right = 423.0
 margin_bottom = 115.0
-text = "Control reminders"
+text = "Toggle fullscreen"
 
-[node name="timer" type="Button" parent="Options"]
+[node name="Controls" type="Button" parent="Options"]
 margin_top = 116.0
 margin_right = 423.0
 margin_bottom = 144.0
-text = "Show timer -off-"
+text = "Control reminders"
 
-[node name="Exit" type="Button" parent="Options"]
+[node name="timer" type="Button" parent="Options"]
 margin_top = 145.0
 margin_right = 423.0
 margin_bottom = 173.0
+text = "Show timer -off-"
+
+[node name="Exit" type="Button" parent="Options"]
+margin_top = 174.0
+margin_right = 423.0
+margin_bottom = 202.0
 text = "Exit"
 
 [connection signal="pressed" from="Options/Mute" to="Options" method="_on_Mute_pressed"]
+[connection signal="pressed" from="Options/Mute-music" to="Options" method="_on_Mute_pressed"]
 [connection signal="pressed" from="Options/Fps" to="Options" method="_on_Fps_pressed"]
 [connection signal="pressed" from="Options/fullscreen" to="Options" method="_on_fullscreen_pressed"]
 [connection signal="pressed" from="Options/Controls" to="Options" method="_on_Controls_pressed"]
