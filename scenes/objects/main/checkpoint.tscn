@@ -40,5 +40,6 @@ shape = SubResource( 2 )
 [node name="checkpoint_audio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 7 )
 volume_db = 1.2
+bus = "Sounds"
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

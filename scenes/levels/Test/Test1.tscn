@@ -93,3 +93,4 @@ offset = Vector2( 0, -128 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 autoplay = true
+bus = "Music"

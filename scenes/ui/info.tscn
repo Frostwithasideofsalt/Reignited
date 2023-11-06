@@ -65,7 +65,7 @@ margin_bottom = 60.0
 theme = ExtResource( 1 )
 text = " 
  Game developed by FrostC
- Music made by rodirod"
+ Music made by RodirodDude"
 
 [connection signal="pressed" from="HBoxContainer/Quit" to="HBoxContainer" method="_on_Quit_pressed"]
 [connection signal="pressed" from="HBoxContainer/Github" to="HBoxContainer" method="_on_Github_pressed"]

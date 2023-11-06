@@ -21,6 +21,11 @@ func _enter_tree():
 		$timer.text = "Show timer -on-"
 	else:
 		$timer.text = "Show timer -off-"
+		
+	if globalsetting.music_muted == true:
+		$Mute_music.text = "Music -off-"
+	else:
+		$Mute_music.text = "Music -on-"
 	
 	
 func _physics_process(delta):
@@ -34,11 +39,11 @@ func _on_Exit_pressed():
 func _on_Mute_pressed():
 	if globalsetting.muted == true:
 		$Mute.text = "Sounds -on-"
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), false)
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), false)
 		globalsetting.muted = false
 	else:
 		$Mute.text = "Sounds -off-"
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true)
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), true)
 		globalsetting.muted = true
 		
 
@@ -68,3 +73,14 @@ func _on_timer_pressed():
 		$timer.text = "Show timer -on-"
 	else:
 		$timer.text = "Show timer -off-"
+
+
+func _on_Mute_music_pressed():
+	if globalsetting.music_muted == true:
+		$Mute_music.text = "Music -on-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), false)
+		globalsetting.music_muted = false
+	else:
+		$Mute_music.text = "Music -off-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)
+		globalsetting.music_muted = true

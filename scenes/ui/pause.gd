@@ -63,6 +63,12 @@ func _on_Options_pressed():
 		$Optionspause/timer.text = "Show timer -on-"
 	else:
 		$Optionspause/timer.text = "Show timer -off-"
+		
+	if globalsetting.music_muted == true:
+		$Optionspause/Mute_music.text = "Music -off-"
+	else:
+		$Optionspause/Mute_music.text = "Music -on-"
+	
 	
 	$Optionspause/Mute.grab_focus()
 	
@@ -72,11 +78,11 @@ func _on_Options_pressed():
 func _on_Mute_pressed():
 	if globalsetting.muted == true:
 		$Optionspause/Mute.text = "Sounds -on-"
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), false)
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), false)
 		globalsetting.muted = false
 	else:
 		$Optionspause/Mute.text = "Sounds -off-"
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true)
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), true)
 		globalsetting.muted = true
 		
 
@@ -115,6 +121,12 @@ func _on_Back_pressed():
 	$Main/resume.grab_focus()
 
 
-
-
-
+func _on_Mute_music_pressed():
+	if globalsetting.music_muted == true:
+		$Optionspause/Mute_music.text = "Music -on-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), false)
+		globalsetting.music_muted = false
+	else:
+		$Optionspause/Mute_music.text = "Music -off-"
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)
+		globalsetting.music_muted = true

@@ -26,4 +26,5 @@ func _physics_process(delta):
 	time = time - 1
 	if time <= 1:
 		queue_free()
+		
 	

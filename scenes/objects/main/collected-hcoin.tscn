@@ -27,7 +27,7 @@ animations = [ {
 
 [node name="AnimatedSprite" type="AnimatedSprite"]
 frames = SubResource( 1 )
-frame = 1
+frame = 3
 playing = true
 script = ExtResource( 3 )
 
@@ -36,3 +36,4 @@ stream = ExtResource( 11 )
 volume_db = -13.983
 pitch_scale = 0.66
 attenuation = 0.176777
+bus = "Sounds"

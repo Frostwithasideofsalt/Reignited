@@ -4,8 +4,11 @@ extends Node
 #Is FPS being shown?
 var SFPS = false
 
-#is game muted?
+#is sound muted?
 var muted = false
+
+#is music muted?
+var music_muted = false
 
 #show control hints?
 var control_hints = true
