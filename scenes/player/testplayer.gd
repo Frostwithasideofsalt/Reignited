@@ -122,7 +122,7 @@ func _physics_process(_delta):
 	#Attack
 		
 	if  globallevel.nrg <= 47:
-		globallevel.nrg = globallevel.nrg + 1
+		globallevel.nrg = globallevel.nrg + move_physics_mult
 	
 	if Input.is_action_just_pressed("action") and globallevel.nrg >= 47:
 		var a = PATTACK.instance()
@@ -183,7 +183,7 @@ func _physics_process(_delta):
 			globallevel.score = 0
 			#reset player hp, and score penalty 
 		modulate.a = 0.5
-		globallevel.invstate = globallevel.invstate - 1 
+		globallevel.invstate = globallevel.invstate - move_physics_mult 
 	else :
 		modulate.a = 1
 	
