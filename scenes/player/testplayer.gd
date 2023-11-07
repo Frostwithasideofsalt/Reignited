@@ -150,6 +150,7 @@ func _physics_process(_delta):
 		dash_ghost_offset = position
 		dash_time = 16
 		can_dash = 0
+		$Dash2.play()
 		if $AnimatedSprite.flip_h == true:
 			dash_direction = -1
 		else:
