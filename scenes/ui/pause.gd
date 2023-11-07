@@ -12,8 +12,10 @@ func _input(event):
 		$Main/resume.grab_focus()
 		if !globallevel.paused:
 			$on.play()
+			$AudioStreamPlayer.stop()
 		else:
 			$off.play()
+			$AudioStreamPlayer.play()
 		$on.stop()
 	
 
@@ -34,6 +36,7 @@ func _on_exit_pressed():
 	get_tree().change_scene("res://scenes/Main.tscn")
 
 func _on_resume_pressed():
+	$AudioStreamPlayer.stop()
 	get_tree().paused = false
 	globallevel.paused = false
 	visible =  globallevel.paused

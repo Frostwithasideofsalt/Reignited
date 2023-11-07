@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/FLRI_-_forest.ogg-2e5fc7e6de89197b198d6c62d7344380.oggstr"
+
+[deps]
+
+source_file="res://sounds/music/level/FLRI_-_forest.ogg"
+dest_files=[ "res://.import/FLRI_-_forest.ogg-2e5fc7e6de89197b198d6c62d7344380.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
