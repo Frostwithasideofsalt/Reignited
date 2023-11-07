@@ -40,4 +40,6 @@ var Combo_timer = 0
 
 var timer = 0
 
+#player position
 
+var playerpos = Vector2(0,0)

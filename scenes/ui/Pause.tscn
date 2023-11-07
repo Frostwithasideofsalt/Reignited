@@ -124,6 +124,7 @@ text = "Back"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="pause"]
 stream = ExtResource( 6 )
+bus = "Music"
 
 [connection signal="visibility_changed" from="pause/Main" to="pause" method="_on_Main_visibility_changed"]
 [connection signal="pressed" from="pause/Main/resume" to="pause" method="_on_resume_pressed"]

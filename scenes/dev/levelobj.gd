@@ -14,7 +14,8 @@ export(Dictionary) var TILE_SCENES := {
 	6: preload("res://scenes/objects/main/Box-item.tscn"),
 	8: preload("res://scenes/enemies/Slidey.tscn"),
 	9: preload("res://scenes/enemies/Spikey.tscn"),
-	16: preload("res://scenes/objects/main/safecheckpoint.tscn")
+	16: preload("res://scenes/objects/main/safecheckpoint.tscn"),
+	21: preload("res://scenes/dev/Chaser.tscn")
 }
 
 onready var half_cell_size := cell_size * 0.5

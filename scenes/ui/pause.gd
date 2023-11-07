@@ -26,6 +26,7 @@ func _on_retry_pressed():
 	globallevel.paused = false
 	visible =  globallevel.paused
 	get_tree().paused = false
+	$AudioStreamPlayer.stop()
 	$off.play()
 
 func _on_exit_pressed():

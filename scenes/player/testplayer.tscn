@@ -41,7 +41,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 15.5 )
+extents = Vector2( 8, 15.25 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 12
@@ -93,3 +93,4 @@ bus = "Sounds"
 stream = ExtResource( 7 )
 volume_db = -14.857
 pitch_scale = 0.7
+bus = "Sounds"

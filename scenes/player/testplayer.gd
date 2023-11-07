@@ -203,3 +203,4 @@ func _physics_process(_delta):
 	globallevel.camseek.x = (velocity.x / 256)
 	if Input.is_action_pressed("ui_focus_next"):
 		globalfunc.reset_level()
+	globallevel.playerpos = position
