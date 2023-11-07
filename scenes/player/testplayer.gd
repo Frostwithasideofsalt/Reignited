@@ -86,7 +86,8 @@ func _physics_process(_delta):
 		$Dash.flip_h = $AnimatedSprite.flip_h
 		$Dash.position = dash_ghost_offset - position
 		if fmod(int(dash_time),6) == 2:
-			dash_ghost_offset = position
+			dash_ghost_offset.x = position.x
+			dash_ghost_offset.y = position.y - 3
 
 	else:
 		$Dash.visible= false
