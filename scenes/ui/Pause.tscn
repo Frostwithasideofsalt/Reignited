@@ -81,16 +81,16 @@ position = Vector2( 83.5, 106 )
 scale = Vector2( 1.30455, 1 )
 texture = ExtResource( 7 )
 
-[node name="Mute" type="Button" parent="pause/Optionspause"]
+[node name="Mute_music" type="Button" parent="pause/Optionspause"]
 margin_right = 167.0
 margin_bottom = 28.0
-text = "Sounds"
+text = "<Music"
 
-[node name="Mute_music" type="Button" parent="pause/Optionspause"]
+[node name="Mute" type="Button" parent="pause/Optionspause"]
 margin_top = 29.0
 margin_right = 167.0
 margin_bottom = 57.0
-text = "<Music"
+text = "Sounds"
 
 [node name="Fps" type="Button" parent="pause/Optionspause"]
 margin_top = 58.0
@@ -133,10 +133,10 @@ bus = "Music"
 [connection signal="pressed" from="pause/Main/Options" to="pause" method="_on_Options_pressed"]
 [connection signal="visibility_changed" from="pause/Main/Options" to="pause/Main/Options" method="_on_resume_visibility_changed"]
 [connection signal="pressed" from="pause/Main/exit" to="pause" method="_on_exit_pressed"]
-[connection signal="pressed" from="pause/Optionspause/Mute" to="pause" method="_on_Mute_pressed"]
-[connection signal="visibility_changed" from="pause/Optionspause/Mute" to="pause/Optionspause/Mute" method="_on_Mute_visibility_changed"]
 [connection signal="pressed" from="pause/Optionspause/Mute_music" to="pause" method="_on_Mute_music_pressed"]
 [connection signal="visibility_changed" from="pause/Optionspause/Mute_music" to="pause/Optionspause/Mute_music" method="_on_Mute_visibility_changed"]
+[connection signal="pressed" from="pause/Optionspause/Mute" to="pause" method="_on_Mute_pressed"]
+[connection signal="visibility_changed" from="pause/Optionspause/Mute" to="pause/Optionspause/Mute" method="_on_Mute_visibility_changed"]
 [connection signal="pressed" from="pause/Optionspause/Fps" to="pause" method="_on_Fps_pressed"]
 [connection signal="pressed" from="pause/Optionspause/fullscreen" to="pause" method="_on_fullscreen_pressed"]
 [connection signal="pressed" from="pause/Optionspause/Controls" to="pause" method="_on_Controls_pressed"]
