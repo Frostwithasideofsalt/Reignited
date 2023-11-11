@@ -32,7 +32,6 @@ func _ready():
 
 
 func _physics_process(_delta):
-	
 	move_physics_mult = _delta * 60
 	
 	#key press stuff
@@ -202,6 +201,6 @@ func _physics_process(_delta):
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)
 	globallevel.camseek.x = (velocity.x / 256)
-	if Input.is_action_pressed("ui_focus_next"):
-		globalfunc.reset_level()
+	if Input.is_action_pressed("debug"):
+		globallevel.Combo = 99999999
 	globallevel.playerpos = position

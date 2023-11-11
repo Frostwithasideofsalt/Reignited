@@ -74,7 +74,7 @@ func _on_Options_pressed():
 		$Optionspause/Mute_music.text = "Music -on-"
 	
 	
-	$Optionspause/Mute.grab_focus()
+	$Optionspause/Mute_music.grab_focus()
 	
 
 

@@ -31,13 +31,13 @@ script = ExtResource( 3 )
 margin_right = 423.0
 margin_bottom = 28.0
 text = "Music"
+script = ExtResource( 2 )
 
 [node name="Mute" type="Button" parent="Options"]
 margin_top = 29.0
 margin_right = 423.0
 margin_bottom = 57.0
 text = "Sounds"
-script = ExtResource( 2 )
 
 [node name="Fps" type="Button" parent="Options"]
 margin_top = 58.0
