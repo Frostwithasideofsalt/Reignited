@@ -86,19 +86,18 @@ size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 0.709804, 1, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "j"
+text = "Score: 0"
 
 [node name="Timer" type="Label" parent="."]
-margin_left = 4.0
-margin_top = 76.0
-margin_right = 64.0
-margin_bottom = 93.0
+margin_left = 3.0
+margin_top = 45.0
+margin_right = 63.0
+margin_bottom = 62.0
 rect_pivot_offset = Vector2( 71, -3 )
 size_flags_stretch_ratio = 0.52
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "00:00:00"
 
 [node name="Hud1" type="Sprite" parent="."]
 position = Vector2( 65, 65 )
