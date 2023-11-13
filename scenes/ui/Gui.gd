@@ -37,3 +37,19 @@ func _physics_process(delta):
 		$Timer.text =  "time: " + str(minutes) + ":" + "%02d" % seconds + ":" + "%03d" % msec
 	else:
 		$Timer.text = ""
+		
+		
+func update_scorecount():
+#		if globallevel.score >= 200:
+#			$Ranks/rank.text = "C"
+#			if globallevel.score >= 750:
+#				$Ranks/rank.text = "B"
+#				if globallevel.score >= 1350:
+#					$Ranks/rank.text = "A"
+#					if globallevel.score >= 2200:
+#						$Ranks/rank.text = "S"
+	if globallevel.score >= 2200:
+		$Ranks/rank.text = "S"
+						
+					
+		
