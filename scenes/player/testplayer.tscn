@@ -55,6 +55,7 @@ collision_mask = 65
 script = ExtResource( 2 )
 
 [node name="Dash" type="Sprite" parent="."]
+visible = false
 modulate = Color( 0.678431, 0.12549, 0.94902, 0.72549 )
 position = Vector2( 0, -3 )
 texture = ExtResource( 15 )
