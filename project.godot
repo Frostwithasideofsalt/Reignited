@@ -22,6 +22,8 @@ _global_script_class_icons={
 
 config/name="Flame's land re-ignited"
 run/main_scene="res://scenes/Main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Permafrost/FLRI_demo"
 boot_splash/show_image=false
 config/icon="res://icon.png"
 
@@ -46,6 +48,7 @@ config=false
 rcedit=false
 layer=false
 2d=false
+user=false
 
 [gui]
 
