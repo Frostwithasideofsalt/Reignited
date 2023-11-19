@@ -67,8 +67,7 @@ texture = ExtResource( 15 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -3 )
 frames = SubResource( 2 )
-animation = "walk"
-frame = 3
+animation = "idle"
 playing = true
 
 [node name="pausemenu" parent="." instance=ExtResource( 6 )]
