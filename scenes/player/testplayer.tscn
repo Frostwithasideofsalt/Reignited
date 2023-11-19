@@ -41,7 +41,7 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "walk",
-"speed": 10.0
+"speed": 12.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]

@@ -12,16 +12,20 @@ demo 4/pre-release (0.4.x)
 
 Release (1.x.x)
 
-x = complete, w = work in progress
+x = complete, w = work in progress, N = N/A
 
 Imporant
 
-[x] - have combo meter hide when no combo 
-[w]- level exit
-[x] - have it so score cant be in the negitives 
-[w] - WALKING ANIMATION!!!!
-[w] -  sounds
+[] - add more sounds
+[] - new level exit
+[] - REMAKE THE DAMN WALK ANIMATION
+[] - replace goofy aah temp options and info background
 
+[x] - have combo meter hide when no combo 
+[N]- level exit
+[x] - have it so score cant be in the negitives 
+[N] - WALKING ANIMATION!!!!
+[N] - add sounds
 
 [x]- add falling speed cap
 [x]- add enemies
@@ -43,6 +47,6 @@ Unimportant but should still get added
 [x]-Dynamic camera
 
 Still im unsure about
-[]-Squash and stretch 
+[N]]-Squash and stretch 
 []-Slippery tiles
 [w]-more diverse moveset

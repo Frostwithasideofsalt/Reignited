@@ -196,11 +196,18 @@ func _physics_process(_delta):
 	
 	#TEMP
 	jump_buffer = jump_buffer - move_physics_mult
+	
+
+	
 	#$test.text = String(jump_duration) + "- " + String(move_physics_mult)
 	self.position.x = round(self.position.x)
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)
 	globallevel.camseek.x = (velocity.x / 256)
 	if Input.is_action_pressed("debug"):
-		globallevel.Combo = 99999999
+		print("debugthingactive")
+		if Input.is_action_just_pressed("Jump"):
+			get_tree().change_scene("res://scenes/levels/Test/test.tscn")
+		if Input.is_action_just_pressed("action"):
+			globallevel.Combo = 99999999
 	globallevel.playerpos = position

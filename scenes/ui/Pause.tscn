@@ -5,7 +5,7 @@
 [ext_resource path="res://gfx/gui/hud/pause-gradient.png" type="Texture" id=3]
 [ext_resource path="res://sounds/gui/select-off.ogg" type="AudioStream" id=4]
 [ext_resource path="res://sounds/gui/select-on.ogg" type="AudioStream" id=5]
-[ext_resource path="res://sounds/music/level/pause.ogg" type="AudioStream" id=6]
+[ext_resource path="res://sounds/music/menu/pause.ogg" type="AudioStream" id=6]
 [ext_resource path="res://gfx/gui/hud/gradient-2.png" type="Texture" id=7]
 
 [node name="pause-menu" type="CanvasLayer"]
@@ -64,6 +64,11 @@ margin_right = 117.0
 margin_bottom = 124.0
 theme = ExtResource( 2 )
 text = "Exit"
+
+[node name="Label" type="Label" parent="pause/Main"]
+margin_top = 128.0
+margin_right = 117.0
+margin_bottom = 142.0
 
 [node name="Optionspause" type="VBoxContainer" parent="pause"]
 visible = false
@@ -124,6 +129,7 @@ text = "Back"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="pause"]
 stream = ExtResource( 6 )
+volume_db = -2.476
 bus = "Music"
 
 [connection signal="visibility_changed" from="pause/Main" to="pause" method="_on_Main_visibility_changed"]
