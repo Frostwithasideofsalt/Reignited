@@ -15,7 +15,7 @@ func reset_level():
 	globallevel.timer = 0
 
 func Combo_up():
-	globallevel.score = globallevel.score + 5 + round(((globallevel.Combo_timer / 32) * 5) + (globallevel.Combo / 3)) 
+	globallevel.score = globallevel.score + 5 + round(((globallevel.Combo_timer / 32) * 5) + (globallevel.Combo / 2)) 
 	globallevel.Combo = globallevel.Combo + 1
 	globallevel.Combo_timer = 32
 

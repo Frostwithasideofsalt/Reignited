@@ -204,10 +204,19 @@ func _physics_process(_delta):
 	self.position.y = round(self.position.y)
 	globallevel.camseek.y = (velocity.y / 256)
 	globallevel.camseek.x = (velocity.x / 256)
+	globallevel.playerpos = position
+	
+	
+	#debug stuff 
+	
 	if Input.is_action_pressed("debug"):
-		print("debugthingactive")
+		print("debug")
 		if Input.is_action_just_pressed("Jump"):
 			get_tree().change_scene("res://scenes/levels/Test/test.tscn")
 		if Input.is_action_just_pressed("action"):
-			globallevel.Combo = 99999999
-	globallevel.playerpos = position
+			globallevel.Combo = 50
+			globallevel.Combo_timer = 99
+		if Input.is_action_just_pressed("action-2"):
+			$test.visible = true
+	$test.text = str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))
+	

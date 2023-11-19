@@ -27,7 +27,6 @@ func _physics_process(delta):
 		
 		vsp.x = 60 * dir
 	else:
-		globallevel.score = globallevel.score + 5 + round((globallevel.Combo_timer / 32) * 5)
 		var a = enemydead.instance()
 		a.vsp.x = (vsp.x /30)
 		a.typ = 1
@@ -85,7 +84,7 @@ script = SubResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 1
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

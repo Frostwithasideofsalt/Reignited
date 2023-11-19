@@ -4,6 +4,7 @@ var time = 120
 var typ 
 func _ready():
 	$AudioStreamPlayer.play()
+	
 	if globallevel.hcoin <= 11:
 				globallevel.hcoin = globallevel.hcoin + 1
 	vsp.y = -4
