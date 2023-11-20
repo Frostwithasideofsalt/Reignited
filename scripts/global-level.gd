@@ -43,3 +43,8 @@ var timer = 0
 #player position
 
 var playerpos = Vector2(0,0)
+
+#debug stuff 
+
+var inf_dash = false
+var debug_mode = false

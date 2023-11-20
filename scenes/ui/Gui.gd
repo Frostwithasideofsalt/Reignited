@@ -3,10 +3,13 @@ var seconds = 0
 var minutes = 0
 var msec = 0
 
-var debug = false 
+
 
 func _ready():
 	$combometer.position.y = -200
+	if globallevel.debug_mode == true:
+		$debugpanel.visible = true
+		$DEBUG.visible =  true
 	
 func _physics_process(delta):
 
@@ -44,13 +47,17 @@ func _physics_process(delta):
 	
 	
 	
-	#debug mode
+	#globallevel.debug_mode mode
 		
 		if Input.is_action_just_pressed("F12"):
-			debug = true
-			$DEBUG.visible = true
-			$debugpanel.visible = true
-			print("debug mode enabled")
+			globallevel.debug_mode = !globallevel.debug_mode
+			$debugpanel.visible = globallevel.debug_mode
+			$DEBUG.visible = globallevel.debug_mode
+			if globallevel.debug_mode == true:
+				print("globallevel.debug_mode mode enabled")
+			else:
+				print("globallevel.debug_mode mode disabled")
+				globallevel.inf_dash = false
 		
 		if Input.is_action_just_pressed("F11"):
 			AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), true)
@@ -60,11 +67,44 @@ func _physics_process(delta):
 			print("muted audio")
 		
 		if Input.is_action_just_pressed("F10"):
-			if debug == true:
+			if globallevel.debug_mode == true:
 				get_tree().change_scene("res://scenes/levels/Test/test.tscn")
-				print("Entered debug stage")
+				print("Entered test stage")
 			else:
 				print("You must be in debug mode to use this")
+				
+		if Input.is_action_just_pressed("F9"):
+			if globallevel.debug_mode == true:
+				if Input.is_action_pressed("action-2"):
+					globalfunc.Combo_up()
+					globalfunc.Combo_up()
+					globalfunc.Combo_up()
+					globalfunc.Combo_up()
+					globalfunc.Combo_up()
+					print("Combo up by five")
+
+				else:
+					globalfunc.Combo_up()
+					print("Combo up by one")
+			else:
+				print("You must be in debug mode to use this")
+				
+		if Input.is_action_just_pressed("F7"):
+			if globallevel.debug_mode == true:
+				globallevel.hp = 24
+				globallevel.hcoin = 6
+				print("reset player hp")
+			else:
+				print("You must be in debug mode to use this")
+				
+		if Input.is_action_just_pressed("F6"):
+			if globallevel.debug_mode == true:
+				globallevel.inf_dash = true
+				print("Enabled infinite dash mode")
+			else:
+				print("You must be in debug to use this")
 		
-		if debug == true:
-			$DEBUG.text = " -Debug panel-\nKill value; " + (str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))) + "\nGame speed; " + str(1/(delta * 60)) + "\nCamera Seek;\nx: " + str(globallevel.camseek.x) + "\ny: " + str(globallevel.camseek.y)
+		
+		
+		if globallevel.debug_mode == true:
+			$DEBUG.text = "Kill value; " + (str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))) + "\nGame speed; " + str(1/(delta * 60)) + "\nCamera Seek;\nx: " + str(globallevel.camseek.x) + "\ny: " + str(globallevel.camseek.y)
