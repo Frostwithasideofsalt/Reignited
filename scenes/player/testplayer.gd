@@ -168,7 +168,7 @@ func _physics_process(_delta):
 			
 	#Coins
 	
-	if globallevel.hcoin >= 12 and globallevel.hp <= 23:
+	if globallevel.hcoin >= 6 and globallevel.hp <= 23:
 		globallevel.hcoin = 0
 		if globallevel.hp < 24:
 			globallevel.hp = globallevel.hp + 1 
@@ -189,7 +189,7 @@ func _physics_process(_delta):
 		modulate.a = 1
 	
 	if globallevel.Combo_timer >= 1:
-		globallevel.Combo_timer = globallevel.Combo_timer - 0.15
+		globallevel.Combo_timer = globallevel.Combo_timer - (0.15 * move_physics_mult)
 	else:
 		globallevel.Combo = 0
 		globallevel.Combo_timer = 0
@@ -209,14 +209,14 @@ func _physics_process(_delta):
 	
 	#debug stuff 
 	
-	if Input.is_action_pressed("debug"):
-		print("debug")
-		if Input.is_action_just_pressed("Jump"):
-			get_tree().change_scene("res://scenes/levels/Test/test.tscn")
-		if Input.is_action_just_pressed("action"):
-			globallevel.Combo = 50
-			globallevel.Combo_timer = 99
-		if Input.is_action_just_pressed("action-2"):
-			$test.visible = true
-	$test.text = str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))
+#	if Input.is_action_pressed("debug"):
+#		print("debug")
+#		if Input.is_action_just_pressed("Jump"):
+#			get_tree().change_scene("res://scenes/levels/Test/test.tscn")
+#		if Input.is_action_just_pressed("action"):
+#			globallevel.Combo = 50
+#			globallevel.Combo_timer = 99
+#		if Input.is_action_just_pressed("action-2"):
+#			$test.visible = true
+#	$test.text = str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))
 	

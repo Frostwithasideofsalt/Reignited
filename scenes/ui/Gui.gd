@@ -3,6 +3,8 @@ var seconds = 0
 var minutes = 0
 var msec = 0
 
+var debug = false 
+
 func _ready():
 	$combometer.position.y = -200
 	
@@ -10,7 +12,7 @@ func _physics_process(delta):
 
 	visible =  not globallevel.paused
 	$Bars1.scale = Vector2(globallevel.hp * -2 ,1)
-	$Bars2.scale = Vector2(globallevel.hcoin * -4 ,1)
+	$Bars2.scale = Vector2(globallevel.hcoin * -8 ,1)
 	
 	#ui
 	$Scount.text = "Score: " + String(globallevel.score)
@@ -39,17 +41,30 @@ func _physics_process(delta):
 		$Timer.text = ""
 		
 		
-func update_scorecount():
-#		if globallevel.score >= 200:
-#			$Ranks/rank.text = "C"
-#			if globallevel.score >= 750:
-#				$Ranks/rank.text = "B"
-#				if globallevel.score >= 1350:
-#					$Ranks/rank.text = "A"
-#					if globallevel.score >= 2200:
-#						$Ranks/rank.text = "S"
-	if globallevel.score >= 2200:
-		$Ranks/rank.text = "S"
-						
-					
+	
+	
+	
+	#debug mode
 		
+		if Input.is_action_just_pressed("F12"):
+			debug = true
+			$DEBUG.visible = true
+			$debugpanel.visible = true
+			print("debug mode enabled")
+		
+		if Input.is_action_just_pressed("F11"):
+			AudioServer.set_bus_mute(AudioServer.get_bus_index("Sounds"), true)
+			globalsetting.music_muted = true
+			AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)
+			globalsetting.muted = true
+			print("muted audio")
+		
+		if Input.is_action_just_pressed("F10"):
+			if debug == true:
+				get_tree().change_scene("res://scenes/levels/Test/test.tscn")
+				print("Entered debug stage")
+			else:
+				print("You must be in debug mode to use this")
+		
+		if debug == true:
+			$DEBUG.text = " -Debug panel-\nKill value; " + (str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))) + "\nGame speed; " + str(1/(delta * 60)) + "\nCamera Seek;\nx: " + str(globallevel.camseek.x) + "\ny: " + str(globallevel.camseek.y)

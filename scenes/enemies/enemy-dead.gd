@@ -5,7 +5,7 @@ var typ
 func _ready():
 	$AudioStreamPlayer.play()
 	
-	if globallevel.hcoin <= 11:
+	if globallevel.hcoin <= 5:
 				globallevel.hcoin = globallevel.hcoin + 1
 	vsp.y = -4
 	match(typ):

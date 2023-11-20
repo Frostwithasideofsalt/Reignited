@@ -7,7 +7,7 @@ func _on_Hcoin_body_entered(body):
 	
 	if globallevel.hp == 24:
 			globallevel.score = globallevel.score + 10
-			if globallevel.hcoin <= 11:
+			if globallevel.hcoin <= 5:
 				globallevel.hcoin = globallevel.hcoin + 1
 	else:
 			globallevel.score = globallevel.score + 5
