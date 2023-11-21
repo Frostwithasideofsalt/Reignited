@@ -107,4 +107,4 @@ func _physics_process(delta):
 		
 		
 		if globallevel.debug_mode == true:
-			$DEBUG.text = "Kill value; " + (str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))) + "\nGame speed; " + str(1/(delta * 60)) + "\nCamera Seek;\nx: " + str(globallevel.camseek.x) + "\ny: " + str(globallevel.camseek.y)
+			$DEBUG.text = "Kill value; " + (str(5 + round((globallevel.Combo_timer / 32) * 5) + round(globallevel.Combo / 2))) + "\nGame speed; " + str(1/(delta * 60)) + "\nCamera Seek:\nx: " + str(globallevel.camseek.x) + "\ny: " + str(globallevel.camseek.y) + "\nPosition: \nx: " + str(globallevel.playerpos.x) + "\ny: "  + str(globallevel.playerpos.y)
