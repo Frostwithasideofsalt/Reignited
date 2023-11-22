@@ -7,5 +7,3 @@ func _ready():
 			$AnimatedSprite.play("0")
 		1:
 			$AnimatedSprite.play("1")
-func _physics_process(delta):
-	pass
