@@ -124,7 +124,7 @@ func _physics_process(_delta):
 	if  globallevel.nrg <= 47:
 		globallevel.nrg = globallevel.nrg + move_physics_mult
 	
-	if Input.is_action_just_pressed("action") and globallevel.nrg >= 47:
+	if Input.is_action_just_pressed("action") and globallevel.nrg >= 47 and dash_time <= 1:
 		var a = PATTACK.instance()
 		globallevel.nrg = 0
 		#probably a way better way to this, but i don't have the patiance to do that right now.
@@ -160,11 +160,15 @@ func _physics_process(_delta):
 		horizontal_speed = 320 *dash_direction
 		velocity.y = 0
 		dash_time = dash_time - move_physics_mult 
-		if is_on_wall() or Input.is_action_pressed("Jump"):
+		
+		if is_on_wall() or Input.is_action_pressed("Jump")  or Input.is_action_pressed("action"):
 			dash_time = -1
 			jump_buffer = 0
 			if Input.is_action_pressed("Jump"):
 				velocity.y = -280
+			if Input.is_action_pressed("action"):
+				
+				pass
 			
 	#Coins
 	
