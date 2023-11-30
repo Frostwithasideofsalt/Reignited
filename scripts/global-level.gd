@@ -1,6 +1,9 @@
 extends Node
 #variables in this file reset when a level is exited.
 
+
+var levelOver = false
+
 #Player health
 var hp = 24
 
