@@ -32,6 +32,9 @@ func _ready():
 
 
 func _physics_process(_delta):
+	
+	
+	
 	move_physics_mult = _delta * 60
 	
 	#key press stuff
