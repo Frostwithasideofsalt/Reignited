@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://fonts/flat-theme.tres" type="Theme" id=1]
 [ext_resource path="res://scripts/menu-grab-focus.gd" type="Script" id=2]
 [ext_resource path="res://scenes/ui/infomenu.gd" type="Script" id=3]
 [ext_resource path="res://gfx/gui/pause.png" type="Texture" id=4]
 [ext_resource path="res://gfx/gui/hud/gradient-2.png" type="Texture" id=5]
+[ext_resource path="res://sounds/music/menu/funky.ogg" type="AudioStream" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -66,6 +67,12 @@ theme = ExtResource( 1 )
 text = " 
  Game developed by FrostC
  Music made by RodirodDude"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -6.19
+autoplay = true
+bus = "Music"
 
 [connection signal="pressed" from="HBoxContainer/Quit" to="HBoxContainer" method="_on_Quit_pressed"]
 [connection signal="pressed" from="HBoxContainer/Github" to="HBoxContainer" method="_on_Github_pressed"]

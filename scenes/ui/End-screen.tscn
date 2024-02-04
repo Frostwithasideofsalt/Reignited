@@ -33,9 +33,9 @@ bus = "Music"
 
 [node name="point" type="Label" parent="."]
 margin_left = 131.0
-margin_top = 126.0
+margin_top = 121.0
 margin_right = 187.0
-margin_bottom = 146.0
+margin_bottom = 141.0
 theme = ExtResource( 2 )
 text = "points"
 
@@ -52,27 +52,19 @@ text = "(this is a placeholder
 
 [node name="time" type="Label" parent="."]
 margin_left = 130.0
-margin_top = 95.0
+margin_top = 83.0
 margin_right = 170.0
-margin_bottom = 115.0
+margin_bottom = 103.0
 theme = ExtResource( 2 )
 text = "time"
 
 [node name="rank" type="Label" parent="."]
 margin_left = 129.0
-margin_top = 48.0
+margin_top = 36.0
 margin_right = 309.0
-margin_bottom = 68.0
+margin_bottom = 56.0
 theme = ExtResource( 2 )
 text = "Rank: good question"
-
-[node name="rank2" type="Label" parent="."]
-margin_left = 111.0
-margin_top = 18.0
-margin_right = 328.0
-margin_bottom = 38.0
-theme = ExtResource( 2 )
-text = "Placeholder rank screen!"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
