@@ -80,6 +80,7 @@ custom_fonts/font = SubResource( 3 )
 text = "Score: 0"
 
 [node name="Timer" type="Label" parent="."]
+visible = false
 margin_left = 3.0
 margin_top = 45.0
 margin_right = 63.0

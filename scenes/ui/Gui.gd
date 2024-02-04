@@ -76,11 +76,10 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("F9"):
 			if globallevel.debug_mode == true:
 				if Input.is_action_pressed("action-2"):
-					globalfunc.Combo_up()
-					globalfunc.Combo_up()
-					globalfunc.Combo_up()
-					globalfunc.Combo_up()
-					globalfunc.Combo_up()
+					
+					for i in range(5):
+						globalfunc.Combo_up()
+
 					print("Combo up by five")
 
 				else:

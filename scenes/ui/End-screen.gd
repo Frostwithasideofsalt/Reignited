@@ -15,15 +15,15 @@ func _ready():
 	$time.text = " time: " + "%02d" % minutes + ":" + "%02d" % seconds + ":" + "%03d" % msec
 	
 	if globallevel.score >= 200:
-		$rank.text = "rank: C"
+		$rank.text = "C"
 		if globallevel.score >= 750:
-			$rank.text = "rank: B"
+			$rank.text = "B"
 			if globallevel.score >= 1350:
-				$rank.text = "rank: A"
+				$rank.text = "A"
 				if globallevel.score >= 2200:
-					$rank.text = "rank: S"
+					$rank.text = "S"
 	else: 
-		$rank.text = "rank: D"
+		$rank.text = "D"
 
 func _on_retry_pressed():
 	get_tree().change_scene("res://scenes/levels/Test/forest-challenge.tscn")
