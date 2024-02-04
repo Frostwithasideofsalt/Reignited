@@ -111,7 +111,7 @@ margin_top = 1.0
 margin_right = -31.0
 margin_bottom = 63.0
 theme = ExtResource( 16 )
-text = "v0.1.0"
+text = "v0.1.1 - nightly"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )

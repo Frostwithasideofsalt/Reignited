@@ -24,7 +24,7 @@ centered = false
 offset = Vector2( 0, -128 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="bg"]
-motion_scale = Vector2( 0.1, 0 )
+motion_scale = Vector2( 0.04, 0.04 )
 motion_mirroring = Vector2( 512, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/ParallaxLayer3"]
@@ -35,7 +35,7 @@ offset = Vector2( 0, -128 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="bg"]
 position = Vector2( 9, 3 )
-motion_scale = Vector2( 0.2, 0 )
+motion_scale = Vector2( 0.18, 0.18 )
 motion_mirroring = Vector2( 512, 0 )
 
 [node name="Sprite" type="Sprite" parent="bg/ParallaxLayer"]
