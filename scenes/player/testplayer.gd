@@ -20,6 +20,7 @@ var jump_buffer = 0
 var move_physics_mult = 0
 
 var canjump = true
+var run_direction = 1
 
 var state = 0
 
@@ -37,7 +38,7 @@ func swap_state(a):
 			canjump = true;
 		1:
 			state = 1;
-			canjump = false;
+			canjump = true;
 			
 		
 
@@ -54,31 +55,41 @@ func _physics_process(_delta):
 	
 	#key press stuff
 	h_hey_press = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
+	if h_hey_press != 0:
+		run_direction = h_hey_press
 	#Left and right movment
-	if h_hey_press == 1 and horizontal_speed < 160 :
-		
-		horizontal_speed += (80 - (80 * friction)) * move_physics_mult
-		$AnimatedSprite.flip_h = false
-		
-	elif h_hey_press == -1 and horizontal_speed > -160:
-		
-		horizontal_speed += -(80 - (80 * friction)) * move_physics_mult
-		$AnimatedSprite.flip_h = true
-		
-	elif h_hey_press == 0:
-		
-		horizontal_speed = horizontal_speed *(friction) 
-		
+
 	velocity.x = horizontal_speed
 	
 	
 
 	match state:
 		0:
-			pass
+			if h_hey_press == 1 and horizontal_speed < 160 :
+				horizontal_speed += (80 - (80 * friction)) * move_physics_mult
+				$AnimatedSprite.flip_h = false
+			elif h_hey_press == -1 and horizontal_speed > -160:
+				horizontal_speed += -(80 - (80 * friction)) * move_physics_mult
+				$AnimatedSprite.flip_h = true
+			elif h_hey_press == 0:
+				horizontal_speed = horizontal_speed *(friction) 
+				
+			
+			if Input.is_action_pressed("action-2"):
+				swap_state(1)
+				
+				
 		1:
-			pass
-
+			
+			if Input.is_action_pressed("action-2") == false:
+				swap_state(0)
+			
+			#if abs(horizontal_speed + (80 * run_direction)) > 999999:
+			print(horizontal_speed + (80 * run_direction))
+			
+			if abs(horizontal_speed) < 280:
+				horizontal_speed += (80 * move_physics_mult) * run_direction
+			
 
 
 	if canjump == true:
